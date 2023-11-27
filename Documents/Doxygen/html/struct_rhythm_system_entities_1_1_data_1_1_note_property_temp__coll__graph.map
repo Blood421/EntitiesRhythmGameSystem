@@ -1,0 +1,25 @@
+<map id="RhythmSystemEntities.Data.NotePropertyTemp" name="RhythmSystemEntities.Data.NotePropertyTemp">
+<area shape="rect" id="Node000001" title="譜面データをエンティティにするまでの仮データ" alt="" coords="614,524,797,604"/>
+<area shape="rect" id="Node000002" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data.html" title=" " alt="" coords="615,381,796,461"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="708,461,708,508,703,508,703,461"/>
+<area shape="rect" id="Node000003" href="$class_i_component_data.html" title=" " alt="" coords="910,223,1023,289"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="940,302,915,333,884,360,842,383,797,401,795,396,839,378,881,355,911,329,936,299"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="1047,223,1115,289"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="1056,290,1038,306,983,338,925,364,867,385,813,401,811,395,866,380,923,359,981,333,1034,301,1052,286"/>
+<area shape="rect" id="Node000005" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data_1_1_timing_data.html" title=" " alt="" coords="162,216,403,296"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="324,294,365,327,412,355,458,373,506,387,599,406,598,412,505,393,456,378,410,360,362,331,321,298"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="56,5,93,71"/>
+<area shape="poly" id="edge12_Node000001_Node000006" title=" " alt="" coords="59,67,46,96,24,171,10,233,9,263,13,292,25,322,46,356,61,372,81,388,136,418,204,446,282,471,449,513,598,543,597,548,448,518,281,476,202,451,133,423,78,392,57,376,42,359,21,325,8,293,3,263,4,233,19,169,41,94,54,65"/>
+<area shape="poly" id="edge8_Node000002_Node000006" title=" " alt="" coords="68,71,57,121,52,183,54,215,60,246,71,275,88,302,122,327,172,349,235,367,307,382,460,402,598,413,598,418,460,407,306,387,234,372,170,354,119,332,84,305,66,278,55,248,48,215,46,183,52,120,62,70"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="95,57,236,202,232,206,91,60"/>
+<area shape="rect" id="Node000007" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data_1_1_long_note_edge_i_d_data.html" title=" " alt="" coords="427,209,653,303"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="507,304,498,331,499,344,504,356,523,376,546,391,572,402,599,410,597,415,570,407,544,396,520,380,500,359,493,345,493,331,502,302"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="836,5,863,71"/>
+<area shape="poly" id="edge13_Node000001_Node000008" title=" " alt="" coords="863,40,916,56,991,87,1031,110,1069,137,1103,170,1130,207,1142,233,1145,255,1141,278,1130,305,1104,349,1071,389,1032,424,989,455,944,481,899,503,814,537,812,532,897,499,942,477,986,451,1029,420,1067,386,1100,346,1126,302,1136,277,1140,255,1137,234,1126,210,1099,173,1066,141,1028,114,989,92,914,61,862,45"/>
+<area shape="poly" id="edge10_Node000002_Node000008" title=" " alt="" coords="854,71,856,139,856,223,849,303,842,335,832,359,811,381,807,377,827,356,837,334,844,302,850,223,851,139,849,71"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="838,51,621,201,618,197,834,46"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="677,223,715,289"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="679,288,652,328,649,342,652,356,656,366,651,368,647,358,643,342,647,326,675,285"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="740,223,785,289"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="757,289,736,358,733,367,728,365,731,356,752,288"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="RhythmSystemEntities.ECS.Aspect.NoteAspect.ThroughNote" name="RhythmSystemEntities.ECS.Aspect.NoteAspect.ThroughNote">
+<area shape="rect" id="Node000001" title="判定通り越したノーツの処理" alt="" coords="5,71,212,111"/>
+<area shape="rect" id="Node000002" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect.html#a5b76c1cfe19179c0c5ebc22ba7f040da" title="ノーツを判定処理する" alt="" coords="280,5,486,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,67,279,48,280,53,198,73"/>
+<area shape="rect" id="Node000004" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect.html#aeb419f47dabdcd45970380bb85cbb8c4" title="オフセットを返す NowSecから引いて使ってね" alt="" coords="260,71,506,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="212,88,244,88,244,94,212,94"/>
+<area shape="rect" id="Node000005" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect.html#a4249e9c6e1c490d01cd88d561089bee5" title="オプションの入力オフセットを返す NowSecに足して使ってね" alt="" coords="272,135,494,191"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="189,109,260,128,259,133,188,114"/>
+<area shape="rect" id="Node000003" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect.html#ae27666ba738586d06fe7ed550dae3e51" title="ノーツが処理中かどうかの取得" alt="" coords="554,5,785,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="486,23,539,23,539,28,486,28"/>
+</map>

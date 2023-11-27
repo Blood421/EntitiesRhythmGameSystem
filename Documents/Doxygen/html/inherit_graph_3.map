@@ -1,0 +1,17 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_i_component_data.html" title=" " alt="" coords="5,209,128,235"/>
+<area shape="rect" id="Node000001" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data.html" title="ロングノーツの端のエンティティのデータ" alt="" coords="185,5,376,46"/>
+<area shape="poly" id="edge11_Node000000_Node000001" title=" " alt="" coords="77,193,113,125,141,89,174,57,195,44,198,49,177,61,145,92,118,128,81,196"/>
+<area shape="rect" id="Node000002" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_music_i_d_data.html" title="曲IDデータ" alt="" coords="185,71,376,111"/>
+<area shape="poly" id="edge12_Node000000_Node000002" title=" " alt="" coords="87,195,126,158,174,122,201,109,203,114,177,127,129,162,91,199"/>
+<area shape="rect" id="Node000003" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data.html" title=" " alt="" coords="185,136,376,177"/>
+<area shape="poly" id="edge13_Node000000_Node000003" title=" " alt="" coords="125,201,210,175,212,180,126,206"/>
+<area shape="rect" id="Node000004" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data.html" title="ノーツ生成用エンティティのデータ" alt="" coords="185,201,376,242"/>
+<area shape="poly" id="edge14_Node000000_Node000004" title=" " alt="" coords="143,219,185,219,185,224,143,224"/>
+<area shape="rect" id="Node000005" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_spawn_data.html" title=" " alt="" coords="176,267,385,307"/>
+<area shape="poly" id="edge15_Node000000_Node000005" title=" " alt="" coords="126,237,212,264,210,269,125,242"/>
+<area shape="rect" id="Node000006" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_option_data.html" title=" " alt="" coords="185,332,376,373"/>
+<area shape="poly" id="edge16_Node000000_Node000006" title=" " alt="" coords="91,244,129,281,177,317,203,329,201,334,174,321,126,285,87,248"/>
+<area shape="rect" id="Node000007" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_presenter_data.html" title="MonoからのECSのノーツ橋渡し用のデータ" alt="" coords="185,397,376,438"/>
+<area shape="poly" id="edge17_Node000000_Node000007" title=" " alt="" coords="81,248,118,315,145,351,177,382,198,394,195,399,174,386,141,355,113,318,77,250"/>
+</map>

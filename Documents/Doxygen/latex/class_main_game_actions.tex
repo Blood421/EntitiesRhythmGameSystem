@@ -1,0 +1,349 @@
+\doxysection{Main\+Game\+Actions Class Reference}
+\hypertarget{class_main_game_actions}{}\label{class_main_game_actions}\index{MainGameActions@{MainGameActions}}
+
+
+Inheritance diagram for Main\+Game\+Actions\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{class_main_game_actions__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Main\+Game\+Actions\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_game_actions__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+interface \mbox{\hyperlink{interface_main_game_actions_1_1_i_main_actions}{IMain\+Actions}}
+\item 
+struct \mbox{\hyperlink{struct_main_game_actions_1_1_main_actions}{Main\+Actions}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_game_actions_a82c4008e21a0b4a1e8ba02acdc69c822}{Main\+Game\+Actions}} ()
+\item 
+void \mbox{\hyperlink{class_main_game_actions_a75427508a28fc5df4cc81ff8bfd62988}{Dispose}} ()
+\item 
+bool \mbox{\hyperlink{class_main_game_actions_a3e991ce0739297f158f9d41f64b018f9}{Contains}} (Input\+Action action)
+\item 
+IEnumerator$<$ Input\+Action $>$ \mbox{\hyperlink{class_main_game_actions_a15901d69bdfc5d298a595c9b6f830545}{Get\+Enumerator}} ()
+\item 
+void \mbox{\hyperlink{class_main_game_actions_a9aa6eec5eb60b2684fa1c5ac45a70e77}{Enable}} ()
+\item 
+void \mbox{\hyperlink{class_main_game_actions_ac017207a3e9503931edc371a14f21a4e}{Disable}} ()
+\item 
+Input\+Action \mbox{\hyperlink{class_main_game_actions_a6de8a05cded65b36068a8a61d5efa2f3}{Find\+Action}} (string action\+Name\+Or\+Id, bool throw\+If\+Not\+Found=false)
+\item 
+int \mbox{\hyperlink{class_main_game_actions_ae774768aa6a960f6daa069ba78f74c44}{Find\+Binding}} (Input\+Binding \mbox{\hyperlink{class_main_game_actions_ab4caddffe945f246eb35e602a35ae5cb}{binding\+Mask}}, out Input\+Action action)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Input\+Action\+Asset \mbox{\hyperlink{class_main_game_actions_aa94b853cf8e43379725ecd9945bf7699}{asset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Input\+Binding? \mbox{\hyperlink{class_main_game_actions_ab4caddffe945f246eb35e602a35ae5cb}{binding\+Mask}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Read\+Only\+Array$<$ Input\+Device $>$? \mbox{\hyperlink{class_main_game_actions_af497b42b8f3c55a703322d06d63ecbc9}{devices}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Read\+Only\+Array$<$ Input\+Control\+Scheme $>$ \mbox{\hyperlink{class_main_game_actions_ae8f4a8d9f2de6027cd5e37b349ec59bd}{control\+Schemes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+IEnumerable$<$ Input\+Binding $>$ \mbox{\hyperlink{class_main_game_actions_a41a8eaf53276ef4d0b8d033571e9710b}{bindings}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_main_game_actions_1_1_main_actions}{Main\+Actions}} \mbox{\hyperlink{class_main_game_actions_a746c46dd2d2f10b451356db98e0bb63e}{Main}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IEnumerator IEnumerable. \mbox{\hyperlink{class_main_game_actions_ab755a36dacb1e800eb6e578875afb3fd}{Get\+Enumerator}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly Input\+Action\+Map \mbox{\hyperlink{class_main_game_actions_a11b7adb85022614af9acca69442076b6}{m\+\_\+\+Main}}
+\item 
+List$<$ \mbox{\hyperlink{interface_main_game_actions_1_1_i_main_actions}{IMain\+Actions}} $>$ \mbox{\hyperlink{class_main_game_actions_a414d16dc899259cc0cbf3004d8fb1e4b}{m\+\_\+\+Main\+Actions\+Callback\+Interfaces}} = new List$<$\mbox{\hyperlink{interface_main_game_actions_1_1_i_main_actions}{IMain\+Actions}}$>$()
+\item 
+readonly Input\+Action \mbox{\hyperlink{class_main_game_actions_a60d886d0662e5bd545a28bca1930983d}{m\+\_\+\+Main\+\_\+\+Lane0}}
+\item 
+readonly Input\+Action \mbox{\hyperlink{class_main_game_actions_ad3d6133a25084abb3c74c1ab1383420d}{m\+\_\+\+Main\+\_\+\+Lane1}}
+\item 
+readonly Input\+Action \mbox{\hyperlink{class_main_game_actions_aab6a624a4ab680ed527b47183acdc1ad}{m\+\_\+\+Main\+\_\+\+Lane2}}
+\item 
+readonly Input\+Action \mbox{\hyperlink{class_main_game_actions_ac8ceec7c7088d436ecfda01d4437dc92}{m\+\_\+\+Main\+\_\+\+Lane3}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00018}{18}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_main_game_actions_a82c4008e21a0b4a1e8ba02acdc69c822}\label{class_main_game_actions_a82c4008e21a0b4a1e8ba02acdc69c822} 
+\index{MainGameActions@{MainGameActions}!MainGameActions@{MainGameActions}}
+\index{MainGameActions@{MainGameActions}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{MainGameActions()}{MainGameActions()}}
+{\footnotesize\ttfamily Main\+Game\+Actions.\+Main\+Game\+Actions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00021}{21}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_main_game_actions_a3e991ce0739297f158f9d41f64b018f9}\label{class_main_game_actions_a3e991ce0739297f158f9d41f64b018f9} 
+\index{MainGameActions@{MainGameActions}!Contains@{Contains}}
+\index{Contains@{Contains}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily bool Main\+Game\+Actions.\+Contains (\begin{DoxyParamCaption}\item[{Input\+Action}]{action }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00144}{144}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+\Hypertarget{class_main_game_actions_ac017207a3e9503931edc371a14f21a4e}\label{class_main_game_actions_ac017207a3e9503931edc371a14f21a4e} 
+\index{MainGameActions@{MainGameActions}!Disable@{Disable}}
+\index{Disable@{Disable}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{Disable()}{Disable()}}
+{\footnotesize\ttfamily void Main\+Game\+Actions.\+Disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00164}{164}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_game_actions_ac017207a3e9503931edc371a14f21a4e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_game_actions_a75427508a28fc5df4cc81ff8bfd62988}\label{class_main_game_actions_a75427508a28fc5df4cc81ff8bfd62988} 
+\index{MainGameActions@{MainGameActions}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily void Main\+Game\+Actions.\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00125}{125}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_game_actions_a75427508a28fc5df4cc81ff8bfd62988_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_game_actions_a9aa6eec5eb60b2684fa1c5ac45a70e77}\label{class_main_game_actions_a9aa6eec5eb60b2684fa1c5ac45a70e77} 
+\index{MainGameActions@{MainGameActions}!Enable@{Enable}}
+\index{Enable@{Enable}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{Enable()}{Enable()}}
+{\footnotesize\ttfamily void Main\+Game\+Actions.\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00159}{159}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+\Hypertarget{class_main_game_actions_a6de8a05cded65b36068a8a61d5efa2f3}\label{class_main_game_actions_a6de8a05cded65b36068a8a61d5efa2f3} 
+\index{MainGameActions@{MainGameActions}!FindAction@{FindAction}}
+\index{FindAction@{FindAction}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{FindAction()}{FindAction()}}
+{\footnotesize\ttfamily Input\+Action Main\+Game\+Actions.\+Find\+Action (\begin{DoxyParamCaption}\item[{string}]{action\+Name\+Or\+Id,  }\item[{bool}]{throw\+If\+Not\+Found = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00171}{171}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+\Hypertarget{class_main_game_actions_ae774768aa6a960f6daa069ba78f74c44}\label{class_main_game_actions_ae774768aa6a960f6daa069ba78f74c44} 
+\index{MainGameActions@{MainGameActions}!FindBinding@{FindBinding}}
+\index{FindBinding@{FindBinding}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{FindBinding()}{FindBinding()}}
+{\footnotesize\ttfamily int Main\+Game\+Actions.\+Find\+Binding (\begin{DoxyParamCaption}\item[{Input\+Binding}]{binding\+Mask,  }\item[{out Input\+Action}]{action }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00176}{176}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+\Hypertarget{class_main_game_actions_a15901d69bdfc5d298a595c9b6f830545}\label{class_main_game_actions_a15901d69bdfc5d298a595c9b6f830545} 
+\index{MainGameActions@{MainGameActions}!GetEnumerator@{GetEnumerator}}
+\index{GetEnumerator@{GetEnumerator}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{GetEnumerator()}{GetEnumerator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily IEnumerator$<$ Input\+Action $>$ Main\+Game\+Actions.\+Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00149}{149}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_game_actions_a15901d69bdfc5d298a595c9b6f830545_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_game_actions_ab755a36dacb1e800eb6e578875afb3fd}\label{class_main_game_actions_ab755a36dacb1e800eb6e578875afb3fd} 
+\index{MainGameActions@{MainGameActions}!GetEnumerator@{GetEnumerator}}
+\index{GetEnumerator@{GetEnumerator}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{GetEnumerator()}{GetEnumerator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily IEnumerator IEnumerable. Main\+Game\+Actions.\+Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00154}{154}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_game_actions_ab755a36dacb1e800eb6e578875afb3fd_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_main_game_actions_a11b7adb85022614af9acca69442076b6}\label{class_main_game_actions_a11b7adb85022614af9acca69442076b6} 
+\index{MainGameActions@{MainGameActions}!m\_Main@{m\_Main}}
+\index{m\_Main@{m\_Main}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{m\_Main}{m\_Main}}
+{\footnotesize\ttfamily readonly Input\+Action\+Map Main\+Game\+Actions.\+m\+\_\+\+Main\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00182}{182}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+\Hypertarget{class_main_game_actions_a60d886d0662e5bd545a28bca1930983d}\label{class_main_game_actions_a60d886d0662e5bd545a28bca1930983d} 
+\index{MainGameActions@{MainGameActions}!m\_Main\_Lane0@{m\_Main\_Lane0}}
+\index{m\_Main\_Lane0@{m\_Main\_Lane0}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{m\_Main\_Lane0}{m\_Main\_Lane0}}
+{\footnotesize\ttfamily readonly Input\+Action Main\+Game\+Actions.\+m\+\_\+\+Main\+\_\+\+Lane0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00184}{184}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+\Hypertarget{class_main_game_actions_ad3d6133a25084abb3c74c1ab1383420d}\label{class_main_game_actions_ad3d6133a25084abb3c74c1ab1383420d} 
+\index{MainGameActions@{MainGameActions}!m\_Main\_Lane1@{m\_Main\_Lane1}}
+\index{m\_Main\_Lane1@{m\_Main\_Lane1}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{m\_Main\_Lane1}{m\_Main\_Lane1}}
+{\footnotesize\ttfamily readonly Input\+Action Main\+Game\+Actions.\+m\+\_\+\+Main\+\_\+\+Lane1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00185}{185}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+\Hypertarget{class_main_game_actions_aab6a624a4ab680ed527b47183acdc1ad}\label{class_main_game_actions_aab6a624a4ab680ed527b47183acdc1ad} 
+\index{MainGameActions@{MainGameActions}!m\_Main\_Lane2@{m\_Main\_Lane2}}
+\index{m\_Main\_Lane2@{m\_Main\_Lane2}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{m\_Main\_Lane2}{m\_Main\_Lane2}}
+{\footnotesize\ttfamily readonly Input\+Action Main\+Game\+Actions.\+m\+\_\+\+Main\+\_\+\+Lane2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00186}{186}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+\Hypertarget{class_main_game_actions_ac8ceec7c7088d436ecfda01d4437dc92}\label{class_main_game_actions_ac8ceec7c7088d436ecfda01d4437dc92} 
+\index{MainGameActions@{MainGameActions}!m\_Main\_Lane3@{m\_Main\_Lane3}}
+\index{m\_Main\_Lane3@{m\_Main\_Lane3}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{m\_Main\_Lane3}{m\_Main\_Lane3}}
+{\footnotesize\ttfamily readonly Input\+Action Main\+Game\+Actions.\+m\+\_\+\+Main\+\_\+\+Lane3\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00187}{187}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+\Hypertarget{class_main_game_actions_a414d16dc899259cc0cbf3004d8fb1e4b}\label{class_main_game_actions_a414d16dc899259cc0cbf3004d8fb1e4b} 
+\index{MainGameActions@{MainGameActions}!m\_MainActionsCallbackInterfaces@{m\_MainActionsCallbackInterfaces}}
+\index{m\_MainActionsCallbackInterfaces@{m\_MainActionsCallbackInterfaces}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{m\_MainActionsCallbackInterfaces}{m\_MainActionsCallbackInterfaces}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{interface_main_game_actions_1_1_i_main_actions}{IMain\+Actions}}$>$ Main\+Game\+Actions.\+m\+\_\+\+Main\+Actions\+Callback\+Interfaces = new List$<$\mbox{\hyperlink{interface_main_game_actions_1_1_i_main_actions}{IMain\+Actions}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00183}{183}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_main_game_actions_aa94b853cf8e43379725ecd9945bf7699}\label{class_main_game_actions_aa94b853cf8e43379725ecd9945bf7699} 
+\index{MainGameActions@{MainGameActions}!asset@{asset}}
+\index{asset@{asset}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{asset}{asset}}
+{\footnotesize\ttfamily Input\+Action\+Asset Main\+Game\+Actions.\+asset\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00020}{20}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+\Hypertarget{class_main_game_actions_ab4caddffe945f246eb35e602a35ae5cb}\label{class_main_game_actions_ab4caddffe945f246eb35e602a35ae5cb} 
+\index{MainGameActions@{MainGameActions}!bindingMask@{bindingMask}}
+\index{bindingMask@{bindingMask}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{bindingMask}{bindingMask}}
+{\footnotesize\ttfamily Input\+Binding? Main\+Game\+Actions.\+binding\+Mask\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00130}{130}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+\Hypertarget{class_main_game_actions_a41a8eaf53276ef4d0b8d033571e9710b}\label{class_main_game_actions_a41a8eaf53276ef4d0b8d033571e9710b} 
+\index{MainGameActions@{MainGameActions}!bindings@{bindings}}
+\index{bindings@{bindings}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{bindings}{bindings}}
+{\footnotesize\ttfamily IEnumerable$<$Input\+Binding$>$ Main\+Game\+Actions.\+bindings\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00169}{169}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+\Hypertarget{class_main_game_actions_ae8f4a8d9f2de6027cd5e37b349ec59bd}\label{class_main_game_actions_ae8f4a8d9f2de6027cd5e37b349ec59bd} 
+\index{MainGameActions@{MainGameActions}!controlSchemes@{controlSchemes}}
+\index{controlSchemes@{controlSchemes}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{controlSchemes}{controlSchemes}}
+{\footnotesize\ttfamily Read\+Only\+Array$<$Input\+Control\+Scheme$>$ Main\+Game\+Actions.\+control\+Schemes\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00142}{142}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+\Hypertarget{class_main_game_actions_af497b42b8f3c55a703322d06d63ecbc9}\label{class_main_game_actions_af497b42b8f3c55a703322d06d63ecbc9} 
+\index{MainGameActions@{MainGameActions}!devices@{devices}}
+\index{devices@{devices}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{devices}{devices}}
+{\footnotesize\ttfamily Read\+Only\+Array$<$Input\+Device$>$? Main\+Game\+Actions.\+devices\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00136}{136}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+\Hypertarget{class_main_game_actions_a746c46dd2d2f10b451356db98e0bb63e}\label{class_main_game_actions_a746c46dd2d2f10b451356db98e0bb63e} 
+\index{MainGameActions@{MainGameActions}!Main@{Main}}
+\index{Main@{Main}!MainGameActions@{MainGameActions}}
+\doxysubsubsection{\texorpdfstring{Main}{Main}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_main_game_actions_1_1_main_actions}{Main\+Actions}} Main\+Game\+Actions.\+Main\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line \mbox{\hyperlink{_main_game_actions_8cs_source_l00249}{249}} of file \mbox{\hyperlink{_main_game_actions_8cs_source}{Main\+Game\+Actions.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/git/\+Entities\+Rhythm\+Game\+System/\+Entities\+Rhythm\+Game\+System/\+Assets/\+Entities\+Rhythm\+Game/\+Scripts/\+Input\+Actions/\mbox{\hyperlink{_main_game_actions_8cs}{Main\+Game\+Actions.\+cs}}\end{DoxyCompactItemize}

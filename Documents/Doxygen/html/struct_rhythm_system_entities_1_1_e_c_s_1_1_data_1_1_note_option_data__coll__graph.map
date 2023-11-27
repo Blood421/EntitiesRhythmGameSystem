@@ -1,0 +1,7 @@
+<map id="RhythmSystemEntities.ECS.Data.NoteOptionData" name="RhythmSystemEntities.ECS.Data.NoteOptionData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="21,149,202,229"/>
+<area shape="rect" id="Node000002" href="$class_i_component_data.html" title=" " alt="" coords="5,5,119,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,84,101,148,96,150,75,85"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="143,5,181,71"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,71,133,134,128,132,149,69"/>
+</map>

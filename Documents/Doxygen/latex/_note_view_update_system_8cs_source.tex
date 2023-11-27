@@ -1,0 +1,48 @@
+\doxysection{Note\+View\+Update\+System.\+cs}
+\hypertarget{_note_view_update_system_8cs_source}{}\label{_note_view_update_system_8cs_source}\index{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/ECS/System/NoteViewUpdateSystem.cs@{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/ECS/System/NoteViewUpdateSystem.cs}}
+\mbox{\hyperlink{_note_view_update_system_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_e_c_s_1_1_aspect}{RhythmSystemEntities.ECS.Aspect}};}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }Unity.Burst;}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }Unity.Entities;}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00005}00005\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_e_c_s_1_1_system}{RhythmSystemEntities.ECS.System}}}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00006}00006\ \{}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00010}00010\ \ \ \ \ [BurstCompile]}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00011}00011\ \ \ \ \ [DisableAutoCreation]}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00012}00012\ \ \ \ \ [UpdateAfter(typeof(LongNoteEdgeExecuteSystem))]}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00013}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_view_update_system}{00013}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{partial\ struct\ }\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_view_update_system}{NoteViewUpdateSystem}}\ :\ \mbox{\hyperlink{class_i_system}{ISystem}}}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00014}00014\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00015}00015\ \ \ \ \ \ \ \ \ [BurstCompile]}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00016}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_view_update_system_ae4eccdb6d9dc3ad5345ea26d32c8a24d}{00016}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_view_update_system_ae4eccdb6d9dc3ad5345ea26d32c8a24d}{OnUpdate}}(ref\ SystemState\ state)}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00017}00017\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//見た目更新Job発行}}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//いつ終わってもいい}}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_view_update_job}{NoteViewUpdateJob}}().ScheduleParallel();}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_long_note_edge_view_update_job}{LongNoteEdgeViewUpdateJob}}().ScheduleParallel();}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00023}00023\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00024}00024\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00028}00028\ \ \ \ \ [BurstCompile]}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00029}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_view_update_job}{00029}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{partial\ struct\ }\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_view_update_job}{NoteViewUpdateJob}}\ :\ \mbox{\hyperlink{class_i_job_entity}{IJobEntity}}}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00030}00030\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ [BurstCompile]}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00032}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_view_update_job_a626089ce8fd188537dccb2a362eae4a7}{00032}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_view_update_job_a626089ce8fd188537dccb2a362eae4a7}{Execute}}(\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect}{NoteAspect}}\ noteAspect)}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//ノーツの見た目の更新}}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ noteAspect.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a5c9db5a54ba08eb5974f9461dcabb1af}{ViewUpdate}}();}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00037}00037\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00041}00041\ \ \ \ \ [BurstCompile]}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00042}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_long_note_edge_view_update_job}{00042}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{partial\ struct\ }\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_long_note_edge_view_update_job}{LongNoteEdgeViewUpdateJob}}\ :\ \mbox{\hyperlink{class_i_job_entity}{IJobEntity}}}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00043}00043\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ [BurstCompile]}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00045}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_long_note_edge_view_update_job_a7e9ddf34fb6104a2f701f684f2d0ee8e}{00045}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_long_note_edge_view_update_job_a7e9ddf34fb6104a2f701f684f2d0ee8e}{Execute}}(\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_long_note_edge_aspect}{LongNoteEdgeAspect}}\ longNoteEdgeAspect)}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//ノーツの見た目の更新}}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ longNoteEdgeAspect.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_long_note_edge_aspect_a3c49e186f9371ad27bbf6d26f0917f60}{ViewUpdate}}();}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00050}00050\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_view_update_system_8cs_source_l00051}00051\ \}}
+
+\end{DoxyCode}

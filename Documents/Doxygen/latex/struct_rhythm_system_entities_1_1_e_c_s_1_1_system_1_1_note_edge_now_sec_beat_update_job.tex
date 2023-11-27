@@ -1,0 +1,151 @@
+\doxysection{Rhythm\+System\+Entities.\+ECS.\+System.\+Note\+Edge\+Now\+Sec\+Beat\+Update\+Job Struct Reference}
+\hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job}{}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job}\index{RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob@{RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob}}
+
+
+一時データを使ってノーツ端のデータを更新する\+Job  
+
+
+
+
+Inheritance diagram for Rhythm\+System\+Entities.\+ECS.\+System.\+Note\+Edge\+Now\+Sec\+Beat\+Update\+Job\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rhythm\+System\+Entities.\+ECS.\+System.\+Note\+Edge\+Now\+Sec\+Beat\+Update\+Job\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Native\+Array$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_presenter_system_1_1_note_presenter_data_temp}{Note\+Presenter\+System.\+Note\+Presenter\+Data\+Temp}} $>$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_a137a1e953aa0f14699286aeb991bfe11}{temps}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_acd1f260f972b9d15bc21c3a7beec97b3}{Execute}} (\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_long_note_edge_aspect}{Long\+Note\+Edge\+Aspect}} long\+Note\+Edge\+Aspect)
+\item 
+float \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_a1e22642d34e4ccf9bfa790732059ace3}{To\+Beat}} (float now\+Sec, Blob\+Asset\+Reference$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_b_p_m_changes_blob}{BPMChanges\+Blob}} $>$ bpm\+Changes)
+\item 
+float \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_ae96f66062a4a195a964676704c141491}{To\+Sec\+With\+Fixed\+BPM}} (float beat, float bpm)
+\item 
+float \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_afb9fb27ef5501e6c16ab30ca474be409}{To\+Beat\+With\+Fixed\+BPM}} (float sec, float bpm)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+一時データを使ってノーツ端のデータを更新する\+Job 
+
+Definition at line \mbox{\hyperlink{_note_presenter_system_8cs_source_l00211}{211}} of file \mbox{\hyperlink{_note_presenter_system_8cs_source}{Note\+Presenter\+System.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_acd1f260f972b9d15bc21c3a7beec97b3}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_acd1f260f972b9d15bc21c3a7beec97b3} 
+\index{RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob@{RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob}!Execute@{Execute}}
+\index{Execute@{Execute}!RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob@{RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+ECS.\+System.\+Note\+Edge\+Now\+Sec\+Beat\+Update\+Job.\+Execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_long_note_edge_aspect}{Long\+Note\+Edge\+Aspect}}}]{long\+Note\+Edge\+Aspect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_note_presenter_system_8cs_source_l00215}{215}} of file \mbox{\hyperlink{_note_presenter_system_8cs_source}{Note\+Presenter\+System.\+cs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_acd1f260f972b9d15bc21c3a7beec97b3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_a1e22642d34e4ccf9bfa790732059ace3}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_a1e22642d34e4ccf9bfa790732059ace3} 
+\index{RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob@{RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob}!ToBeat@{ToBeat}}
+\index{ToBeat@{ToBeat}!RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob@{RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob}}
+\doxysubsubsection{\texorpdfstring{ToBeat()}{ToBeat()}}
+{\footnotesize\ttfamily float Rhythm\+System\+Entities.\+ECS.\+System.\+Note\+Edge\+Now\+Sec\+Beat\+Update\+Job.\+To\+Beat (\begin{DoxyParamCaption}\item[{float}]{now\+Sec,  }\item[{Blob\+Asset\+Reference$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_b_p_m_changes_blob}{BPMChanges\+Blob}} $>$}]{bpm\+Changes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_note_presenter_system_8cs_source_l00237}{237}} of file \mbox{\hyperlink{_note_presenter_system_8cs_source}{Note\+Presenter\+System.\+cs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_a1e22642d34e4ccf9bfa790732059ace3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_a1e22642d34e4ccf9bfa790732059ace3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_afb9fb27ef5501e6c16ab30ca474be409}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_afb9fb27ef5501e6c16ab30ca474be409} 
+\index{RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob@{RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob}!ToBeatWithFixedBPM@{ToBeatWithFixedBPM}}
+\index{ToBeatWithFixedBPM@{ToBeatWithFixedBPM}!RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob@{RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob}}
+\doxysubsubsection{\texorpdfstring{ToBeatWithFixedBPM()}{ToBeatWithFixedBPM()}}
+{\footnotesize\ttfamily float Rhythm\+System\+Entities.\+ECS.\+System.\+Note\+Edge\+Now\+Sec\+Beat\+Update\+Job.\+To\+Beat\+With\+Fixed\+BPM (\begin{DoxyParamCaption}\item[{float}]{sec,  }\item[{float}]{bpm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_note_presenter_system_8cs_source_l00290}{290}} of file \mbox{\hyperlink{_note_presenter_system_8cs_source}{Note\+Presenter\+System.\+cs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_afb9fb27ef5501e6c16ab30ca474be409_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_ae96f66062a4a195a964676704c141491}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_ae96f66062a4a195a964676704c141491} 
+\index{RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob@{RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob}!ToSecWithFixedBPM@{ToSecWithFixedBPM}}
+\index{ToSecWithFixedBPM@{ToSecWithFixedBPM}!RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob@{RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob}}
+\doxysubsubsection{\texorpdfstring{ToSecWithFixedBPM()}{ToSecWithFixedBPM()}}
+{\footnotesize\ttfamily float Rhythm\+System\+Entities.\+ECS.\+System.\+Note\+Edge\+Now\+Sec\+Beat\+Update\+Job.\+To\+Sec\+With\+Fixed\+BPM (\begin{DoxyParamCaption}\item[{float}]{beat,  }\item[{float}]{bpm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_note_presenter_system_8cs_source_l00282}{282}} of file \mbox{\hyperlink{_note_presenter_system_8cs_source}{Note\+Presenter\+System.\+cs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_ae96f66062a4a195a964676704c141491_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_a137a1e953aa0f14699286aeb991bfe11}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job_a137a1e953aa0f14699286aeb991bfe11} 
+\index{RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob@{RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob}!temps@{temps}}
+\index{temps@{temps}!RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob@{RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob}}
+\doxysubsubsection{\texorpdfstring{temps}{temps}}
+{\footnotesize\ttfamily Native\+Array$<$\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_presenter_system_1_1_note_presenter_data_temp}{Note\+Presenter\+System.\+Note\+Presenter\+Data\+Temp}}$>$ Rhythm\+System\+Entities.\+ECS.\+System.\+Note\+Edge\+Now\+Sec\+Beat\+Update\+Job.\+temps}
+
+
+
+Definition at line \mbox{\hyperlink{_note_presenter_system_8cs_source_l00213}{213}} of file \mbox{\hyperlink{_note_presenter_system_8cs_source}{Note\+Presenter\+System.\+cs}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/git/\+Entities\+Rhythm\+Game\+System/\+Entities\+Rhythm\+Game\+System/\+Assets/\+Entities\+Rhythm\+Game/\+Scripts/\+ECS/\+System/\mbox{\hyperlink{_note_presenter_system_8cs}{Note\+Presenter\+System.\+cs}}\end{DoxyCompactItemize}

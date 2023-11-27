@@ -1,0 +1,5 @@
+<map id="RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter.SendInputDataToECS" name="RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter.SendInputDataToECS">
+<area shape="rect" id="Node000001" title="データに変更があったら(入力があったら)ECS側に送る" alt="" coords="5,5,234,61"/>
+<area shape="rect" id="Node000002" href="$class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system.html#a85340e0e4ca7cb74df30dcaeecab3630" title=" " alt="" coords="282,13,497,54"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,31,266,31,266,36,234,36"/>
+</map>

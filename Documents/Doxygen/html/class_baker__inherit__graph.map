@@ -1,0 +1,7 @@
+<map id="Baker" name="Baker">
+<area shape="rect" id="Node000001" title=" " alt="" coords="293,5,341,71"/>
+<area shape="rect" id="Node000002" href="$class_rhythm_system_entities_1_1_e_c_s_1_1_authoring_1_1_note_generator_authoring_1_1_note_generator_baker.html" title=" " alt="" coords="5,119,299,213"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="283,68,214,121,211,117,280,64"/>
+<area shape="rect" id="Node000003" href="$class_rhythm_system_entities_1_1_e_c_s_1_1_authoring_1_1_note_generator_spawn_authoring_1_1_spawn_test_baker.html" title=" " alt="" coords="323,119,643,213"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="354,64,424,117,421,121,351,68"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="IDisposable" name="IDisposable">
+<area shape="rect" id="Node000001" title=" " alt="" coords="192,5,279,71"/>
+<area shape="rect" id="Node000002" href="$class_main_game_actions.html" title=" " alt="" coords="5,119,231,564"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,85,207,120,202,118,215,83"/>
+<area shape="rect" id="Node000003" href="$class_rhythm_system_entities_1_1_system_1_1_player_1_1_player_input.html" title="プレイヤーの入力クラス 主にレーン入力" alt="" coords="255,251,453,431"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="256,83,322,251,317,253,251,85"/>
+</map>

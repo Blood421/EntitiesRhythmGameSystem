@@ -1,0 +1,7 @@
+<map id="RhythmSystemEntities.ECS.Aspect.NoteAspect.WithinJudgeRangeCheck" name="RhythmSystemEntities.ECS.Aspect.NoteAspect.WithinJudgeRangeCheck">
+<area shape="rect" id="Node000001" title="判定する範囲に入っているかどうかのチェック" alt="" coords="5,41,290,82"/>
+<area shape="rect" id="Node000002" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect.html#aeb419f47dabdcd45970380bb85cbb8c4" title="オフセットを返す NowSecから引いて使ってね" alt="" coords="338,5,584,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="290,43,322,39,322,44,290,48"/>
+<area shape="rect" id="Node000003" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect.html#a4249e9c6e1c490d01cd88d561089bee5" title="オプションの入力オフセットを返す NowSecに足して使ってね" alt="" coords="350,70,572,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="290,75,335,81,334,86,290,81"/>
+</map>

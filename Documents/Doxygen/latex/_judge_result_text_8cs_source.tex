@@ -1,0 +1,97 @@
+\doxysection{Judge\+Result\+Text.\+cs}
+\hypertarget{_judge_result_text_8cs_source}{}\label{_judge_result_text_8cs_source}\index{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/System/UI/JudgeResultText.cs@{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/System/UI/JudgeResultText.cs}}
+\mbox{\hyperlink{_judge_result_text_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }Cysharp.Threading.Tasks;}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_e_c_s_1_1_system}{RhythmSystemEntities.ECS.System}};}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_system_1_1_judge}{RhythmSystemEntities.System.Judge}};}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00006}00006\ \textcolor{keyword}{using\ }TMPro;}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00007}00007\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00009}\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_system_1_1_u_i}{00009}}\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_system_1_1_u_i}{RhythmSystemEntities.System.UI}}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00010}00010\ \{}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00014}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text}{00014}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text}{JudgeResultText}}\ :\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_judge_receiver_item_base}{JudgeReceiverItemBase}}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00015}00015\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00016}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_aa28aec61b14a49467f501225b973add1}{00016}}\ \ \ \ \ \ \ \ \ [SerializeField,Tooltip(\textcolor{stringliteral}{"{}リザルトを表示するテキスト"{}})]\ \textcolor{keyword}{private}\ TextMeshProUGUI\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_aa28aec61b14a49467f501225b973add1}{resultText}};}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00017}00017\ \ \ \ \ \ \ \ \ \textcolor{comment}{//判定が入るキュー}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00018}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_ad628a61178004ffd1e7ed94ebaa22f8d}{00018}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Queue<\mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system}{NoteJudgeSystem}}.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system_1_1_judge_notify_data}{JudgeNotifyData}}>\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_ad628a61178004ffd1e7ed94ebaa22f8d}{judgeNotifyDataQueue}};}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{comment}{//ディレイデキュー用}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00020}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_af8cfd6d33b2666cf22ee2fe10004e403}{00020}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_af8cfd6d33b2666cf22ee2fe10004e403}{time}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00022}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_a0bc237ff0f59d96aff7fbebeaddb8d19}{00022}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_a0bc237ff0f59d96aff7fbebeaddb8d19}{Awake}}()}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//初期化}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_ad628a61178004ffd1e7ed94ebaa22f8d}{judgeNotifyDataQueue}}\ =\ \textcolor{keyword}{new}\ Queue<\mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system}{NoteJudgeSystem}}.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system_1_1_judge_notify_data}{JudgeNotifyData}}>();}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_af8cfd6d33b2666cf22ee2fe10004e403}{time}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00029}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_a629b0444ee4bb6587c8a0521e557b9f7}{00029}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_a629b0444ee4bb6587c8a0521e557b9f7}{Update}}()}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//時間更新}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_af8cfd6d33b2666cf22ee2fe10004e403}{time}}\ +=\ Time.deltaTime;}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_af8cfd6d33b2666cf22ee2fe10004e403}{time}}\ >\ 0.05f)}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//1秒待ってデキューしてテキストを更新}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_af1a9114f011473071dc6d16d0bdb093a}{Dequeue}}();}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_af8cfd6d33b2666cf22ee2fe10004e403}{time}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \textcolor{comment}{//判定データが送られてくる}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00042}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_a912943fbf1f19439ac49dcdf667a0fc0}{00042}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_a912943fbf1f19439ac49dcdf667a0fc0}{Notified}}(\mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system}{NoteJudgeSystem}}.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system_1_1_judge_notify_data}{JudgeNotifyData}}\ data)}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_a1f7cedc1cdc166524dc28c298044c550}{EnqueueResult}}(data);}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \textcolor{comment}{//リザルトをエンキューして表示}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00048}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_a1f7cedc1cdc166524dc28c298044c550}{00048}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_a1f7cedc1cdc166524dc28c298044c550}{EnqueueResult}}(\mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system}{NoteJudgeSystem}}.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system_1_1_judge_notify_data}{JudgeNotifyData}}\ data)}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_ad628a61178004ffd1e7ed94ebaa22f8d}{judgeNotifyDataQueue}}.Enqueue(data);}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_a2850d57f537e7936cc39b1fd8269b757}{UpdateText}}();}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \textcolor{comment}{//テキストを更新}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00055}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_a2850d57f537e7936cc39b1fd8269b757}{00055}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_a2850d57f537e7936cc39b1fd8269b757}{UpdateText}}()}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ resultText.text\ =\ \textcolor{keywordtype}{string}.Empty;}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ count\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system}{NoteJudgeSystem}}.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system_1_1_judge_notify_data}{JudgeNotifyData}}\ judgeNotifyData\ in\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_ad628a61178004ffd1e7ed94ebaa22f8d}{judgeNotifyDataQueue}})}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//描画しすぎるとスパイクとんでもないことになるから制限}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (count\ >=\ 10)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ resultText.text\ +=\ \textcolor{stringliteral}{"{}MusicID\ :\ <color=blue>"{}}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ judgeNotifyData.musicID}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \textcolor{stringliteral}{"{}</color>\ ,\ Lane\ :\ <color=orange>"{}}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ judgeNotifyData.lane}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \textcolor{stringliteral}{"{}</color>\ ,\ IsExecuted\ :\ <color=red>"{}}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ judgeNotifyData.isExecuted}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \textcolor{stringliteral}{"{}</color>\ ,\ pos\ :\ <color=green>"{}}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \textcolor{stringliteral}{"{}\ x:"{}}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ judgeNotifyData.noteJudgedPos.x}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \textcolor{stringliteral}{"{}\ y:"{}}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ judgeNotifyData.noteJudgedPos.y}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \textcolor{stringliteral}{"{}\ z:"{}}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ judgeNotifyData.noteJudgedPos.z}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \textcolor{stringliteral}{"{}</color>\ ,\ Judge\ :\ <color=yellow>"{}}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ judgeNotifyData.judgeType}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \textcolor{stringliteral}{"{}</color>"{}};}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ resultText.text\ +=\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ count++;}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \textcolor{comment}{//デキューしてテキスト更新}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00087}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_af1a9114f011473071dc6d16d0bdb093a}{00087}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_af1a9114f011473071dc6d16d0bdb093a}{Dequeue}}()}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00088}00088\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_ad628a61178004ffd1e7ed94ebaa22f8d}{judgeNotifyDataQueue}}.Count\ ==\ 0)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00090}00090\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_ad628a61178004ffd1e7ed94ebaa22f8d}{judgeNotifyDataQueue}}.Dequeue();}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text_a2850d57f537e7936cc39b1fd8269b757}{UpdateText}}();}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00092}00092\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00093}00093\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_judge_result_text_8cs_source_l00094}00094\ \}}
+
+\end{DoxyCode}

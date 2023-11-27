@@ -1,0 +1,390 @@
+\doxysection{Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer Class Reference}
+\hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer}{}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer}\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+
+
+オーディオデータをタイマーとして扱うクラス  
+
+
+
+
+Inheritance diagram for Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0f}{Music\+State}} \{ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0fa7db9ef68a4539b370b2feb1e02591b06}{before\+Play}}
+, \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0fac9dbb2b7c84159b632d71e512eba8428}{Playing}}
+, \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0fa5014ade494a3e4299c0fc991e4689448}{after\+Play}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a88e403561e23cda0d6653495329f2df7}{Get\+Offset}} ()
+\item 
+IRead\+Only\+Reactive\+Property$<$ float $>$ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_ad007dc8eb3149d57237d600c4ca341cf}{Get\+Time}} ()
+\item 
+IRead\+Only\+Reactive\+Property$<$ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0f}{Music\+State}} $>$ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_add1c6d399ae15e0e7a48c625a2932abb}{Get\+Music\+State}} ()
+\item 
+bool \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a92204a5bf3d9d89b2acfa669336321e8}{Get\+Is\+Audio\+Start}} ()
+\item 
+bool \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_ad819bd0f03e7e3ba0c5e5b18b22bcf7c}{Get\+Is\+Pause}} ()
+\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a2de16c28667774729db343713588d526}{Init}} ()
+\begin{DoxyCompactList}\small\item\em 初期化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a95aecff53f503a1cbefe5ce076e48a56}{Music\+Start}} ()
+\begin{DoxyCompactList}\small\item\em 曲スタート \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a60c1a156812b6ad83e4a26cdc28c0bb4}{Music\+Pause}} ()
+\begin{DoxyCompactList}\small\item\em 曲ポーズ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a59d4152835843aca72316b774f3e1190}{Music\+Stop}} ()
+\begin{DoxyCompactList}\small\item\em 曲ストップ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a27af4efd307fa8dd1efff0f638229544}{Add\+Time}} (float value)
+\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a47852ecc0b209dd8a5579283ce982d2f}{Set\+Time}} (float \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a1eb9754b8fbcfe78f66669ef738c4b8e}{time}})
+\begin{DoxyCompactList}\small\item\em 時間をセットする \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a64c4e7dfb344050c578c799464026092}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a00bbca97f1fa4e167c39c69952558807}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a5f10659be608ac05c85d840aa98ec0f6}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_afc68c2942fb83af222b910fe33444da6}{On\+Destroy}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Audio\+Source \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_ac071b836117ec75f92c6660cdfb38f6c}{audio\+Source}}
+\item 
+float \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a6b3ee302d1bd7a389bb48a07dac98340}{offset}} = 0
+\item 
+Reactive\+Property$<$ float $>$ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a1eb9754b8fbcfe78f66669ef738c4b8e}{time}} = new Reactive\+Property$<$float$>$(0)
+\item 
+Reactive\+Property$<$ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0f}{Music\+State}} $>$ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_ade76965e3ff04502cecfd307cea55ea4}{music\+State}} = new Reactive\+Property$<$\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0f}{Music\+State}}$>$(\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0fa7db9ef68a4539b370b2feb1e02591b06}{Music\+State.\+before\+Play}})
+\item 
+bool \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_afe67444bcb32ede5cfcff132ca4b120f}{is\+Audio\+Start}} = false
+\item 
+bool \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_acb8b3c350567e353e51b8973c7ef74e5}{is\+Pause}} = false
+\item 
+float \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8c3e59fbedf431580060a51f4aed53ea}{added\+Temp\+Time}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+オーディオデータをタイマーとして扱うクラス 
+
+Definition at line \mbox{\hyperlink{_music_timer_8cs_source_l00009}{9}} of file \mbox{\hyperlink{_music_timer_8cs_source}{Music\+Timer.\+cs}}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0f}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0f} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!MusicState@{MusicState}}
+\index{MusicState@{MusicState}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{MusicState}{MusicState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0f}{Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+Music\+State}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{beforePlay@{beforePlay}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!beforePlay@{beforePlay}}}\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0fa7db9ef68a4539b370b2feb1e02591b06}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0fa7db9ef68a4539b370b2feb1e02591b06} 
+before\+Play&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Playing@{Playing}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!Playing@{Playing}}}\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0fac9dbb2b7c84159b632d71e512eba8428}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0fac9dbb2b7c84159b632d71e512eba8428} 
+Playing&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{afterPlay@{afterPlay}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!afterPlay@{afterPlay}}}\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0fa5014ade494a3e4299c0fc991e4689448}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0fa5014ade494a3e4299c0fc991e4689448} 
+after\+Play&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_music_timer_8cs_source_l00012}{12}} of file \mbox{\hyperlink{_music_timer_8cs_source}{Music\+Timer.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a27af4efd307fa8dd1efff0f638229544}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a27af4efd307fa8dd1efff0f638229544} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!AddTime@{AddTime}}
+\index{AddTime@{AddTime}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{AddTime()}{AddTime()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+Add\+Time (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_music_timer_8cs_source_l00152}{152}} of file \mbox{\hyperlink{_music_timer_8cs_source}{Music\+Timer.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a64c4e7dfb344050c578c799464026092}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a64c4e7dfb344050c578c799464026092} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!Awake@{Awake}}
+\index{Awake@{Awake}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_music_timer_8cs_source_l00042}{42}} of file \mbox{\hyperlink{_music_timer_8cs_source}{Music\+Timer.\+cs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a64c4e7dfb344050c578c799464026092_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a92204a5bf3d9d89b2acfa669336321e8}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a92204a5bf3d9d89b2acfa669336321e8} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!GetIsAudioStart@{GetIsAudioStart}}
+\index{GetIsAudioStart@{GetIsAudioStart}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{GetIsAudioStart()}{GetIsAudioStart()}}
+{\footnotesize\ttfamily bool Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+Get\+Is\+Audio\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_ad819bd0f03e7e3ba0c5e5b18b22bcf7c}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_ad819bd0f03e7e3ba0c5e5b18b22bcf7c} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!GetIsPause@{GetIsPause}}
+\index{GetIsPause@{GetIsPause}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{GetIsPause()}{GetIsPause()}}
+{\footnotesize\ttfamily bool Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+Get\+Is\+Pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_add1c6d399ae15e0e7a48c625a2932abb}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_add1c6d399ae15e0e7a48c625a2932abb} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!GetMusicState@{GetMusicState}}
+\index{GetMusicState@{GetMusicState}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{GetMusicState()}{GetMusicState()}}
+{\footnotesize\ttfamily IRead\+Only\+Reactive\+Property$<$ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0f}{Music\+State}} $>$ Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+Get\+Music\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a88e403561e23cda0d6653495329f2df7}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a88e403561e23cda0d6653495329f2df7} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!GetOffset@{GetOffset}}
+\index{GetOffset@{GetOffset}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{GetOffset()}{GetOffset()}}
+{\footnotesize\ttfamily float Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+Get\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_ad007dc8eb3149d57237d600c4ca341cf}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_ad007dc8eb3149d57237d600c4ca341cf} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!GetTime@{GetTime}}
+\index{GetTime@{GetTime}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{GetTime()}{GetTime()}}
+{\footnotesize\ttfamily IRead\+Only\+Reactive\+Property$<$ float $>$ Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+Get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_ad007dc8eb3149d57237d600c4ca341cf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a2de16c28667774729db343713588d526}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a2de16c28667774729db343713588d526} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!Init@{Init}}
+\index{Init@{Init}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+初期化 
+
+
+
+Definition at line \mbox{\hyperlink{_music_timer_8cs_source_l00108}{108}} of file \mbox{\hyperlink{_music_timer_8cs_source}{Music\+Timer.\+cs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a2de16c28667774729db343713588d526_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a60c1a156812b6ad83e4a26cdc28c0bb4}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a60c1a156812b6ad83e4a26cdc28c0bb4} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!MusicPause@{MusicPause}}
+\index{MusicPause@{MusicPause}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{MusicPause()}{MusicPause()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+Music\+Pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+曲ポーズ 
+
+
+
+Definition at line \mbox{\hyperlink{_music_timer_8cs_source_l00133}{133}} of file \mbox{\hyperlink{_music_timer_8cs_source}{Music\+Timer.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a95aecff53f503a1cbefe5ce076e48a56}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a95aecff53f503a1cbefe5ce076e48a56} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!MusicStart@{MusicStart}}
+\index{MusicStart@{MusicStart}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{MusicStart()}{MusicStart()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+Music\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+曲スタート 
+
+
+
+Definition at line \mbox{\hyperlink{_music_timer_8cs_source_l00122}{122}} of file \mbox{\hyperlink{_music_timer_8cs_source}{Music\+Timer.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a59d4152835843aca72316b774f3e1190}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a59d4152835843aca72316b774f3e1190} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!MusicStop@{MusicStop}}
+\index{MusicStop@{MusicStop}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{MusicStop()}{MusicStop()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+Music\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+曲ストップ 
+
+
+
+Definition at line \mbox{\hyperlink{_music_timer_8cs_source_l00144}{144}} of file \mbox{\hyperlink{_music_timer_8cs_source}{Music\+Timer.\+cs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a59d4152835843aca72316b774f3e1190_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_afc68c2942fb83af222b910fe33444da6}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_afc68c2942fb83af222b910fe33444da6} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!OnDestroy@{OnDestroy}}
+\index{OnDestroy@{OnDestroy}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{OnDestroy()}{OnDestroy()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_music_timer_8cs_source_l00220}{220}} of file \mbox{\hyperlink{_music_timer_8cs_source}{Music\+Timer.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a47852ecc0b209dd8a5579283ce982d2f}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a47852ecc0b209dd8a5579283ce982d2f} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!SetTime@{SetTime}}
+\index{SetTime@{SetTime}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{SetTime()}{SetTime()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+Set\+Time (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})}
+
+
+
+時間をセットする 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & 時間(sec)\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_music_timer_8cs_source_l00200}{200}} of file \mbox{\hyperlink{_music_timer_8cs_source}{Music\+Timer.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a00bbca97f1fa4e167c39c69952558807}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a00bbca97f1fa4e167c39c69952558807} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!Start@{Start}}
+\index{Start@{Start}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_music_timer_8cs_source_l00049}{49}} of file \mbox{\hyperlink{_music_timer_8cs_source}{Music\+Timer.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a5f10659be608ac05c85d840aa98ec0f6}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a5f10659be608ac05c85d840aa98ec0f6} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!Update@{Update}}
+\index{Update@{Update}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_music_timer_8cs_source_l00060}{60}} of file \mbox{\hyperlink{_music_timer_8cs_source}{Music\+Timer.\+cs}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8c3e59fbedf431580060a51f4aed53ea}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8c3e59fbedf431580060a51f4aed53ea} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!addedTempTime@{addedTempTime}}
+\index{addedTempTime@{addedTempTime}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{addedTempTime}{addedTempTime}}
+{\footnotesize\ttfamily float Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+added\+Temp\+Time = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_music_timer_8cs_source_l00040}{40}} of file \mbox{\hyperlink{_music_timer_8cs_source}{Music\+Timer.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_ac071b836117ec75f92c6660cdfb38f6c}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_ac071b836117ec75f92c6660cdfb38f6c} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!audioSource@{audioSource}}
+\index{audioSource@{audioSource}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{audioSource}{audioSource}}
+{\footnotesize\ttfamily Audio\+Source Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+audio\+Source\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_music_timer_8cs_source_l00019}{19}} of file \mbox{\hyperlink{_music_timer_8cs_source}{Music\+Timer.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_afe67444bcb32ede5cfcff132ca4b120f}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_afe67444bcb32ede5cfcff132ca4b120f} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!isAudioStart@{isAudioStart}}
+\index{isAudioStart@{isAudioStart}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{isAudioStart}{isAudioStart}}
+{\footnotesize\ttfamily bool Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+is\+Audio\+Start = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_music_timer_8cs_source_l00032}{32}} of file \mbox{\hyperlink{_music_timer_8cs_source}{Music\+Timer.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_acb8b3c350567e353e51b8973c7ef74e5}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_acb8b3c350567e353e51b8973c7ef74e5} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!isPause@{isPause}}
+\index{isPause@{isPause}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{isPause}{isPause}}
+{\footnotesize\ttfamily bool Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+is\+Pause = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_music_timer_8cs_source_l00036}{36}} of file \mbox{\hyperlink{_music_timer_8cs_source}{Music\+Timer.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_ade76965e3ff04502cecfd307cea55ea4}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_ade76965e3ff04502cecfd307cea55ea4} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!musicState@{musicState}}
+\index{musicState@{musicState}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{musicState}{musicState}}
+{\footnotesize\ttfamily Reactive\+Property$<$\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0f}{Music\+State}}$>$ Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+music\+State = new Reactive\+Property$<$\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0f}{Music\+State}}$>$(\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a8be5814423113369278f715e23e10d0fa7db9ef68a4539b370b2feb1e02591b06}{Music\+State.\+before\+Play}})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_music_timer_8cs_source_l00028}{28}} of file \mbox{\hyperlink{_music_timer_8cs_source}{Music\+Timer.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a6b3ee302d1bd7a389bb48a07dac98340}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a6b3ee302d1bd7a389bb48a07dac98340} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!offset@{offset}}
+\index{offset@{offset}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily float Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+offset = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_music_timer_8cs_source_l00020}{20}} of file \mbox{\hyperlink{_music_timer_8cs_source}{Music\+Timer.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a1eb9754b8fbcfe78f66669ef738c4b8e}\label{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_a1eb9754b8fbcfe78f66669ef738c4b8e} 
+\index{RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}!time@{time}}
+\index{time@{time}!RhythmSystemEntities.System.Timer.MusicTimer@{RhythmSystemEntities.System.Timer.MusicTimer}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily Reactive\+Property$<$float$>$ Rhythm\+System\+Entities.\+System.\+Timer.\+Music\+Timer.\+time = new Reactive\+Property$<$float$>$(0)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_music_timer_8cs_source_l00024}{24}} of file \mbox{\hyperlink{_music_timer_8cs_source}{Music\+Timer.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/git/\+Entities\+Rhythm\+Game\+System/\+Entities\+Rhythm\+Game\+System/\+Assets/\+Entities\+Rhythm\+Game/\+Scripts/\+System/\+Timer/\mbox{\hyperlink{_music_timer_8cs}{Music\+Timer.\+cs}}\end{DoxyCompactItemize}

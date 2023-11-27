@@ -1,0 +1,9 @@
+<map id="RhythmSystemEntities.System.Loader.NotesGenerateData.GetNoteProperties" name="RhythmSystemEntities.System.Loader.NotesGenerateData.GetNoteProperties">
+<area shape="rect" id="Node000001" title=" " alt="" coords="772,5,1004,61"/>
+<area shape="rect" id="Node000002" href="$class_rhythm_system_entities_1_1_system_1_1_notes_generator.html#a55778375ab8d32de17523a47c0fc923d" title=" " alt="" coords="517,13,724,54"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="757,36,725,36,725,31,757,31"/>
+<area shape="rect" id="Node000003" href="$class_rhythm_system_entities_1_1_system_1_1_notes_generator.html#a25f3cc854f0d55bc02d712779fc0e224" title=" " alt="" coords="261,13,469,54"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="501,36,469,36,469,31,501,31"/>
+<area shape="rect" id="Node000004" href="$class_rhythm_system_entities_1_1_system_1_1_notes_generator.html#a3ee0264812cdf674b00135a8ad525fef" title=" " alt="" coords="5,13,213,54"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="245,36,213,36,213,31,245,31"/>
+</map>

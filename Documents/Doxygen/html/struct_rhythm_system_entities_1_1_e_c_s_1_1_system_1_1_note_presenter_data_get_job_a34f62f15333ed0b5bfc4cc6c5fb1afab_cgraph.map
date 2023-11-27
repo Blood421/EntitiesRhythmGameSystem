@@ -1,0 +1,11 @@
+<map id="RhythmSystemEntities.ECS.System.NotePresenterDataGetJob.Execute" name="RhythmSystemEntities.ECS.System.NotePresenterDataGetJob.Execute">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,125,230,181"/>
+<area shape="rect" id="Node000002" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect.html#a7500fea6c5b1445fef27fe68581e16b7" title="BPMChangesのBlobAssetのRefを取得" alt="" coords="278,5,487,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,122,277,71,290,65,292,70,279,76,173,127"/>
+<area shape="rect" id="Node000003" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect.html#a138b0766c47659bdd748e0abbe3df0aa" title="MusicIDの取得" alt="" coords="278,85,487,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,134,262,129,263,134,230,139"/>
+<area shape="rect" id="Node000004" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect.html#af090009eb42eded78d22db22b5753ab9" title="今の時間の取得(sec)" alt="" coords="278,165,487,221"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="230,167,263,172,262,178,230,173"/>
+<area shape="rect" id="Node000005" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect.html#a3ac840046272d57cbfb4023cf0a23ebe" title="オプションのスクロール速度の取得" alt="" coords="278,245,487,301"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="173,179,279,231,292,237,290,241,277,236,171,184"/>
+</map>

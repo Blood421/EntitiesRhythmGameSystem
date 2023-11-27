@@ -1,0 +1,7 @@
+<map id="RhythmSystemEntities.System.Judge.JudgeRecieverFromECS.Start" name="RhythmSystemEntities.System.Judge.JudgeRecieverFromECS.Start">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,242,79"/>
+<area shape="rect" id="Node000002" href="$class_rhythm_system_entities_1_1_system_1_1_judge_1_1_judge_receiver_item_base.html#aa43696d200f2dabf0492b621233b4779" title="判定通知を受けとる" alt="" coords="290,5,543,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,43,274,39,274,44,242,48"/>
+<area shape="rect" id="Node000003" href="$class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system.html#aebb641934c7829e7f6bd1620d507734e" title=" " alt="" coords="300,71,533,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,69,284,74,284,79,242,75"/>
+</map>

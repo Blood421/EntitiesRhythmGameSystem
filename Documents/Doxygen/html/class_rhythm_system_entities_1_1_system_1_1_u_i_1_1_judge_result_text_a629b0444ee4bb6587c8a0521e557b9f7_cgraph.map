@@ -1,0 +1,7 @@
+<map id="RhythmSystemEntities.System.UI.JudgeResultText.Update" name="RhythmSystemEntities.System.UI.JudgeResultText.Update">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,213,46"/>
+<area shape="rect" id="Node000002" href="$class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text.html#af1a9114f011473071dc6d16d0bdb093a" title=" " alt="" coords="261,5,468,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,23,245,23,245,28,213,28"/>
+<area shape="rect" id="Node000003" href="$class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text.html#a2850d57f537e7936cc39b1fd8269b757" title=" " alt="" coords="516,5,723,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="468,23,501,23,501,28,468,28"/>
+</map>

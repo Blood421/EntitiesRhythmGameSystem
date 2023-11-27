@@ -1,0 +1,133 @@
+\doxysection{Rhythm\+System\+Entities.\+ECS.\+System.\+Time\+Presenter\+System Class Reference}
+\hypertarget{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system}{}\label{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system}\index{RhythmSystemEntities.ECS.System.TimePresenterSystem@{RhythmSystemEntities.ECS.System.TimePresenterSystem}}
+
+
+Mono側から\+ECS側にデータを持っていくための\+System.  
+
+
+
+
+Inheritance diagram for Rhythm\+System\+Entities.\+ECS.\+System.\+Time\+Presenter\+System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rhythm\+System\+Entities.\+ECS.\+System.\+Time\+Presenter\+System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system_a8fb07f8cdae7d7b4932ec9214f57f698}{Music\+Time\+Present}} (int music\+ID, float now\+Sec)
+\begin{DoxyCompactList}\small\item\em 今の時間(sec)を更新するときに使う \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system_a72e0850ef135c424a8d214ad59ca9bf3}{On\+Create}} ()
+\item 
+override void \mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system_a63439180f08acd0c8852ea32ccc37adc}{On\+Update}} ()
+\item 
+override void \mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system_a5fece80fa41e897429012434eeb373bf}{On\+Destroy}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Native\+Array$<$ float $>$ \mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system_a2b28e6e5256f3009c21b8f6594f606a2}{now\+Sec\+Present\+Data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Mono側から\+ECS側にデータを持っていくための\+System. 
+
+Definition at line \mbox{\hyperlink{_time_presenter_system_8cs_source_l00014}{14}} of file \mbox{\hyperlink{_time_presenter_system_8cs_source}{Time\+Presenter\+System.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system_a8fb07f8cdae7d7b4932ec9214f57f698}\label{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system_a8fb07f8cdae7d7b4932ec9214f57f698} 
+\index{RhythmSystemEntities.ECS.System.TimePresenterSystem@{RhythmSystemEntities.ECS.System.TimePresenterSystem}!MusicTimePresent@{MusicTimePresent}}
+\index{MusicTimePresent@{MusicTimePresent}!RhythmSystemEntities.ECS.System.TimePresenterSystem@{RhythmSystemEntities.ECS.System.TimePresenterSystem}}
+\doxysubsubsection{\texorpdfstring{MusicTimePresent()}{MusicTimePresent()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+ECS.\+System.\+Time\+Presenter\+System.\+Music\+Time\+Present (\begin{DoxyParamCaption}\item[{int}]{music\+ID,  }\item[{float}]{now\+Sec }\end{DoxyParamCaption})}
+
+
+
+今の時間(sec)を更新するときに使う 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music\+ID} & Music\+ID\\
+\hline
+{\em now\+Sec} & 今の時間(sec)\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_time_presenter_system_8cs_source_l00052}{52}} of file \mbox{\hyperlink{_time_presenter_system_8cs_source}{Time\+Presenter\+System.\+cs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system_a8fb07f8cdae7d7b4932ec9214f57f698_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system_a72e0850ef135c424a8d214ad59ca9bf3}\label{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system_a72e0850ef135c424a8d214ad59ca9bf3} 
+\index{RhythmSystemEntities.ECS.System.TimePresenterSystem@{RhythmSystemEntities.ECS.System.TimePresenterSystem}!OnCreate@{OnCreate}}
+\index{OnCreate@{OnCreate}!RhythmSystemEntities.ECS.System.TimePresenterSystem@{RhythmSystemEntities.ECS.System.TimePresenterSystem}}
+\doxysubsubsection{\texorpdfstring{OnCreate()}{OnCreate()}}
+{\footnotesize\ttfamily override void Rhythm\+System\+Entities.\+ECS.\+System.\+Time\+Presenter\+System.\+On\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_time_presenter_system_8cs_source_l00019}{19}} of file \mbox{\hyperlink{_time_presenter_system_8cs_source}{Time\+Presenter\+System.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system_a5fece80fa41e897429012434eeb373bf}\label{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system_a5fece80fa41e897429012434eeb373bf} 
+\index{RhythmSystemEntities.ECS.System.TimePresenterSystem@{RhythmSystemEntities.ECS.System.TimePresenterSystem}!OnDestroy@{OnDestroy}}
+\index{OnDestroy@{OnDestroy}!RhythmSystemEntities.ECS.System.TimePresenterSystem@{RhythmSystemEntities.ECS.System.TimePresenterSystem}}
+\doxysubsubsection{\texorpdfstring{OnDestroy()}{OnDestroy()}}
+{\footnotesize\ttfamily override void Rhythm\+System\+Entities.\+ECS.\+System.\+Time\+Presenter\+System.\+On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_time_presenter_system_8cs_source_l00040}{40}} of file \mbox{\hyperlink{_time_presenter_system_8cs_source}{Time\+Presenter\+System.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system_a63439180f08acd0c8852ea32ccc37adc}\label{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system_a63439180f08acd0c8852ea32ccc37adc} 
+\index{RhythmSystemEntities.ECS.System.TimePresenterSystem@{RhythmSystemEntities.ECS.System.TimePresenterSystem}!OnUpdate@{OnUpdate}}
+\index{OnUpdate@{OnUpdate}!RhythmSystemEntities.ECS.System.TimePresenterSystem@{RhythmSystemEntities.ECS.System.TimePresenterSystem}}
+\doxysubsubsection{\texorpdfstring{OnUpdate()}{OnUpdate()}}
+{\footnotesize\ttfamily override void Rhythm\+System\+Entities.\+ECS.\+System.\+Time\+Presenter\+System.\+On\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_time_presenter_system_8cs_source_l00030}{30}} of file \mbox{\hyperlink{_time_presenter_system_8cs_source}{Time\+Presenter\+System.\+cs}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system_a2b28e6e5256f3009c21b8f6594f606a2}\label{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system_a2b28e6e5256f3009c21b8f6594f606a2} 
+\index{RhythmSystemEntities.ECS.System.TimePresenterSystem@{RhythmSystemEntities.ECS.System.TimePresenterSystem}!nowSecPresentData@{nowSecPresentData}}
+\index{nowSecPresentData@{nowSecPresentData}!RhythmSystemEntities.ECS.System.TimePresenterSystem@{RhythmSystemEntities.ECS.System.TimePresenterSystem}}
+\doxysubsubsection{\texorpdfstring{nowSecPresentData}{nowSecPresentData}}
+{\footnotesize\ttfamily Native\+Array$<$float$>$ Rhythm\+System\+Entities.\+ECS.\+System.\+Time\+Presenter\+System.\+now\+Sec\+Present\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_time_presenter_system_8cs_source_l00017}{17}} of file \mbox{\hyperlink{_time_presenter_system_8cs_source}{Time\+Presenter\+System.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/git/\+Entities\+Rhythm\+Game\+System/\+Entities\+Rhythm\+Game\+System/\+Assets/\+Entities\+Rhythm\+Game/\+Scripts/\+ECS/\+System/\mbox{\hyperlink{_time_presenter_system_8cs}{Time\+Presenter\+System.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,280 @@
+\doxysection{Note\+Aspect.\+cs}
+\hypertarget{_note_aspect_8cs_source}{}\label{_note_aspect_8cs_source}\index{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/ECS/Aspect/NoteAspect.cs@{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/ECS/Aspect/NoteAspect.cs}}
+\mbox{\hyperlink{_note_aspect_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_data}{RhythmSystemEntities.Data}};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_e_c_s_1_1_data}{RhythmSystemEntities.ECS.Data}};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }Unity.Entities;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }Unity.Mathematics;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }Unity.Transforms;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00006}00006\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00008}00008\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_e_c_s_1_1_aspect}{RhythmSystemEntities.ECS.Aspect}}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00009}00009\ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00013}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect}{00013}}\ \ \ \ \ \textcolor{keyword}{public}\ readonly\ \textcolor{keyword}{partial\ struct\ }\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect}{NoteAspect}}\ :\ \mbox{\hyperlink{class_i_aspect}{IAspect}}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00014}00014\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00015}00015\ \ \ \ \ \ \ \ \ \textcolor{comment}{//エンティティ}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00016}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ab45f7b5062bdeb0012b27db0487e9173}{00016}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ readonly\ Entity\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ab45f7b5062bdeb0012b27db0487e9173}{entity}};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00017}00017\ \ \ \ \ \ \ \ \ \textcolor{comment}{//LocalTransform}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00018}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_add3d41ae4a6bf073251c8635e3570cab}{00018}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ readonly\ RefRW<LocalTransform>\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_add3d41ae4a6bf073251c8635e3570cab}{localTransformRW}};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{comment}{//LocalToWorld}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00020}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a2eed2894222461c05ef3cd014e5a6c33}{00020}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ readonly\ RefRW<LocalToWorld>\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a2eed2894222461c05ef3cd014e5a6c33}{localToWorldRW}};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \textcolor{comment}{//ノーツのMusicID}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00022}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a364dbc3cd18df214871c6923a9bc0283}{00022}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ readonly\ RefRO<MusicIDData>\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a364dbc3cd18df214871c6923a9bc0283}{musicIDDataRO}};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{comment}{//ノーツのデータ}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00024}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{00024}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ readonly\ RefRW<NoteComponentData>\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \textcolor{comment}{//ノーツのオプションデータ}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00026}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_afe10a44f8f52c6db7d8b8fe9bed38c4c}{00026}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ readonly\ RefRO<NoteOptionData>\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_afe10a44f8f52c6db7d8b8fe9bed38c4c}{noteOptionDataRO}};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00028}00028\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ View}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00033}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a5c9db5a54ba08eb5974f9461dcabb1af}{00033}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a5c9db5a54ba08eb5974f9461dcabb1af}{ViewUpdate}}()}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//もし処理済みなら非表示にする}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isExecuted\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.isExecuted;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (isExecuted)}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a2ac622aca78077026b0778dc9dc65948}{SuspectedDisableToView}}();}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//移動}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_acaa6e2b533fc9cb10e7c2f75770f745d}{TransformUpdate}}();}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00050}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_acaa6e2b533fc9cb10e7c2f75770f745d}{00050}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_acaa6e2b533fc9cb10e7c2f75770f745d}{TransformUpdate}}()}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00051}00051\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data_a597b4ad1c91576ffce13694dbf804d38}{NoteComponentData.NoteType}}\ noteType\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.noteType;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(noteType\ ==\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data}{NoteComponentData}}.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data_a597b4ad1c91576ffce13694dbf804d38}{NoteType}}.Single)\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ac1f410f6a0e58d5a89307f878ee5ce61}{SingleNoteTransformUpdate}}();}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(noteType\ ==\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data}{NoteComponentData}}.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data_a597b4ad1c91576ffce13694dbf804d38}{NoteType}}.Long)\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a91326017e47bc7f315606a2b32bc6c57}{LongNoteTransformUpdate}}();}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00060}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ac1f410f6a0e58d5a89307f878ee5ce61}{00060}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ac1f410f6a0e58d5a89307f878ee5ce61}{SingleNoteTransformUpdate}}()}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//データを取得}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ beat\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.nowBeat;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ beginBeat\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.timingData.beginBeat;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ offsetBeat\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.timingData.offsetBeat;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ lane\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.lane;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ float2\ posOffset\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.posOffset;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ float2\ posAdjustor\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.posAdjustor;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//スクロール速度}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ scrollSpeed\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_afe10a44f8f52c6db7d8b8fe9bed38c4c}{noteOptionDataRO}}.ValueRO.scrollSpeed;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//移動}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a317132557dbce8d7bcac50f4cf8384b1}{SingleNoteMove}}(\textcolor{keyword}{new}\ float3(lane\ *\ posAdjustor.x\ +\ posOffset.x,(beginBeat\ -\/\ beat\ +\ offsetBeat)\ *\ posAdjustor.y\ *\ scrollSpeed\ +\ posOffset.y\ ,\ 0));}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00081}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a317132557dbce8d7bcac50f4cf8384b1}{00081}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a317132557dbce8d7bcac50f4cf8384b1}{SingleNoteMove}}(float3\ pos)}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00082}00082\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//移動}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ localTransformRW.ValueRW.Position\ =\ pos;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00090}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a91326017e47bc7f315606a2b32bc6c57}{00090}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a91326017e47bc7f315606a2b32bc6c57}{LongNoteTransformUpdate}}()}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00091}00091\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//データを取得}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ nowBeat\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.nowBeat;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ beginBeat\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.timingData.beginBeat;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ endBeat\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.timingData.endBeat;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ midBeat\ =\ (endBeat\ +\ beginBeat)\ /\ 2f;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ offsetBeat\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.timingData.offsetBeat;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00098}00098\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ lane\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.lane;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00099}00099\ \ \ \ \ \ \ \ \ \ \ \ \ float2\ posOffset\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.posOffset;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00100}00100\ \ \ \ \ \ \ \ \ \ \ \ \ float2\ posAdjustor\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.posAdjustor;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00101}00101\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//スクロール速度}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ scrollSpeed\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_afe10a44f8f52c6db7d8b8fe9bed38c4c}{noteOptionDataRO}}.ValueRO.scrollSpeed;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00105}00105\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//移動}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ab64b49ce18900bce49b862db99c00d57}{LongNoteMove}}(\textcolor{keyword}{new}\ float3(lane\ *\ posAdjustor.x\ +\ posOffset.x,(midBeat\ -\/\ nowBeat\ +\ offsetBeat)\ *\ posAdjustor.y\ *\ scrollSpeed\ +\ posOffset.y\ ,\ 0));}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//スケール変化}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a254553b22e7529ebaa57b913444d176e}{LongNoteScaleUpdate}}(endBeat\ -\/\ beginBeat);}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00109}00109\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00115}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ab64b49ce18900bce49b862db99c00d57}{00115}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ab64b49ce18900bce49b862db99c00d57}{LongNoteMove}}(float3\ pos)}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00116}00116\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00117}00117\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//移動}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \ \ localTransformRW.ValueRW.Position\ =\ pos;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00119}00119\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00120}00120\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00125}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a254553b22e7529ebaa57b913444d176e}{00125}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a254553b22e7529ebaa57b913444d176e}{LongNoteScaleUpdate}}(\textcolor{keywordtype}{float}\ beatDif)}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00126}00126\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00127}00127\ \ \ \ \ \ \ \ \ \ \ \ \ var\ l2w\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a2eed2894222461c05ef3cd014e5a6c33}{localToWorldRW}}.ValueRW.Value;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00128}00128\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00129}00129\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//スクロール速度}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00130}00130\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ scrollSpeed\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_afe10a44f8f52c6db7d8b8fe9bed38c4c}{noteOptionDataRO}}.ValueRO.scrollSpeed;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00131}00131\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00132}00132\ \ \ \ \ \ \ \ \ \ \ \ \ l2w.c1.y\ =\ beatDif\ *\ scrollSpeed;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00133}00133\ \ \ \ \ \ \ \ \ \ \ \ \ localToWorldRW.ValueRW.Value\ =\ l2w;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00134}00134\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00135}00135\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00140}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a2ac622aca78077026b0778dc9dc65948}{00140}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a2ac622aca78077026b0778dc9dc65948}{SuspectedDisableToView}}()\ =>\ localTransformRW.ValueRW.Position\ =\ \textcolor{keyword}{new}\ float3(-\/10000,-\/10000,-\/10000);}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00141}00141\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00142}00142\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00143}00143\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00144}00144\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00149}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a4e070a6cc8c5d389b11365d0f756007e}{00149}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a4e070a6cc8c5d389b11365d0f756007e}{SetNowSec}}(\textcolor{keywordtype}{float}\ sec)\ =>\ noteDataRW.ValueRW.nowSec\ =\ sec;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00150}00150\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00155}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a537252bf562ad1ffbba04d341fd82fb6}{00155}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a537252bf562ad1ffbba04d341fd82fb6}{SetNowBeat}}(\textcolor{keywordtype}{float}\ beat)\ =>\ noteDataRW.ValueRW.nowBeat\ =\ beat;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00156}00156\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00160}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a5b76c1cfe19179c0c5ebc22ba7f040da}{00160}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a5b76c1cfe19179c0c5ebc22ba7f040da}{ExecuteNote}}(\mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_game_settings}{GameSettings}}.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_game_settings_a492b7e84dfdbb511456a52562d66aab9}{JudgeType}}\ judgeType)}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00161}00161\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00162}00162\ \ \ \ \ \ \ \ \ \ \ \ \ var\ type\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.noteType;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00163}00163\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//ロングノーツかつ処理中じゃなくミス判定じゃない場合処理中に変更}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00164}00164\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (type\ ==\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data}{NoteComponentData}}.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data_a597b4ad1c91576ffce13694dbf804d38}{NoteType}}.Long\ \&\&\ !\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae27666ba738586d06fe7ed550dae3e51}{GetIsProcessing}}()\ \&\&\ judgeType\ !=\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_game_settings}{GameSettings}}.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_game_settings_a492b7e84dfdbb511456a52562d66aab9}{JudgeType}}.Miss)}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00165}00165\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00166}00166\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ noteDataRW.ValueRW.isProcessing\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00167}00167\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00168}00168\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00169}00169\ \ \ \ \ \ \ \ \ \ \ \ \ noteDataRW.ValueRW.isExecuted\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00170}00170\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00171}00171\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00175}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a98bf52d2d3d392d0d1051c460eb15f68}{00175}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a98bf52d2d3d392d0d1051c460eb15f68}{ReviveNote}}()}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00176}00176\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00177}00177\ \ \ \ \ \ \ \ \ \ \ \ \ noteDataRW.ValueRW.isExecuted\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00178}00178\ \ \ \ \ \ \ \ \ \ \ \ \ noteDataRW.ValueRW.isProcessing\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00179}00179\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00180}00180\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00181}00181\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00186}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a1249eaa44313ca69065522077a16e540}{00186}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a1249eaa44313ca69065522077a16e540}{GetMusicID}}()\ =>\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a364dbc3cd18df214871c6923a9bc0283}{musicIDDataRO}}.ValueRO.musicID;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00187}00187\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00192}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_aa9c5bea14903bb87418e0299119f6e8b}{00192}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data_1_1_long_note_edge_i_d_data}{NoteComponentData.LongNoteEdgeIDData}}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_aa9c5bea14903bb87418e0299119f6e8b}{GetLongNoteEdgeIDData}}()\ =>\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data_a3976c4cef32f7e4dcbb2ba90d735bdf5}{longNoteEdgeIDData}};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00193}00193\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00198}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ad870283b818b64e4ea7619fb4664010e}{00198}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ad870283b818b64e4ea7619fb4664010e}{GetLane}}()\ =>\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.lane;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00199}00199\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00204}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_aa2798c74a4c2ff8e4d3591242f7ae854}{00204}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data_a597b4ad1c91576ffce13694dbf804d38}{NoteComponentData.NoteType}}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_aa2798c74a4c2ff8e4d3591242f7ae854}{GetNoteType}}()\ =>\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data_ab229818a93c2582bb970db04a217d9ee}{noteType}};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00205}00205\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00210}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae27666ba738586d06fe7ed550dae3e51}{00210}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae27666ba738586d06fe7ed550dae3e51}{GetIsProcessing}}()\ =>\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.isProcessing;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00211}00211\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00216}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a10d3e56ecb8211df562ab429c09e7e75}{00216}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a10d3e56ecb8211df562ab429c09e7e75}{GetIsExecuted}}()\ =>\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.isExecuted;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00217}00217\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00222}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a6328ff62a70055feaa45f7cdb90cdd02}{00222}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a6328ff62a70055feaa45f7cdb90cdd02}{GetEntityIndex}}()\ =>\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ab45f7b5062bdeb0012b27db0487e9173}{entity}}.Index;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00223}00223\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00228}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a4ea666ce7600bc6604a66b599b9460ba}{00228}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a4ea666ce7600bc6604a66b599b9460ba}{GetJudgeSec}}()}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00229}00229\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00230}00230\ \ \ \ \ \ \ \ \ \ \ \ \ var\ type\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.noteType;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00231}00231\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//シングル}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00232}00232\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (type\ ==\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data}{NoteComponentData}}.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data_a597b4ad1c91576ffce13694dbf804d38}{NoteType}}.Single)\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.timingData.beginSec;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00233}00233\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00234}00234\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00235}00235\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//ロング}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00236}00236\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isProcessing\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.isProcessing;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00237}00237\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//終点}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00238}00238\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (isProcessing)\textcolor{keywordflow}{return}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.timingData.endSec;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00239}00239\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00240}00240\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//始点}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00241}00241\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.timingData.beginSec;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00242}00242\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00243}00243\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00244}00244\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00250}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_aeb419f47dabdcd45970380bb85cbb8c4}{00250}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_aeb419f47dabdcd45970380bb85cbb8c4}{GetJudgeOffsetSec}}()\ =>\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.timingData.offsetSec;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00251}00251\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00257}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a4249e9c6e1c490d01cd88d561089bee5}{00257}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a4249e9c6e1c490d01cd88d561089bee5}{GetPlayerInputOffsetSec}}()\ =>\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_afe10a44f8f52c6db7d8b8fe9bed38c4c}{noteOptionDataRO}}.ValueRO.playerInputOffset;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00258}00258\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00263}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a80aa0239d676db073cb811977b9e1375}{00263}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a80aa0239d676db073cb811977b9e1375}{WithinJudgeRangeCheck}}()}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00264}00264\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00265}00265\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//処理済みは常にfalseを返す}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00266}00266\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.isExecuted)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00267}00267\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00268}00268\ \ \ \ \ \ \ \ \ \ \ \ \ var\ type\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.noteType;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00269}00269\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ nowSec\ =\ noteDataRW.ValueRO.nowSec\ -\/\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_aeb419f47dabdcd45970380bb85cbb8c4}{GetJudgeOffsetSec}}()\ +\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a4249e9c6e1c490d01cd88d561089bee5}{GetPlayerInputOffsetSec}}();}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00270}00270\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ beginSec\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.timingData.beginSec;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00271}00271\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ endSec\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.timingData.endSec;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00272}00272\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ judgeSec\ =\ (beginSec\ -\/\ nowSec);}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00273}00273\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ missRange\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_game_settings}{GameSettings}}.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_game_settings_a2b3529f7708ea9d91125e34f86c7c9e1}{missRange}};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00274}00274\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00275}00275\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//判定}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00276}00276\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//シングル}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00277}00277\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (type\ ==\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data}{NoteComponentData}}.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data_a597b4ad1c91576ffce13694dbf804d38}{NoteType}}.Single)\ \textcolor{keywordflow}{return}\ Mathf.Abs(judgeSec)\ <=\ missRange;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00278}00278\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00279}00279\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00280}00280\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//ロング}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00281}00281\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isProcessing\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.isProcessing;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00282}00282\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//終点}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00283}00283\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (isProcessing)}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00284}00284\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00285}00285\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ judgeSec\ =\ (endSec\ -\/\ nowSec);}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00286}00286\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//負なら範囲内ならtrue}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00287}00287\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//正なら常にtrue}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00288}00288\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//ロングノーツなので離れる時にしか終点判定はないはず}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00289}00289\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(judgeSec\ <\ 0)\ \textcolor{keywordflow}{return}\ -\/missRange\ <=\ judgeSec;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00290}00290\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00291}00291\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00292}00292\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//始点}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00293}00293\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Mathf.Abs(judgeSec)\ <=\ missRange;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00294}00294\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00295}00295\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00296}00296\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00302}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a74734ab95d50d23d7c72c8a01f3c734c}{00302}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a74734ab95d50d23d7c72c8a01f3c734c}{ThroughNote}}(\textcolor{keywordtype}{bool}\ isAuto)}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00303}00303\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00304}00304\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//処理済みならスキップ}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00305}00305\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.isExecuted)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00306}00306\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00307}00307\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ nowSec\ =\ noteDataRW.ValueRO.nowSec\ -\/\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_aeb419f47dabdcd45970380bb85cbb8c4}{GetJudgeOffsetSec}}()\ +\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a4249e9c6e1c490d01cd88d561089bee5}{GetPlayerInputOffsetSec}}();}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00308}00308\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ judgeSec\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.timingData.beginSec;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00309}00309\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//処理中なら終わりのsecを入れる}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00310}00310\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.isProcessing)\ judgeSec\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.timingData.endSec;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00311}00311\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00312}00312\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//判定に使う差分}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00313}00313\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//オートなら0}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00314}00314\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ judgeSecDiff\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_game_settings}{GameSettings}}.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_game_settings_a2b3529f7708ea9d91125e34f86c7c9e1}{missRange}};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00315}00315\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (isAuto)\ judgeSecDiff\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00316}00316\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00317}00317\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//処理判定}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00318}00318\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (nowSec\ -\/\ judgeSec\ >\ judgeSecDiff)}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00319}00319\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00320}00320\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//オートならパーフェクトで処理}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00321}00321\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//オートじゃなければミスで処理}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00322}00322\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_game_settings_a492b7e84dfdbb511456a52562d66aab9}{GameSettings.JudgeType}}\ judgeType\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_game_settings}{GameSettings}}.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_game_settings_a492b7e84dfdbb511456a52562d66aab9}{JudgeType}}.Miss;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00323}00323\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (isAuto)\ judgeType\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_game_settings}{GameSettings}}.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_game_settings_a492b7e84dfdbb511456a52562d66aab9}{JudgeType}}.Perfect;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00324}00324\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a5b76c1cfe19179c0c5ebc22ba7f040da}{ExecuteNote}}(judgeType);}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00325}00325\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00326}00326\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00327}00327\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00328}00328\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//処理しなかった}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00329}00329\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00330}00330\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00331}00331\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00336}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_afea39c1083c0b22cb11f120fcc61ac38}{00336}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ float3\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_afea39c1083c0b22cb11f120fcc61ac38}{GetNoteJudgedPos}}()}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00337}00337\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00338}00338\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//返す物}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00339}00339\ \ \ \ \ \ \ \ \ \ \ \ \ float3\ pos;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00340}00340\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00341}00341\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//データを取得}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00342}00342\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ nowBeat\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.nowBeat;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00343}00343\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ beginBeat\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.timingData.beginBeat;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00344}00344\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ endBeat\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.timingData.endBeat;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00345}00345\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00346}00346\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ offsetBeat\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.timingData.offsetBeat;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00347}00347\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ lane\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.lane;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00348}00348\ \ \ \ \ \ \ \ \ \ \ \ \ float2\ posOffset\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.posOffset;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00349}00349\ \ \ \ \ \ \ \ \ \ \ \ \ float2\ posAdjustor\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_ae8e087d1b0cec082d74f8c813c0fd7f1}{noteDataRW}}.ValueRO.posAdjustor;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00350}00350\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00351}00351\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//スクロール速度}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00352}00352\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ scrollSpeed\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_afe10a44f8f52c6db7d8b8fe9bed38c4c}{noteOptionDataRO}}.ValueRO.scrollSpeed;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00353}00353\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00354}00354\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data_a597b4ad1c91576ffce13694dbf804d38}{NoteComponentData.NoteType}}\ noteType\ =\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_aa2798c74a4c2ff8e4d3591242f7ae854}{GetNoteType}}();}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00355}00355\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (noteType\ ==\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data}{NoteComponentData}}.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_component_data_a597b4ad1c91576ffce13694dbf804d38}{NoteType}}.Long)}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00356}00356\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00357}00357\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//ビート}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00358}00358\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//始点or終点}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00359}00359\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ beat\ =\ beginBeat;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00360}00360\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect_a10d3e56ecb8211df562ab429c09e7e75}{GetIsExecuted}}())\ beat\ =\ endBeat;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00361}00361\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00362}00362\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pos\ =\ \textcolor{keyword}{new}\ float3(lane\ *\ posAdjustor.x\ +\ posOffset.x,}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00363}00363\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (beat\ -\/\ nowBeat\ +\ offsetBeat)\ *\ posAdjustor.y\ *\ scrollSpeed\ +\ posOffset.y,}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00364}00364\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0);}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00365}00365\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ pos;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00366}00366\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00367}00367\ }
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00368}00368\ \ \ \ \ \ \ \ \ \ \ \ \ pos\ =\ (\textcolor{keyword}{new}\ float3(lane\ *\ posAdjustor.x\ +\ posOffset.x,}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00369}00369\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (beginBeat\ -\/\ nowBeat\ +\ offsetBeat)\ *\ posAdjustor.y\ *\ scrollSpeed\ +\ posOffset.y,}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00370}00370\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0));}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00371}00371\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ pos;}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00372}00372\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00373}00373\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_aspect_8cs_source_l00374}00374\ \}}
+
+\end{DoxyCode}

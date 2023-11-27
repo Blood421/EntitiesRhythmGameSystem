@@ -1,0 +1,38 @@
+\doxysection{Judge\+Reciever\+From\+ECS.\+cs}
+\hypertarget{_judge_reciever_from_e_c_s_8cs_source}{}\label{_judge_reciever_from_e_c_s_8cs_source}\index{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/System/Judge/JudgeRecieverFromECS.cs@{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/System/Judge/JudgeRecieverFromECS.cs}}
+\mbox{\hyperlink{_judge_reciever_from_e_c_s_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_e_c_s_1_1_system}{RhythmSystemEntities.ECS.System}};}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }UniRx;}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }Unity.Entities;}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00006}00006\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_system_1_1_judge}{RhythmSystemEntities.System.Judge}}}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00011}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_judge_reciever_from_e_c_s}{00011}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_judge_reciever_from_e_c_s}{JudgeRecieverFromECS}}\ :\ \mbox{\hyperlink{class_mono_behaviour}{MonoBehaviour}}}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00012}00012\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00013}00013\ \ \ \ \ \ \ \ \ \textcolor{comment}{//通知を流したいクラス}}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00014}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_judge_reciever_from_e_c_s_afcefb7a8db513ce7f6ac8ef148d7d569}{00014}}\ \ \ \ \ \ \ \ \ [SerializeField]\ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_judge_receiver_item_base}{JudgeReceiverItemBase}}[]\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_judge_reciever_from_e_c_s_afcefb7a8db513ce7f6ac8ef148d7d569}{judgeReceiverItemBases}};}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00015}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_judge_reciever_from_e_c_s_a52616f1f4e671821a4bab58fad8affd9}{00015}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_judge_reciever_from_e_c_s_a52616f1f4e671821a4bab58fad8affd9}{Start}}()}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00016}00016\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//判定システムを取得}}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system}{NoteJudgeSystem}}\ noteJudgeSystem\ =}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ World.DefaultGameObjectInjectionWorld.GetExistingSystemManaged<\mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system}{NoteJudgeSystem}}>();}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//判定システムから判定通知が来たらデータを流す}}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ noteJudgeSystem}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .\mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system_aebb641934c7829e7f6bd1620d507734e}{OnJudge}}()}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .Subscribe(result\ =>}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_judge_receiver_item_base}{JudgeReceiverItemBase}}\ judgeReceiverItemBase\ \textcolor{keywordflow}{in}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_judge_reciever_from_e_c_s_afcefb7a8db513ce7f6ac8ef148d7d569}{judgeReceiverItemBases}})}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//通知}}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ judgeReceiverItemBase.\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_judge_receiver_item_base_aa43696d200f2dabf0492b621233b4779}{Notified}}(result);}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \})}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .AddTo(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00034}00034\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_judge_reciever_from_e_c_s_8cs_source_l00035}00035\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_system_base.html" title=" " alt="" coords="5,112,103,137"/>
+<area shape="rect" id="Node000001" href="$class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_all_data_spawn_system.html" title="ノーツやPresenter,Generatorを生成するSystem" alt="" coords="154,5,383,46"/>
+<area shape="poly" id="edge57_Node000000_Node000001" title=" " alt="" coords="82,99,113,77,150,57,181,44,183,49,152,61,116,82,85,104"/>
+<area shape="rect" id="Node000002" href="$class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system.html" title="ノーツの入力判定と通り過ぎ判定をするシステム" alt="" coords="173,71,364,111"/>
+<area shape="poly" id="edge58_Node000000_Node000002" title=" " alt="" coords="117,112,172,103,173,108,118,117"/>
+<area shape="rect" id="Node000003" href="$class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_option_presenter_system.html" title="プレゼンターにオプションデータをデリバリーするシステム" alt="" coords="151,136,386,177"/>
+<area shape="poly" id="edge59_Node000000_Node000003" title=" " alt="" coords="118,131,150,136,150,141,117,136"/>
+<area shape="rect" id="Node000004" href="$class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system.html" title="Mono側からECS側にデータを持っていくためのSystem." alt="" coords="169,201,368,242"/>
+<area shape="poly" id="edge60_Node000000_Node000004" title=" " alt="" coords="85,144,116,166,152,186,183,198,181,203,150,191,113,171,82,149"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="RhythmSystemEntities.ECS.System.SetNoteOptionJob" name="RhythmSystemEntities.ECS.System.SetNoteOptionJob">
+<area shape="rect" id="Node000001" title="プレゼンターのデータにセットするJobの発行" alt="" coords="23,149,205,229"/>
+<area shape="rect" id="Node000002" href="$class_i_job_entity.html" title=" " alt="" coords="5,5,76,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,83,97,148,93,150,60,85"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="101,5,127,71"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,70,117,132,111,132,111,70"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="187,5,225,71"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="201,71,192,99,179,126,171,138,167,134,174,123,187,97,196,70"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="MainGameActions.MainActions.RemoveCallbacks" name="MainGameActions.MainActions.RemoveCallbacks">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,104,217,145"/>
+<area shape="rect" id="Node000002" href="$struct_main_game_actions_1_1_main_actions.html#affdbb435ab842608eb07bcf3c60ee84e" title=" " alt="" coords="265,104,476,145"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,122,249,122,249,127,217,127"/>
+<area shape="rect" id="Node000003" href="$interface_main_game_actions_1_1_i_main_actions.html#a813ac11689286bbc529e2eaeb61b717a" title=" " alt="" coords="524,5,739,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="416,101,523,57,545,49,547,54,525,61,418,106"/>
+<area shape="rect" id="Node000004" href="$interface_main_game_actions_1_1_i_main_actions.html#abf53ad41a268a626330343eaf182a67e" title=" " alt="" coords="524,71,739,111"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="476,108,508,104,509,109,477,113"/>
+<area shape="rect" id="Node000005" href="$interface_main_game_actions_1_1_i_main_actions.html#ad8ad00bf32e801d44add057d633eb991" title=" " alt="" coords="524,136,739,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="477,135,509,139,508,144,476,140"/>
+<area shape="rect" id="Node000006" href="$interface_main_game_actions_1_1_i_main_actions.html#a9c87b75006f49d57b86b03163cf3882d" title=" " alt="" coords="524,201,739,242"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="419,143,525,186,547,193,545,199,523,191,417,148"/>
+</map>

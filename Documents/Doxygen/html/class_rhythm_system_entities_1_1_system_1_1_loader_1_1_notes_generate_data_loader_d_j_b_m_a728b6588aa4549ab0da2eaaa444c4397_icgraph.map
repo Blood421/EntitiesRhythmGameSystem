@@ -1,0 +1,13 @@
+<map id="RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM.LoadAsync" name="RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM.LoadAsync">
+<area shape="rect" id="Node000001" title="譜面の非同期ロード テキスト読み取りの行數がoneFrameExecuteNum超えたら1Frame待機" alt="" coords="1405,5,1666,61"/>
+<area shape="rect" id="Node000002" href="$class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data.html#a227e235873073a238b200f6709c6e2ee" title=" " alt="" coords="1071,13,1357,54"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1389,36,1357,36,1357,31,1389,31"/>
+<area shape="rect" id="Node000003" href="$class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data.html#a0f0e3f14e7ea77aae3902abd39426108" title="譜面の非同期ロード" alt="" coords="772,13,1023,54"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1055,36,1023,36,1023,31,1055,31"/>
+<area shape="rect" id="Node000004" href="$class_rhythm_system_entities_1_1_system_1_1_notes_generator.html#a55778375ab8d32de17523a47c0fc923d" title=" " alt="" coords="517,13,724,54"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="757,36,725,36,725,31,757,31"/>
+<area shape="rect" id="Node000005" href="$class_rhythm_system_entities_1_1_system_1_1_notes_generator.html#a25f3cc854f0d55bc02d712779fc0e224" title=" " alt="" coords="261,13,469,54"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="501,36,469,36,469,31,501,31"/>
+<area shape="rect" id="Node000006" href="$class_rhythm_system_entities_1_1_system_1_1_notes_generator.html#a3ee0264812cdf674b00135a8ad525fef" title=" " alt="" coords="5,13,213,54"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="245,36,213,36,213,31,245,31"/>
+</map>

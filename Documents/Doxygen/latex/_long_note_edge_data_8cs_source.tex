@@ -1,0 +1,42 @@
+\doxysection{Long\+Note\+Edge\+Data.\+cs}
+\hypertarget{_long_note_edge_data_8cs_source}{}\label{_long_note_edge_data_8cs_source}\index{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/ECS/Data/LongNoteEdgeData.cs@{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/ECS/Data/LongNoteEdgeData.cs}}
+\mbox{\hyperlink{_long_note_edge_data_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }Unity.Entities;}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }Unity.Mathematics;}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00004}\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_e_c_s_1_1_data}{00004}}\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_e_c_s_1_1_data}{RhythmSystemEntities.ECS.Data}}}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00005}00005\ \{}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00009}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data}{00009}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data}{LongNoteEdgeData}}\ :\ \mbox{\hyperlink{class_i_component_data}{IComponentData}}}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00010}00010\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00011}00011\ \ \ \ \ \ \ \ \ \textcolor{comment}{//タイミング系のデータ}}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00012}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_1_1_timing_data}{00012}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_1_1_timing_data}{TimingData}}}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00013}00013\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00014}00014\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//時間(beat)}}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00015}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_1_1_timing_data_a83764a14ec54eb1605e44e3f6290aca0}{00015}}\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_1_1_timing_data_a83764a14ec54eb1605e44e3f6290aca0}{beat}};}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00016}00016\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//曲とのズレを修正するもの(beat)}}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00017}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_1_1_timing_data_a7177a9753f7d458235ac55b4b09fe253}{00017}}\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_1_1_timing_data_a7177a9753f7d458235ac55b4b09fe253}{offsetBeat}};}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \textcolor{comment}{//EdgeID}}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00021}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_a85c789707a9fd7f5b77134d2be59a46f}{00021}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_a85c789707a9fd7f5b77134d2be59a46f}{edgeID}};}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{comment}{//タイミング系のデータ}}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00024}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_a789992e5f1804e10b3cd865f497f0b6d}{00024}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_1_1_timing_data}{TimingData}}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_a789992e5f1804e10b3cd865f497f0b6d}{timingData}};}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \textcolor{comment}{//今の時間(beat)}}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00027}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_ab272eac489cb8f0554c9b0ffb9015c20}{00027}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_ab272eac489cb8f0554c9b0ffb9015c20}{nowBeat}};}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \textcolor{comment}{//レーン}}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00030}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_a6f8509a9c450790444090cdbd37a5dab}{00030}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_a6f8509a9c450790444090cdbd37a5dab}{lane}};}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ \textcolor{comment}{//処理したかどうか}}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00033}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_a6437b0971faa5058e4d8df9946a279c0}{00033}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_a6437b0971faa5058e4d8df9946a279c0}{isExecuted}};}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \textcolor{comment}{//ポジションのオフセット}}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00035}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_a1d7bb7ac5beedaa789d2e372e001c00d}{00035}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ float2\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_a1d7bb7ac5beedaa789d2e372e001c00d}{posOffset}};}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \textcolor{comment}{//ポジションの調整(間隔)}}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00037}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_ac14dc8c2e381bd9ad09fdda6a5cc9485}{00037}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ float2\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_ac14dc8c2e381bd9ad09fdda6a5cc9485}{posAdjustor}};}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00038}00038\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_long_note_edge_data_8cs_source_l00039}00039\ \}}
+
+\end{DoxyCode}

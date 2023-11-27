@@ -1,0 +1,17 @@
+<map id="RhythmSystemEntities.System.Effect.JudgeResultEffect" name="RhythmSystemEntities.System.Effect.JudgeResultEffect">
+<area shape="rect" id="Node000001" title="判定結果でエフェクトを表示するクラス" alt="" coords="154,322,353,402"/>
+<area shape="rect" id="Node000002" href="$class_rhythm_system_entities_1_1_system_1_1_judge_1_1_judge_receiver_item_base.html" title="判定を受け取るクラスの基底クラス" alt="" coords="5,171,163,236"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,244,214,320,210,324,127,248"/>
+<area shape="rect" id="Node000003" href="$class_mono_behaviour.html" title=" " alt="" coords="31,5,137,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,86,87,171,81,171,81,86"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="187,171,213,236"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="209,235,226,297,229,305,224,307,221,299,204,237"/>
+<area shape="rect" id="Node000005" href="$struct_rhythm_system_entities_1_1_data_1_1_game_settings.html" title="ゲームの設定 基本的にconstの値のみ" alt="" coords="238,164,421,244"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="313,245,282,308,277,305,308,242"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="235,5,296,71"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="263,70,262,104,270,139,275,149,270,151,264,141,257,105,257,70"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="375,5,412,71"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="389,71,366,141,363,149,358,147,362,139,384,69"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="445,171,547,236"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="460,238,375,300,348,316,346,311,372,295,457,234"/>
+</map>

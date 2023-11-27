@@ -1,0 +1,36 @@
+\doxysection{Music\+Timer\+System\+Presenter.\+cs}
+\hypertarget{_music_timer_system_presenter_8cs_source}{}\label{_music_timer_system_presenter_8cs_source}\index{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/System/Timer/MusicTimerSystemPresenter.cs@{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/System/Timer/MusicTimerSystemPresenter.cs}}
+\mbox{\hyperlink{_music_timer_system_presenter_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_e_c_s_1_1_system}{RhythmSystemEntities.ECS.System}};}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }UniRx;}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }Unity.Entities;}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00007}00007\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_system_1_1_timer}{RhythmSystemEntities.System.Timer}}}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00008}00008\ \{}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00012}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_system_presenter}{00012}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_system_presenter}{MusicTimerSystemPresenter}}\ :\ \mbox{\hyperlink{class_mono_behaviour}{MonoBehaviour}}}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00013}00013\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00014}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_system_presenter_a16bd3274d0c6a906e7c9ec1fde59bb3c}{00014}}\ \ \ \ \ \ \ \ \ [SerializeField,Tooltip(\textcolor{stringliteral}{"{}曲タイマーの参照"{}})]\ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer}{MusicTimer}}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_system_presenter_a16bd3274d0c6a906e7c9ec1fde59bb3c}{musicTimer}};}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00015}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_system_presenter_aec4c00344760e10696ad18974f1a3836}{00015}}\ \ \ \ \ \ \ \ \ [SerializeField,Tooltip(\textcolor{stringliteral}{"{}曲ID"{}})]\ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_system_presenter_aec4c00344760e10696ad18974f1a3836}{musicID}};}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00017}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_system_presenter_a6e1d1748e36160f58e60590233df5bcb}{00017}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_system_presenter_a6e1d1748e36160f58e60590233df5bcb}{Start}}()}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//システムを取得}}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system}{TimePresenterSystem}}\ timePresenterSystem\ =}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ World.DefaultGameObjectInjectionWorld.GetExistingSystemManaged<\mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system}{TimePresenterSystem}}>();}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//タイマーから時間をSystemに送るための購読}}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_system_presenter_a16bd3274d0c6a906e7c9ec1fde59bb3c}{musicTimer}}}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_ad007dc8eb3149d57237d600c4ca341cf}{GetTime}}()}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .Subscribe(nowSec\ =>}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ timePresenterSystem.\mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system_a8fb07f8cdae7d7b4932ec9214f57f698}{MusicTimePresent}}(\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer_system_presenter_aec4c00344760e10696ad18974f1a3836}{musicID}},nowSec);}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \})}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .AddTo(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00032}00032\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_music_timer_system_presenter_8cs_source_l00033}00033\ \}}
+
+\end{DoxyCode}

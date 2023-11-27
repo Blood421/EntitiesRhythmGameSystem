@@ -1,0 +1,9 @@
+<map id="RhythmSystemEntities.ECS.System.NoteJudgeSystem.JudgeTempData" name="RhythmSystemEntities.ECS.System.NoteJudgeSystem.JudgeTempData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,164,275,244"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="21,5,48,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="40,70,47,104,62,138,71,150,67,153,57,141,42,106,34,71"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="121,5,159,71"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,70,143,147,137,147,137,70"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="218,5,257,71"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="235,71,226,106,210,141,202,153,198,150,206,138,221,104,230,70"/>
+</map>

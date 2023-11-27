@@ -1,0 +1,11 @@
+<map id="RhythmSystemEntities.System.UI.JudgeResultText.UpdateText" name="RhythmSystemEntities.System.UI.JudgeResultText.UpdateText">
+<area shape="rect" id="Node000001" title=" " alt="" coords="537,39,744,79"/>
+<area shape="rect" id="Node000002" href="$class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text.html#af1a9114f011473071dc6d16d0bdb093a" title=" " alt="" coords="271,5,479,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="521,47,479,41,479,36,522,41"/>
+<area shape="rect" id="Node000004" href="$class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text.html#a1f7cedc1cdc166524dc28c298044c550" title=" " alt="" coords="261,71,489,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="522,76,490,80,489,75,521,71"/>
+<area shape="rect" id="Node000003" href="$class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text.html#a629b0444ee4bb6587c8a0521e557b9f7" title=" " alt="" coords="5,5,213,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="255,28,213,28,213,23,255,23"/>
+<area shape="rect" id="Node000005" href="$class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text.html#a912943fbf1f19439ac49dcdf667a0fc0" title=" " alt="" coords="5,71,213,111"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="245,94,213,94,213,88,245,88"/>
+</map>

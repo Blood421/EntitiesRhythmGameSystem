@@ -1,0 +1,5 @@
+<map id="RhythmSystemEntities.System.Judge.JudgeReceiverItemBase.Notified" name="RhythmSystemEntities.System.Judge.JudgeReceiverItemBase.Notified">
+<area shape="rect" id="Node000001" title="判定通知を受けとる" alt="" coords="290,5,543,46"/>
+<area shape="rect" id="Node000002" href="$class_rhythm_system_entities_1_1_system_1_1_judge_1_1_judge_reciever_from_e_c_s.html#a52616f1f4e671821a4bab58fad8affd9" title=" " alt="" coords="5,5,242,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="274,28,242,28,242,23,274,23"/>
+</map>

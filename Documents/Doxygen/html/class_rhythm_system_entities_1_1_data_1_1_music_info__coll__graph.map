@@ -1,0 +1,9 @@
+<map id="RhythmSystemEntities.Data.MusicInfo" name="RhythmSystemEntities.Data.MusicInfo">
+<area shape="rect" id="Node000001" title="譜面データから読み込んだ曲情報" alt="" coords="63,224,246,304"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,107,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,70,62,132,70,166,84,198,91,209,86,212,79,201,65,168,57,133,52,71"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="136,5,173,71"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,70,157,207,152,207,152,70"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="197,5,280,71"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="237,71,224,132,201,201,196,210,191,208,196,199,219,131,232,70"/>
+</map>

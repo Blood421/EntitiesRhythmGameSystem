@@ -1,0 +1,5 @@
+<map id="RhythmSystemEntities.ECS.System.NoteJudgeSystem.AddMusicSettings" name="RhythmSystemEntities.ECS.System.NoteJudgeSystem.AddMusicSettings">
+<area shape="rect" id="Node000001" title=" " alt="" coords="309,5,548,61"/>
+<area shape="rect" id="Node000002" href="$class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter.html#a169ad4139438d7bb429e316ef906be50" title=" " alt="" coords="5,13,261,54"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="293,36,261,36,261,31,293,31"/>
+</map>

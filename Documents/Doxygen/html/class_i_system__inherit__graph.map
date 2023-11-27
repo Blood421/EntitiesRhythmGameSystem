@@ -1,0 +1,9 @@
+<map id="ISystem" name="ISystem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="331,5,393,71"/>
+<area shape="rect" id="Node000002" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_long_note_edge_execute_system.html" title="ロングノーツの端のエンティティのデータを更新するシステム" alt="" coords="5,129,244,209"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="319,65,197,131,195,127,317,61"/>
+<area shape="rect" id="Node000003" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_presenter_system.html" title="presenter&#45;&gt;ノーツのデータデリバリーシステム" alt="" coords="269,119,455,219"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="365,86,365,119,359,119,359,86"/>
+<area shape="rect" id="Node000004" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_view_update_system.html" title="ノーツを移動させるシステム" alt="" coords="479,129,685,209"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="407,62,517,127,515,131,404,67"/>
+</map>

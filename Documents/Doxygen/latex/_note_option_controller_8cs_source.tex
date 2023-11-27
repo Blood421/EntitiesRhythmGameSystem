@@ -1,0 +1,25 @@
+\doxysection{Note\+Option\+Controller.\+cs}
+\hypertarget{_note_option_controller_8cs_source}{}\label{_note_option_controller_8cs_source}\index{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/System/Option/NoteOptionController.cs@{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/System/Option/NoteOptionController.cs}}
+\mbox{\hyperlink{_note_option_controller_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_note_option_controller_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_note_option_controller_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }UniRx;}
+\DoxyCodeLine{\Hypertarget{_note_option_controller_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_note_option_controller_8cs_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_note_option_controller_8cs_source_l00005}\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_system_1_1_option}{00005}}\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_system_1_1_option}{RhythmSystemEntities.System.Option}}}
+\DoxyCodeLine{\Hypertarget{_note_option_controller_8cs_source_l00006}00006\ \{}
+\DoxyCodeLine{\Hypertarget{_note_option_controller_8cs_source_l00010}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_option_1_1_note_option_controller}{00010}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_option_1_1_note_option_controller}{NoteOptionController}}\ :\ \mbox{\hyperlink{class_mono_behaviour}{MonoBehaviour}}}
+\DoxyCodeLine{\Hypertarget{_note_option_controller_8cs_source_l00011}00011\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_option_controller_8cs_source_l00012}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_option_1_1_note_option_controller_a5bd71b2368276da7f89157f0f357c5b0}{00012}}\ \ \ \ \ \ \ \ \ [SerializeField,Tooltip(\textcolor{stringliteral}{"{}スクロール速度"{}})]\ \textcolor{keyword}{private}\ FloatReactiveProperty\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_option_1_1_note_option_controller_a5bd71b2368276da7f89157f0f357c5b0}{scrollSpeed}};}
+\DoxyCodeLine{\Hypertarget{_note_option_controller_8cs_source_l00013}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_option_1_1_note_option_controller_aa2f10f6f825c8863dfa9c16f28e8298d}{00013}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ IReadOnlyReactiveProperty<float>\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_option_1_1_note_option_controller_aa2f10f6f825c8863dfa9c16f28e8298d}{GetScrollSpeed}}()\ =>\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_option_1_1_note_option_controller_a5bd71b2368276da7f89157f0f357c5b0}{scrollSpeed}};}
+\DoxyCodeLine{\Hypertarget{_note_option_controller_8cs_source_l00014}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_option_1_1_note_option_controller_a388d89b5c1295d4aac71b47caae83993}{00014}}\ \ \ \ \ \ \ \ \ [SerializeField,Tooltip(\textcolor{stringliteral}{"{}プレイヤーの入力オフセット"{}})]\ \textcolor{keyword}{private}\ FloatReactiveProperty\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_option_1_1_note_option_controller_a388d89b5c1295d4aac71b47caae83993}{playerInputOffset}};}
+\DoxyCodeLine{\Hypertarget{_note_option_controller_8cs_source_l00015}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_option_1_1_note_option_controller_a2a3b394c0c672e580e88ad0825f2d5f7}{00015}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ IReadOnlyReactiveProperty<float>\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_option_1_1_note_option_controller_a2a3b394c0c672e580e88ad0825f2d5f7}{GetPlayerInputOffset}}()\ =>\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_option_1_1_note_option_controller_a388d89b5c1295d4aac71b47caae83993}{playerInputOffset}};}
+\DoxyCodeLine{\Hypertarget{_note_option_controller_8cs_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_note_option_controller_8cs_source_l00017}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_option_1_1_note_option_controller_a5d85da40c043adbcdda16380ff212910}{00017}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_option_1_1_note_option_controller_a5d85da40c043adbcdda16380ff212910}{OnDestroy}}()}
+\DoxyCodeLine{\Hypertarget{_note_option_controller_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_option_controller_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_option_1_1_note_option_controller_a5bd71b2368276da7f89157f0f357c5b0}{scrollSpeed}}.Dispose();}
+\DoxyCodeLine{\Hypertarget{_note_option_controller_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_option_controller_8cs_source_l00021}00021\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_option_controller_8cs_source_l00022}00022\ \}}
+
+\end{DoxyCode}

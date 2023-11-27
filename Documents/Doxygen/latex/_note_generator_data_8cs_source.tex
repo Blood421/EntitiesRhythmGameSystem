@@ -1,0 +1,43 @@
+\doxysection{Note\+Generator\+Data.\+cs}
+\hypertarget{_note_generator_data_8cs_source}{}\label{_note_generator_data_8cs_source}\index{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/ECS/Data/NoteGeneratorData.cs@{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/ECS/Data/NoteGeneratorData.cs}}
+\mbox{\hyperlink{_note_generator_data_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_data}{RhythmSystemEntities.Data}};}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }Unity.Entities;}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00004}00004\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_e_c_s_1_1_data}{RhythmSystemEntities.ECS.Data}}}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00005}00005\ \{}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00009}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data}{00009}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data}{NoteGeneratorData}}\ :\ \mbox{\hyperlink{class_i_component_data}{IComponentData}}}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00010}00010\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00011}00011\ \ \ \ \ \ \ \ \ \textcolor{comment}{//ノーツ生成処理が終わっているかどうか}}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00012}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data_ae7ccab80bc05c84d25df16e7300ba591}{00012}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data_ae7ccab80bc05c84d25df16e7300ba591}{isInit}};}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00013}00013\ \ \ \ \ \ \ \ \ \textcolor{comment}{//シングルノーツのEntity}}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00014}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data_af6c86d72c5badbf1e3e1de3c2fd4a255}{00014}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Entity\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data_af6c86d72c5badbf1e3e1de3c2fd4a255}{singleNoteEntity}};}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00015}00015\ \ \ \ \ \ \ \ \ \textcolor{comment}{//ロングノーツのEntity}}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00016}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data_a4e73d21b6488ded804aed90e11079711}{00016}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Entity\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data_a4e73d21b6488ded804aed90e11079711}{longNoteEntity}};}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00017}00017\ \ \ \ \ \ \ \ \ \textcolor{comment}{//ロングノーツ端のEntity}}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00018}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data_a445de12f5ffb73406456818507a98ea4}{00018}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Entity\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data_a445de12f5ffb73406456818507a98ea4}{longNoteEdgeEntity}};}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{comment}{//NotePresenterのEntity}}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00020}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data_aafd6158c134eac81d17a5642124730a2}{00020}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Entity\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data_aafd6158c134eac81d17a5642124730a2}{notePresenterDataEntity}};}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \textcolor{comment}{//MusicID}}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00022}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data_acc428562a30f1b51fe84fa7633518d3e}{00022}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data_acc428562a30f1b51fe84fa7633518d3e}{musicID}};}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{comment}{//BPMChangesのBlobAssetのRef}}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00024}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data_aa5aa593907f452723f91b7f4847f15c4}{00024}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ BlobAssetReference<BPMChangesBlob>\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data_aa5aa593907f452723f91b7f4847f15c4}{bpmChangesBlobRef}};}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \textcolor{comment}{//NotePropertyTempsのBlobAssetのRef}}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00026}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data_aaf8a21d6f17a250af6e03a8f35371e58}{00026}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ BlobAssetReference<NotePropertyTempsBlob>\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data_aaf8a21d6f17a250af6e03a8f35371e58}{notePropertyTempsBlobRef}};}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00027}00027\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00028}00028\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00029}00029\ \ \ \ \ \textcolor{comment}{//BPMChangesのBlobを生成するときに使う}}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00030}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_b_p_m_changes_blob}{00030}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_b_p_m_changes_blob}{BPMChangesBlob}}}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00031}00031\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00032}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_b_p_m_changes_blob_a6b99b98a3c91afd6d75be03932aa2c0c}{00032}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ BlobArray<BPMChange>\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_b_p_m_changes_blob_a6b99b98a3c91afd6d75be03932aa2c0c}{bpmChanges}};}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00033}00033\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00034}00034\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00035}00035\ \ \ \ \ \textcolor{comment}{//NotePropertyTempsのBlobを生成するときに使う}}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00036}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_property_temps_blob}{00036}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_property_temps_blob}{NotePropertyTempsBlob}}}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00037}00037\ \ \ \ \ \{\ }
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00038}\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_property_temps_blob_a7e37b672e8530ec089a4cbdb9c90ac1a}{00038}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ BlobArray<NotePropertyTemp>\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_property_temps_blob_a7e37b672e8530ec089a4cbdb9c90ac1a}{notePropertyTemps}};}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00039}00039\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_note_generator_data_8cs_source_l00040}00040\ \}}
+
+\end{DoxyCode}

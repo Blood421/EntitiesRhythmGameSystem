@@ -1,0 +1,21 @@
+\doxysection{Rhythm\+Game\+Systems\+Late\+Update\+Group.\+cs}
+\hypertarget{_rhythm_game_systems_late_update_group_8cs_source}{}\label{_rhythm_game_systems_late_update_group_8cs_source}\index{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/ECS/System/RhythmGameSystemsLateUpdateGroup.cs@{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/ECS/System/RhythmGameSystemsLateUpdateGroup.cs}}
+\mbox{\hyperlink{_rhythm_game_systems_late_update_group_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_rhythm_game_systems_late_update_group_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }Unity.Entities;}
+\DoxyCodeLine{\Hypertarget{_rhythm_game_systems_late_update_group_8cs_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_rhythm_game_systems_late_update_group_8cs_source_l00003}00003\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_e_c_s_1_1_system}{RhythmSystemEntities.ECS.System}}}
+\DoxyCodeLine{\Hypertarget{_rhythm_game_systems_late_update_group_8cs_source_l00004}00004\ \{}
+\DoxyCodeLine{\Hypertarget{_rhythm_game_systems_late_update_group_8cs_source_l00008}00008\ \ \ \ \ [UpdateInGroup(typeof(PresentationSystemGroup))]}
+\DoxyCodeLine{\Hypertarget{_rhythm_game_systems_late_update_group_8cs_source_l00009}\mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_rhythm_game_systems_late_update_group}{00009}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{partial\ class\ }\mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_rhythm_game_systems_late_update_group}{RhythmGameSystemsLateUpdateGroup}}\ :\ \mbox{\hyperlink{class_component_system_group}{ComponentSystemGroup}}}
+\DoxyCodeLine{\Hypertarget{_rhythm_game_systems_late_update_group_8cs_source_l00010}00010\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_rhythm_game_systems_late_update_group_8cs_source_l00011}\mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_rhythm_game_systems_late_update_group_ad472afff209c383263caf8754231c00e}{00011}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_rhythm_game_systems_late_update_group_ad472afff209c383263caf8754231c00e}{OnCreate}}()}
+\DoxyCodeLine{\Hypertarget{_rhythm_game_systems_late_update_group_8cs_source_l00012}00012\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_rhythm_game_systems_late_update_group_8cs_source_l00013}00013\ \ \ \ \ \ \ \ \ \ \ \ \ base.OnCreate();}
+\DoxyCodeLine{\Hypertarget{_rhythm_game_systems_late_update_group_8cs_source_l00014}00014\ \ \ \ \ \ \ \ \ \ \ \ \ AddSystemToUpdateList(World.GetOrCreateSystem<\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_long_note_edge_execute_system}{LongNoteEdgeExecuteSystem}}>());}
+\DoxyCodeLine{\Hypertarget{_rhythm_game_systems_late_update_group_8cs_source_l00015}00015\ \ \ \ \ \ \ \ \ \ \ \ \ AddSystemToUpdateList(World.GetOrCreateSystem<\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_view_update_system}{NoteViewUpdateSystem}}>());}
+\DoxyCodeLine{\Hypertarget{_rhythm_game_systems_late_update_group_8cs_source_l00016}00016\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_rhythm_game_systems_late_update_group_8cs_source_l00017}00017\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_rhythm_game_systems_late_update_group_8cs_source_l00018}00018\ \}}
+
+\end{DoxyCode}

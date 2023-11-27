@@ -1,0 +1,7 @@
+<map id="RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob.ToBeat" name="RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob.ToBeat">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,45,252,101"/>
+<area shape="rect" id="Node000002" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job.html#afb9fb27ef5501e6c16ab30ca474be409" title=" " alt="" coords="300,5,546,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,54,284,49,285,55,253,59"/>
+<area shape="rect" id="Node000003" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job.html#ae96f66062a4a195a964676704c141491" title=" " alt="" coords="300,85,546,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="253,87,285,92,284,97,252,93"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="RhythmSystemEntities.System.Timer.MusicTimer" name="RhythmSystemEntities.System.Timer.MusicTimer">
+<area shape="rect" id="Node000001" title="オーディオデータをタイマーとして扱うクラス" alt="" coords="5,119,204,599"/>
+<area shape="rect" id="Node000002" href="$class_mono_behaviour.html" title=" " alt="" coords="52,5,157,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,86,107,119,102,119,102,86"/>
+</map>

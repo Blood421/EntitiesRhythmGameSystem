@@ -1,0 +1,9 @@
+<map id="RhythmSystemEntities.System.Judge.JudgeReceiverItemBase" name="RhythmSystemEntities.System.Judge.JudgeReceiverItemBase">
+<area shape="rect" id="Node000001" title="判定を受け取るクラスの基底クラス" alt="" coords="116,119,315,199"/>
+<area shape="rect" id="Node000003" href="$class_rhythm_system_entities_1_1_system_1_1_effect_1_1_judge_result_effect.html" title="判定結果でエフェクトを表示するクラス" alt="" coords="5,287,204,427"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,213,146,288,141,285,184,210"/>
+<area shape="rect" id="Node000004" href="$class_rhythm_system_entities_1_1_system_1_1_u_i_1_1_judge_result_text.html" title="テキストに判定結果を表示するクラス" alt="" coords="228,247,427,467"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="247,210,267,245,263,248,243,213"/>
+<area shape="rect" id="Node000002" href="$class_mono_behaviour.html" title=" " alt="" coords="163,5,268,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,85,218,119,213,119,213,85"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="RhythmSystemEntities.ECS.System.NoteJudgeSystem.OnJudge" name="RhythmSystemEntities.ECS.System.NoteJudgeSystem.OnJudge">
+<area shape="rect" id="Node000001" title=" " alt="" coords="290,5,523,46"/>
+<area shape="rect" id="Node000002" href="$class_rhythm_system_entities_1_1_system_1_1_judge_1_1_judge_reciever_from_e_c_s.html#a52616f1f4e671821a4bab58fad8affd9" title=" " alt="" coords="5,5,242,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="274,28,242,28,242,23,274,23"/>
+</map>

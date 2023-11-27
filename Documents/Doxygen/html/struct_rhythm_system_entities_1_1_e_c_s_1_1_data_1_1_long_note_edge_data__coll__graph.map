@@ -1,0 +1,16 @@
+<map id="RhythmSystemEntities.ECS.Data.LongNoteEdgeData" name="RhythmSystemEntities.ECS.Data.LongNoteEdgeData">
+<area shape="rect" id="Node000001" title="ロングノーツの端のエンティティのデータ" alt="" coords="202,307,383,387"/>
+<area shape="rect" id="Node000002" href="$class_i_component_data.html" title=" " alt="" coords="5,156,119,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,231,118,257,145,280,204,313,201,317,142,285,114,261,91,235"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="143,156,170,221"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,221,151,252,154,267,160,281,173,297,189,310,186,314,169,301,155,284,148,269,145,253,146,221"/>
+<area shape="rect" id="Node000004" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_long_note_edge_data_1_1_timing_data.html" title=" " alt="" coords="318,149,553,229"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="402,230,341,296,337,293,398,227"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="234,5,271,71"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="249,71,241,143,241,186,246,228,255,260,267,291,262,293,250,262,240,229,235,186,235,143,244,70"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="273,52,376,136,373,140,270,56"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="577,156,616,221"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="579,218,566,231,527,258,485,282,401,317,398,312,483,277,525,254,563,227,575,214"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="661,156,706,221"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="667,223,642,256,607,285,558,309,504,326,451,337,401,344,400,339,450,332,503,321,556,304,605,280,638,252,663,219"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="RhythmSystemEntities.ECS.Aspect.NoteAspect.GetIsProcessing" name="RhythmSystemEntities.ECS.Aspect.NoteAspect.GetIsProcessing">
+<area shape="rect" id="Node000001" title="ノーツが処理中かどうかの取得" alt="" coords="903,49,1135,90"/>
+<area shape="rect" id="Node000002" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_within_judge_range_check_job.html#adf6c1eec4f5f8d3d7b1b4b32a48b2cab" title=" " alt="" coords="611,5,855,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="888,55,856,51,856,46,888,50"/>
+<area shape="rect" id="Node000003" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect.html#a5b76c1cfe19179c0c5ebc22ba7f040da" title="ノーツを判定処理する" alt="" coords="631,85,836,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="888,88,837,95,836,90,887,83"/>
+<area shape="rect" id="Node000004" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_judged_result_to_note_job.html#a4a3323b2f39c754c73dddc57f28fd0d3" title=" " alt="" coords="302,52,563,92"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="615,95,563,89,564,84,616,89"/>
+<area shape="rect" id="Node000005" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect.html#a74734ab95d50d23d7c72c8a01f3c734c" title="判定通り越したノーツの処理" alt="" coords="329,117,536,158"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="615,120,536,129,536,124,615,115"/>
+<area shape="rect" id="Node000006" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_through_note_judge_job.html#a5ce24e90eb6c1b0b197583c0e1eed826" title=" " alt="" coords="5,117,254,158"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="314,140,254,140,254,135,314,135"/>
+</map>

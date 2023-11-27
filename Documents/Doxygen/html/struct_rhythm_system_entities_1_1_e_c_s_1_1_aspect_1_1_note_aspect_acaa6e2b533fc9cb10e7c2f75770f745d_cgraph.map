@@ -1,0 +1,13 @@
+<map id="RhythmSystemEntities.ECS.Aspect.NoteAspect.TransformUpdate" name="RhythmSystemEntities.ECS.Aspect.NoteAspect.TransformUpdate">
+<area shape="rect" id="Node000001" title="ノーツのTransform更新" alt="" coords="5,113,241,154"/>
+<area shape="rect" id="Node000002" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect.html#a91326017e47bc7f315606a2b32bc6c57" title="ロングノーツのTransform更新" alt="" coords="294,66,541,122"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,115,278,110,279,115,242,120"/>
+<area shape="rect" id="Node000005" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect.html#ac1f410f6a0e58d5a89307f878ee5ce61" title="シングルノーツのTransform更新" alt="" coords="289,146,546,202"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="242,147,273,151,273,157,241,152"/>
+<area shape="rect" id="Node000003" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect.html#ab64b49ce18900bce49b862db99c00d57" title="ロングノーツの移動" alt="" coords="599,5,819,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="539,63,603,48,604,53,540,68"/>
+<area shape="rect" id="Node000004" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect.html#a254553b22e7529ebaa57b913444d176e" title="ロングノーツの大きさの変更" alt="" coords="598,70,820,126"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="541,93,582,93,582,99,541,98"/>
+<area shape="rect" id="Node000006" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect.html#a317132557dbce8d7bcac50f4cf8384b1" title="シングルノーツの移動" alt="" coords="594,153,824,194"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="546,171,579,171,579,176,546,176"/>
+</map>

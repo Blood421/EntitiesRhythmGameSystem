@@ -1,0 +1,15 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_i_aspect.html" title=" " alt="" coords="5,177,71,203"/>
+<area shape="rect" id="Node000001" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_long_note_edge_aspect.html" title="ロングノーツの端のエンティティのアスペクト" alt="" coords="139,5,330,46"/>
+<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="47,161,73,108,93,80,117,57,138,44,140,49,120,61,97,84,78,111,51,163"/>
+<area shape="rect" id="Node000002" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_aspect.html" title="ノーツエンティティのアスペクト" alt="" coords="139,71,330,111"/>
+<area shape="poly" id="edge6_Node000000_Node000002" title=" " alt="" coords="61,164,87,142,117,122,146,109,148,114,120,127,90,146,65,168"/>
+<area shape="rect" id="Node000003" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect.html" title="ノーツ生成用エンティティのアスペクト" alt="" coords="139,136,330,177"/>
+<area shape="poly" id="edge7_Node000000_Node000003" title=" " alt="" coords="86,179,138,170,139,175,87,184"/>
+<area shape="rect" id="Node000004" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_spawn_aspect.html" title="ノーツ生成するエンティティを保持するエンティティのアスペクト" alt="" coords="119,201,350,242"/>
+<area shape="poly" id="edge8_Node000000_Node000004" title=" " alt="" coords="87,195,119,200,118,205,86,200"/>
+<area shape="rect" id="Node000005" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_option_aspect.html" title="曲ごとのオプション用のアスペクト" alt="" coords="139,267,330,307"/>
+<area shape="poly" id="edge9_Node000000_Node000005" title=" " alt="" coords="65,211,91,232,120,251,148,264,146,269,117,256,87,237,62,215"/>
+<area shape="rect" id="Node000006" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect.html" title="ノーツへデータを運ぶ(Presenter)エンティティ用のアスペクト" alt="" coords="139,332,330,373"/>
+<area shape="poly" id="edge10_Node000000_Node000006" title=" " alt="" coords="52,216,78,268,97,294,120,317,140,329,138,334,117,321,93,298,73,270,47,218"/>
+</map>

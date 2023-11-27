@@ -1,0 +1,7 @@
+<map id="RhythmSystemEntities.ECS.Aspect.LongNoteEdgeAspect.ViewUpdate" name="RhythmSystemEntities.ECS.Aspect.LongNoteEdgeAspect.ViewUpdate">
+<area shape="rect" id="Node000001" title="見た目の更新" alt="" coords="5,34,231,90"/>
+<area shape="rect" id="Node000002" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_long_note_edge_aspect.html#a4c2ff7984202816a283838fbb753e492" title="移動" alt="" coords="294,5,520,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,45,278,39,279,44,232,50"/>
+<area shape="rect" id="Node000003" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_long_note_edge_aspect.html#ab7eebe2fe12aa9d9b3b303d9f497e8cb" title="疑似的に非表示にする 描画範囲外に吹っ飛ばすことで非表示に" alt="" coords="279,70,535,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,73,263,77,263,82,231,78"/>
+</map>

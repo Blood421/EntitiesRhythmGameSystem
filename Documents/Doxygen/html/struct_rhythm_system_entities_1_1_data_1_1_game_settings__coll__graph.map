@@ -1,0 +1,7 @@
+<map id="RhythmSystemEntities.Data.GameSettings" name="RhythmSystemEntities.Data.GameSettings">
+<area shape="rect" id="Node000001" title="ゲームの設定 基本的にconstの値のみ" alt="" coords="9,164,191,244"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,67,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="33,70,33,104,40,139,45,149,41,151,35,141,27,105,28,70"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="145,5,183,71"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,71,137,141,133,149,128,147,132,139,154,69"/>
+</map>

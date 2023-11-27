@@ -1,0 +1,515 @@
+\doxysection{Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM Class Reference}
+\hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m}{}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m}\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+
+
+DJBM形式の譜面をロードするクラス  
+
+
+
+
+Collaboration diagram for Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a1e9b4a74951a466eb617f380ae6b7116}{Notes\+Generate\+Data\+Loader\+DJBM}} (string \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_aed2c31dc06f5e5bcbfd13cd3ad3cfc6b}{file\+Path}})
+\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_add5c7f697fd3266dbb62625c5c150383}{Load}} ()
+\begin{DoxyCompactList}\small\item\em 譜面のロード \end{DoxyCompactList}\item 
+async Uni\+Task \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a728b6588aa4549ab0da2eaaa444c4397}{Load\+Async}} (int one\+Frame\+Execute\+Num, Cancellation\+Token token)
+\begin{DoxyCompactList}\small\item\em 譜面の非同期ロード テキスト読み取りの行數がone\+Frame\+Execute\+Num超えたら1\+Frame待機 \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_note_property_temp}{Note\+Property\+Temp}} $>$ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_af831c98a491ce65cc96d6501995b8697}{Get\+Note\+Properties}} ()
+\item 
+List$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_b_p_m_change}{BPMChange}} $>$ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_ad115d79d81820806e4770e8e53f644de}{Get\+BPMChanges}} ()
+\item 
+\mbox{\hyperlink{class_rhythm_system_entities_1_1_data_1_1_music_info}{Music\+Info}} \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a4be90e0e4d5276e61445206682809810}{Get\+Music\+Info}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_aa60a0dc080abfd73ca29f358c27d8333}{Load\+Header\+Line}} (string line)
+\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a82bd8d3ef78e932b3f5f948ec5216208}{Load\+Main\+Data\+Line}} (string line)
+\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a7ca3c5a5dea612ec2c9983d02071498b}{Load\+Main\+Lane\+Data}} (string line, float now\+Beat)
+\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a374ca3b376b8df196b16f11b036079d9}{Load\+Main\+Data\+Character}} (char character, float now\+Beat)
+\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a3f00185ee6d2d404114210a1df8c7082}{Load\+Gimmick\+Lane\+Data}} (string line, float now\+Beat)
+\item 
+bool \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_ab9fad3d6da4517cf09a686c08ab8ebf3}{Method\+Pattern\+Exist\+Check}} (string line)
+\item 
+bool \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_ae2636ac63afaae75cc206c5b2d3a5a68}{Comment\+Pattern\+Exist\+Check}} (string line)
+\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a761e0504fd85ef7335d7d019f3b039db}{Execute\+Method}} (string line)
+\item 
+string \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a6a48995e31ca4a31670e53d77a7937ca}{Get\+Header\+Data\+Value}} (string key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_aed2c31dc06f5e5bcbfd13cd3ad3cfc6b}{file\+Path}} = "{}"{}
+\item 
+Dictionary$<$ string, string $>$ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_ac912687c3e7f8a1f886ca077358ff446}{header\+Data}} = new Dictionary$<$string, string$>$()
+\item 
+List$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_note_property_temp}{Note\+Property\+Temp}} $>$ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a3ce28549c780d7e88fb0aceee837072d}{note\+Properties}} = new List$<$\mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_note_property_temp}{Note\+Property\+Temp}}$>$()
+\item 
+List$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_b_p_m_change}{BPMChange}} $>$ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a8f19c384c13911bc7fdf8735419cfa49}{bpm\+Changes}} = new List$<$\mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_b_p_m_change}{BPMChange}}$>$()
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_afd2ccd66edae683e6adfa15dbe13b8c0}{long\+Note\+Begin\+Buffers}} = new float\mbox{[}$\,$\mbox{]} \{-\/1, -\/1, -\/1, -\/1\}
+\item 
+\mbox{\hyperlink{class_rhythm_system_entities_1_1_data_1_1_music_info}{Music\+Info}} \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_af8a4a0e1c759a35c577efaa4e8e7bf7e}{music\+Info}}
+\item 
+bool \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a7e5c830fa806c3cdca8af8deeb3f3ea9}{is\+Main\+Start}} = false
+\item 
+int \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_abb2ef316dcd03e7096196a3d264df4ca}{lane\+Count}} = 0
+\item 
+float \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a75837d8db985cfbc5312109c19250a08}{beat}} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly List$<$ string $>$ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a098736884747a4030b975978ca399867}{header\+Patterns}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+DJBM形式の譜面をロードするクラス 
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00018}{18}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a1e9b4a74951a466eb617f380ae6b7116}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a1e9b4a74951a466eb617f380ae6b7116} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!NotesGenerateDataLoaderDJBM@{NotesGenerateDataLoaderDJBM}}
+\index{NotesGenerateDataLoaderDJBM@{NotesGenerateDataLoaderDJBM}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{NotesGenerateDataLoaderDJBM()}{NotesGenerateDataLoaderDJBM()}}
+{\footnotesize\ttfamily Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+Notes\+Generate\+Data\+Loader\+DJBM (\begin{DoxyParamCaption}\item[{string}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00064}{64}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_ae2636ac63afaae75cc206c5b2d3a5a68}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_ae2636ac63afaae75cc206c5b2d3a5a68} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!CommentPatternExistCheck@{CommentPatternExistCheck}}
+\index{CommentPatternExistCheck@{CommentPatternExistCheck}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{CommentPatternExistCheck()}{CommentPatternExistCheck()}}
+{\footnotesize\ttfamily bool Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+Comment\+Pattern\+Exist\+Check (\begin{DoxyParamCaption}\item[{string}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00421}{421}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_ae2636ac63afaae75cc206c5b2d3a5a68_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a761e0504fd85ef7335d7d019f3b039db}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a761e0504fd85ef7335d7d019f3b039db} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!ExecuteMethod@{ExecuteMethod}}
+\index{ExecuteMethod@{ExecuteMethod}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{ExecuteMethod()}{ExecuteMethod()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+Execute\+Method (\begin{DoxyParamCaption}\item[{string}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00431}{431}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a761e0504fd85ef7335d7d019f3b039db_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_ad115d79d81820806e4770e8e53f644de}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_ad115d79d81820806e4770e8e53f644de} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!GetBPMChanges@{GetBPMChanges}}
+\index{GetBPMChanges@{GetBPMChanges}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{GetBPMChanges()}{GetBPMChanges()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_b_p_m_change}{BPMChange}} $>$ Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+Get\+BPMChanges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_ad115d79d81820806e4770e8e53f644de_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a6a48995e31ca4a31670e53d77a7937ca}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a6a48995e31ca4a31670e53d77a7937ca} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!GetHeaderDataValue@{GetHeaderDataValue}}
+\index{GetHeaderDataValue@{GetHeaderDataValue}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{GetHeaderDataValue()}{GetHeaderDataValue()}}
+{\footnotesize\ttfamily string Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+Get\+Header\+Data\+Value (\begin{DoxyParamCaption}\item[{string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00460}{460}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a6a48995e31ca4a31670e53d77a7937ca_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a4be90e0e4d5276e61445206682809810}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a4be90e0e4d5276e61445206682809810} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!GetMusicInfo@{GetMusicInfo}}
+\index{GetMusicInfo@{GetMusicInfo}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{GetMusicInfo()}{GetMusicInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rhythm_system_entities_1_1_data_1_1_music_info}{Music\+Info}} Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+Get\+Music\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a4be90e0e4d5276e61445206682809810_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_af831c98a491ce65cc96d6501995b8697}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_af831c98a491ce65cc96d6501995b8697} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!GetNoteProperties@{GetNoteProperties}}
+\index{GetNoteProperties@{GetNoteProperties}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{GetNoteProperties()}{GetNoteProperties()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_note_property_temp}{Note\+Property\+Temp}} $>$ Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+Get\+Note\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_af831c98a491ce65cc96d6501995b8697_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_add5c7f697fd3266dbb62625c5c150383}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_add5c7f697fd3266dbb62625c5c150383} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!Load@{Load}}
+\index{Load@{Load}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+譜面のロード 
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00073}{73}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_add5c7f697fd3266dbb62625c5c150383_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_add5c7f697fd3266dbb62625c5c150383_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a728b6588aa4549ab0da2eaaa444c4397}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a728b6588aa4549ab0da2eaaa444c4397} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!LoadAsync@{LoadAsync}}
+\index{LoadAsync@{LoadAsync}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{LoadAsync()}{LoadAsync()}}
+{\footnotesize\ttfamily async Uni\+Task Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+Load\+Async (\begin{DoxyParamCaption}\item[{int}]{one\+Frame\+Execute\+Num,  }\item[{Cancellation\+Token}]{token }\end{DoxyParamCaption})}
+
+
+
+譜面の非同期ロード テキスト読み取りの行數がone\+Frame\+Execute\+Num超えたら1\+Frame待機 
+
+
+\begin{DoxyParams}{Parameters}
+{\em one\+Frame\+Execute\+Num} & 何行読み取りで待機するか\\
+\hline
+{\em token} & キャンセレーショントークン\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00123}{123}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a728b6588aa4549ab0da2eaaa444c4397_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a728b6588aa4549ab0da2eaaa444c4397_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a3f00185ee6d2d404114210a1df8c7082}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a3f00185ee6d2d404114210a1df8c7082} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!LoadGimmickLaneData@{LoadGimmickLaneData}}
+\index{LoadGimmickLaneData@{LoadGimmickLaneData}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{LoadGimmickLaneData()}{LoadGimmickLaneData()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+Load\+Gimmick\+Lane\+Data (\begin{DoxyParamCaption}\item[{string}]{line,  }\item[{float}]{now\+Beat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00306}{306}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a3f00185ee6d2d404114210a1df8c7082_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_aa60a0dc080abfd73ca29f358c27d8333}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_aa60a0dc080abfd73ca29f358c27d8333} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!LoadHeaderLine@{LoadHeaderLine}}
+\index{LoadHeaderLine@{LoadHeaderLine}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{LoadHeaderLine()}{LoadHeaderLine()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+Load\+Header\+Line (\begin{DoxyParamCaption}\item[{string}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00174}{174}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_aa60a0dc080abfd73ca29f358c27d8333_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a374ca3b376b8df196b16f11b036079d9}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a374ca3b376b8df196b16f11b036079d9} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!LoadMainDataCharacter@{LoadMainDataCharacter}}
+\index{LoadMainDataCharacter@{LoadMainDataCharacter}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{LoadMainDataCharacter()}{LoadMainDataCharacter()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+Load\+Main\+Data\+Character (\begin{DoxyParamCaption}\item[{char}]{character,  }\item[{float}]{now\+Beat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00261}{261}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a374ca3b376b8df196b16f11b036079d9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a82bd8d3ef78e932b3f5f948ec5216208}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a82bd8d3ef78e932b3f5f948ec5216208} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!LoadMainDataLine@{LoadMainDataLine}}
+\index{LoadMainDataLine@{LoadMainDataLine}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{LoadMainDataLine()}{LoadMainDataLine()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+Load\+Main\+Data\+Line (\begin{DoxyParamCaption}\item[{string}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00194}{194}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a82bd8d3ef78e932b3f5f948ec5216208_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a82bd8d3ef78e932b3f5f948ec5216208_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a7ca3c5a5dea612ec2c9983d02071498b}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a7ca3c5a5dea612ec2c9983d02071498b} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!LoadMainLaneData@{LoadMainLaneData}}
+\index{LoadMainLaneData@{LoadMainLaneData}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{LoadMainLaneData()}{LoadMainLaneData()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+Load\+Main\+Lane\+Data (\begin{DoxyParamCaption}\item[{string}]{line,  }\item[{float}]{now\+Beat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00228}{228}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a7ca3c5a5dea612ec2c9983d02071498b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a7ca3c5a5dea612ec2c9983d02071498b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_ab9fad3d6da4517cf09a686c08ab8ebf3}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_ab9fad3d6da4517cf09a686c08ab8ebf3} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!MethodPatternExistCheck@{MethodPatternExistCheck}}
+\index{MethodPatternExistCheck@{MethodPatternExistCheck}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{MethodPatternExistCheck()}{MethodPatternExistCheck()}}
+{\footnotesize\ttfamily bool Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+Method\+Pattern\+Exist\+Check (\begin{DoxyParamCaption}\item[{string}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00410}{410}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_ab9fad3d6da4517cf09a686c08ab8ebf3_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a75837d8db985cfbc5312109c19250a08}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a75837d8db985cfbc5312109c19250a08} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!beat@{beat}}
+\index{beat@{beat}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{beat}{beat}}
+{\footnotesize\ttfamily float Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+beat = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00061}{61}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a8f19c384c13911bc7fdf8735419cfa49}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a8f19c384c13911bc7fdf8735419cfa49} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!bpmChanges@{bpmChanges}}
+\index{bpmChanges@{bpmChanges}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{bpmChanges}{bpmChanges}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_b_p_m_change}{BPMChange}}$>$ Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+bpm\+Changes = new List$<$\mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_b_p_m_change}{BPMChange}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00046}{46}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_aed2c31dc06f5e5bcbfd13cd3ad3cfc6b}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_aed2c31dc06f5e5bcbfd13cd3ad3cfc6b} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!filePath@{filePath}}
+\index{filePath@{filePath}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{filePath}{filePath}}
+{\footnotesize\ttfamily string Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+file\+Path = "{}"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00037}{37}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_ac912687c3e7f8a1f886ca077358ff446}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_ac912687c3e7f8a1f886ca077358ff446} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!headerData@{headerData}}
+\index{headerData@{headerData}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{headerData}{headerData}}
+{\footnotesize\ttfamily Dictionary$<$string, string$>$ Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+header\+Data = new Dictionary$<$string, string$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00040}{40}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a098736884747a4030b975978ca399867}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a098736884747a4030b975978ca399867} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!headerPatterns@{headerPatterns}}
+\index{headerPatterns@{headerPatterns}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{headerPatterns}{headerPatterns}}
+{\footnotesize\ttfamily readonly List$<$string$>$ Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+header\+Patterns\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{new}\ List<string>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{@"{}\#(GENRE)\ (.*)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{@"{}\#(TITLE)\ (.*)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{@"{}\#(SUBTITLE)\ (.*)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{@"{}\#(ARTIST)\ (.*)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{@"{}\#(SUBARTIST)\ (.*)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{@"{}\#(NOTESARTIST)\ (.*)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{@"{}\#(BPM)\ (.*)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{@"{}\#(RANK)\ (.*)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{@"{}\#(PLAYLEVEL)\ (.*)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{@"{}(OFFSET)\ (.*)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{@"{}(COMMENT)\ "{}"{}(.*)"{}"{}"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00021}{21}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a7e5c830fa806c3cdca8af8deeb3f3ea9}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a7e5c830fa806c3cdca8af8deeb3f3ea9} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!isMainStart@{isMainStart}}
+\index{isMainStart@{isMainStart}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{isMainStart}{isMainStart}}
+{\footnotesize\ttfamily bool Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+is\+Main\+Start = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00055}{55}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_abb2ef316dcd03e7096196a3d264df4ca}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_abb2ef316dcd03e7096196a3d264df4ca} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!laneCount@{laneCount}}
+\index{laneCount@{laneCount}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{laneCount}{laneCount}}
+{\footnotesize\ttfamily int Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+lane\+Count = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00058}{58}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_afd2ccd66edae683e6adfa15dbe13b8c0}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_afd2ccd66edae683e6adfa15dbe13b8c0} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!longNoteBeginBuffers@{longNoteBeginBuffers}}
+\index{longNoteBeginBuffers@{longNoteBeginBuffers}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{longNoteBeginBuffers}{longNoteBeginBuffers}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+long\+Note\+Begin\+Buffers = new float\mbox{[}$\,$\mbox{]} \{-\/1, -\/1, -\/1, -\/1\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00049}{49}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_af8a4a0e1c759a35c577efaa4e8e7bf7e}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_af8a4a0e1c759a35c577efaa4e8e7bf7e} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!musicInfo@{musicInfo}}
+\index{musicInfo@{musicInfo}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{musicInfo}{musicInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rhythm_system_entities_1_1_data_1_1_music_info}{Music\+Info}} Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+music\+Info\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00052}{52}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a3ce28549c780d7e88fb0aceee837072d}\label{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m_a3ce28549c780d7e88fb0aceee837072d} 
+\index{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}!noteProperties@{noteProperties}}
+\index{noteProperties@{noteProperties}!RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM@{RhythmSystemEntities.System.Loader.NotesGenerateDataLoaderDJBM}}
+\doxysubsubsection{\texorpdfstring{noteProperties}{noteProperties}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_note_property_temp}{Note\+Property\+Temp}}$>$ Rhythm\+System\+Entities.\+System.\+Loader.\+Notes\+Generate\+Data\+Loader\+DJBM.\+note\+Properties = new List$<$\mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_note_property_temp}{Note\+Property\+Temp}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source_l00043}{43}} of file \mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs_source}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/git/\+Entities\+Rhythm\+Game\+System/\+Entities\+Rhythm\+Game\+System/\+Assets/\+Entities\+Rhythm\+Game/\+Scripts/\+System/\+Loader/\mbox{\hyperlink{_notes_generate_data_loader_d_j_b_m_8cs}{Notes\+Generate\+Data\+Loader\+DJBM.\+cs}}\end{DoxyCompactItemize}

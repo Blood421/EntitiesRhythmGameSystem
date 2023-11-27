@@ -1,0 +1,19 @@
+<map id="MainGameActions.MainActions.SetCallbacks" name="MainGameActions.MainActions.SetCallbacks">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,104,217,145"/>
+<area shape="rect" id="Node000002" href="$struct_main_game_actions_1_1_main_actions.html#acfdf94ef334e693df143fe44a78cd0a8" title=" " alt="" coords="265,71,476,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,108,249,104,249,109,217,113"/>
+<area shape="rect" id="Node000007" href="$struct_main_game_actions_1_1_main_actions.html#affdbb435ab842608eb07bcf3c60ee84e" title=" " alt="" coords="265,136,476,177"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="217,135,249,139,249,144,217,140"/>
+<area shape="rect" id="Node000003" href="$interface_main_game_actions_1_1_i_main_actions.html#a813ac11689286bbc529e2eaeb61b717a" title=" " alt="" coords="524,136,739,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="455,109,534,129,532,134,454,115"/>
+<area shape="rect" id="Node000004" href="$interface_main_game_actions_1_1_i_main_actions.html#abf53ad41a268a626330343eaf182a67e" title=" " alt="" coords="524,201,739,242"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="456,110,478,122,494,139,502,155,510,171,526,186,534,192,531,196,522,190,506,174,498,158,489,142,474,126,453,114"/>
+<area shape="rect" id="Node000005" href="$interface_main_game_actions_1_1_i_main_actions.html#ad8ad00bf32e801d44add057d633eb991" title=" " alt="" coords="524,5,739,46"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="454,67,532,48,534,53,455,73"/>
+<area shape="rect" id="Node000006" href="$interface_main_game_actions_1_1_i_main_actions.html#a9c87b75006f49d57b86b03163cf3882d" title=" " alt="" coords="524,71,739,111"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="477,88,509,88,509,94,477,94"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="477,154,509,154,509,159,477,159"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="455,175,534,194,532,200,454,180"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="453,133,474,121,489,106,498,90,506,73,522,57,531,51,534,56,526,61,510,76,502,92,494,109,478,125,456,138"/>
+<area shape="poly" id="edge10_Node000007_Node000006" title=" " alt="" coords="454,133,532,113,534,118,455,138"/>
+</map>

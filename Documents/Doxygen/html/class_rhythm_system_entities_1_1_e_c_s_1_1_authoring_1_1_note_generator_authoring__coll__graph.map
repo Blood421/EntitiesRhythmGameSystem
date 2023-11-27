@@ -1,0 +1,7 @@
+<map id="RhythmSystemEntities.ECS.Authoring.NoteGeneratorAuthoring" name="RhythmSystemEntities.ECS.Authoring.NoteGeneratorAuthoring">
+<area shape="rect" id="Node000001" title="ノーツ生成設定のエンティティ変換用" alt="" coords="12,179,224,259"/>
+<area shape="rect" id="Node000002" href="$class_mono_behaviour.html" title=" " alt="" coords="5,5,111,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,84,108,178,103,180,71,86"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="135,5,224,71"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,71,139,164,134,162,166,69"/>
+</map>

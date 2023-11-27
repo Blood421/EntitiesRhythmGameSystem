@@ -1,0 +1,7 @@
+<map id="MainGameActions.MainActions.Get" name="MainGameActions.MainActions.Get">
+<area shape="rect" id="Node000001" title=" " alt="" coords="265,46,497,72"/>
+<area shape="rect" id="Node000002" href="$struct_main_game_actions_1_1_main_actions.html#a38abb5ab5faf6f1bf8285b779979c6b2" title=" " alt="" coords="5,5,217,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="256,46,217,41,217,36,257,41"/>
+<area shape="rect" id="Node000003" href="$struct_main_game_actions_1_1_main_actions.html#ab486f8a483104266e6bc29e7b86cf3b5" title=" " alt="" coords="5,71,217,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="252,77,217,81,217,76,251,72"/>
+</map>

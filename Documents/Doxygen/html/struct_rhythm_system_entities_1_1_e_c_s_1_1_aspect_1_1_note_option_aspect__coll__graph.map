@@ -1,0 +1,9 @@
+<map id="RhythmSystemEntities.ECS.Aspect.NoteOptionAspect" name="RhythmSystemEntities.ECS.Aspect.NoteOptionAspect">
+<area shape="rect" id="Node000001" title="曲ごとのオプション用のアスペクト" alt="" coords="101,148,282,268"/>
+<area shape="rect" id="Node000002" href="$class_i_aspect.html" title=" " alt="" coords="5,13,63,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,84,136,147,132,151,71,88"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="87,13,296,78"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,78,194,131,189,131,189,78"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="321,5,510,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="363,87,289,141,285,136,360,83"/>
+</map>

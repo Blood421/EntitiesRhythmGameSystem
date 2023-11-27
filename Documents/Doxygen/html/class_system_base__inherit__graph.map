@@ -1,0 +1,11 @@
+<map id="SystemBase" name="SystemBase">
+<area shape="rect" id="Node000001" title=" " alt="" coords="410,5,499,71"/>
+<area shape="rect" id="Node000002" href="$class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_all_data_spawn_system.html" title="ノーツやPresenter,Generatorを生成するSystem" alt="" coords="5,189,227,309"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="396,56,319,81,278,99,240,121,199,154,163,191,159,187,195,150,237,116,276,94,317,76,395,51"/>
+<area shape="rect" id="Node000003" href="$class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system.html" title="ノーツの入力判定と通り過ぎ判定をするシステム" alt="" coords="251,119,432,379"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="433,85,414,120,409,118,428,82"/>
+<area shape="rect" id="Node000004" href="$class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_option_presenter_system.html" title="プレゼンターにオプションデータをデリバリーするシステム" alt="" coords="456,199,683,299"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="481,82,545,198,540,200,477,85"/>
+<area shape="rect" id="Node000005" href="$class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system.html" title="Mono側からECS側にデータを持っていくためのSystem." alt="" coords="707,179,898,319"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="514,47,603,71,651,91,696,116,730,145,759,177,755,181,726,148,693,121,649,96,602,77,513,52"/>
+</map>

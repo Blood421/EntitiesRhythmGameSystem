@@ -1,0 +1,29 @@
+<map id="RhythmSystemEntities.System.Loader.NotesGenerateData.DJBMLoadAsync" name="RhythmSystemEntities.System.Loader.NotesGenerateData.DJBMLoadAsync">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,133,292,174"/>
+<area shape="rect" id="Node000002" href="$class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m.html#ad115d79d81820806e4770e8e53f644de" title=" " alt="" coords="340,5,601,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,130,339,71,358,64,360,69,341,76,197,135"/>
+<area shape="rect" id="Node000003" href="$class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m.html#a4be90e0e4d5276e61445206682809810" title=" " alt="" coords="340,85,601,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="292,133,324,129,324,134,292,138"/>
+<area shape="rect" id="Node000004" href="$class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m.html#af831c98a491ce65cc96d6501995b8697" title=" " alt="" coords="340,165,601,221"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="292,168,324,172,324,178,292,174"/>
+<area shape="rect" id="Node000005" href="$class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m.html#a728b6588aa4549ab0da2eaaa444c4397" title="譜面の非同期ロード テキスト読み取りの行數がoneFrameExecuteNum超えたら1Frame待機" alt="" coords="340,245,601,301"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="197,172,341,231,360,237,358,242,339,236,195,176"/>
+<area shape="rect" id="Node000006" href="$class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m.html#a6a48995e31ca4a31670e53d77a7937ca" title=" " alt="" coords="649,165,910,221"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="580,242,654,223,655,228,581,247"/>
+<area shape="rect" id="Node000007" href="$class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m.html#aa60a0dc080abfd73ca29f358c27d8333" title=" " alt="" coords="649,245,910,301"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="601,271,634,271,634,276,601,276"/>
+<area shape="rect" id="Node000008" href="$class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m.html#a82bd8d3ef78e932b3f5f948ec5216208" title=" " alt="" coords="649,325,910,381"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="581,299,655,318,654,323,580,304"/>
+<area shape="rect" id="Node000009" href="$class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m.html#ae2636ac63afaae75cc206c5b2d3a5a68" title=" " alt="" coords="958,165,1220,221"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="891,323,909,311,925,292,932,272,939,252,957,231,962,227,965,231,960,235,944,254,937,274,929,295,912,315,894,327"/>
+<area shape="rect" id="Node000010" href="$class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m.html#a761e0504fd85ef7335d7d019f3b039db" title=" " alt="" coords="958,245,1220,301"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="889,322,963,303,965,308,891,327"/>
+<area shape="rect" id="Node000011" href="$class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m.html#a3f00185ee6d2d404114210a1df8c7082" title=" " alt="" coords="958,325,1220,381"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="911,351,943,351,943,356,911,356"/>
+<area shape="rect" id="Node000012" href="$class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m.html#a7ca3c5a5dea612ec2c9983d02071498b" title=" " alt="" coords="958,405,1220,461"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="891,379,965,398,963,403,889,384"/>
+<area shape="rect" id="Node000014" href="$class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m.html#ab9fad3d6da4517cf09a686c08ab8ebf3" title=" " alt="" coords="958,485,1220,541"/>
+<area shape="poly" id="edge13_Node000008_Node000014" title=" " alt="" coords="817,379,882,425,960,471,973,477,971,482,957,476,879,430,814,383"/>
+<area shape="rect" id="Node000013" href="$class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_loader_d_j_b_m.html#a374ca3b376b8df196b16f11b036079d9" title=" " alt="" coords="1268,405,1529,461"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1220,431,1252,431,1252,436,1220,436"/>
+</map>

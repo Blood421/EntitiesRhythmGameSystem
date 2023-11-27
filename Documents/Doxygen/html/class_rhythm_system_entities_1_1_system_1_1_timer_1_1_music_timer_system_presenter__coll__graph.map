@@ -1,0 +1,20 @@
+<map id="RhythmSystemEntities.System.Timer.MusicTimerSystemPresenter" name="RhythmSystemEntities.System.Timer.MusicTimerSystemPresenter">
+<area shape="rect" id="Node000001" title="曲タイマーからECSに時間を送るクラス" alt="" coords="170,572,389,652"/>
+<area shape="rect" id="Node000002" href="$class_mono_behaviour.html" title=" " alt="" coords="5,5,111,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,85,70,169,87,277,101,336,119,395,142,453,170,507,195,541,226,570,222,574,191,545,165,510,137,455,114,397,96,337,82,278,65,169,57,86"/>
+<area shape="rect" id="Node000003" href="$class_rhythm_system_entities_1_1_system_1_1_timer_1_1_music_timer.html" title="オーディオデータをタイマーとして扱うクラス" alt="" coords="180,149,379,509"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="93,81,182,197,178,200,89,84"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="282,508,282,555,277,555,277,508"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="135,5,223,71"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="184,70,194,124,196,131,191,133,188,125,179,71"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="261,5,298,71"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="282,70,282,132,277,132,277,70"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="332,5,493,71"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="410,71,395,126,388,143,383,141,390,124,405,70"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="517,5,719,71"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="555,73,443,127,416,137,393,151,393,151,389,147,390,147,414,132,441,122,553,68"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="743,5,781,71"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="744,64,733,73,693,95,660,108,580,127,528,133,485,131,443,133,420,139,394,151,392,147,418,134,442,128,485,126,528,128,579,122,658,103,691,91,730,68,741,60"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="403,296,430,361"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="419,361,414,430,406,471,394,510,377,538,355,562,352,559,373,535,389,508,401,469,408,430,414,361"/>
+</map>

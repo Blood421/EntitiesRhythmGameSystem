@@ -1,0 +1,312 @@
+\doxysection{Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Generator\+Aspect Struct Reference}
+\hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect}{}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect}\index{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}}
+
+
+ノーツ生成用エンティティのアスペクト  
+
+
+
+
+Inheritance diagram for Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Generator\+Aspect\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Generator\+Aspect\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a099d2a57a26ef94bf423c2659303f320}{Init}} (int music\+ID, Native\+Array$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_note_property_temp}{Note\+Property\+Temp}} $>$ note\+Property\+Temps, Native\+Array$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_b_p_m_change}{BPMChange}} $>$ bpm\+Changes)
+\begin{DoxyCompactList}\small\item\em Generator生成後の初期化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_aeae7eca3ba976d9641ab212fa953ecc2}{Init\+Complete}} ()
+\begin{DoxyCompactList}\small\item\em ノーツの生成が完了した \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a2bb0ddbdeaa5a83b148e56feebf6f681}{Get\+Music\+ID}} ()
+\begin{DoxyCompactList}\small\item\em music\+IDの取得 \end{DoxyCompactList}\item 
+Blob\+Asset\+Reference$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_b_p_m_changes_blob}{BPMChanges\+Blob}} $>$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_ae932e245fc7cc48ad95b8a5761f68581}{Get\+BPMChanges\+Blob\+Ref}} ()
+\begin{DoxyCompactList}\small\item\em BPMChangesの\+Blob\+Assetの\+Refを取得 \end{DoxyCompactList}\item 
+Blob\+Asset\+Reference$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_property_temps_blob}{Note\+Property\+Temps\+Blob}} $>$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a2882b9e3af28237e513fc9c6a42c8777}{Get\+Note\+Property\+Temps\+Blob\+Ref}} ()
+\begin{DoxyCompactList}\small\item\em Note\+Property\+Tempsの\+Blob\+Assetの\+Refを取得 \end{DoxyCompactList}\item 
+Entity \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_ac9a3b2eb6b00ec453a4b5d86a94742a6}{Get\+Single\+Note\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em シングルノーツの\+Entityの取得 \end{DoxyCompactList}\item 
+Entity \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a0b8912cc65825977564bd23fe0de0f52}{Get\+Long\+Note\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em ロングノーツの\+Entityの取得 \end{DoxyCompactList}\item 
+Entity \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a082ecf1da618461ac244d05b1ace88b6}{Get\+Long\+Note\+Edge\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em ロングノーツ端の\+Entityの取得 \end{DoxyCompactList}\item 
+Entity \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a8ddd432fae57c2783216a99a9f26aaf0}{Get\+Note\+Presenter\+Data\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Note\+Presenterの\+Entityの取得 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_aa0edbb67aec8395b89a91f40bdacd911}{Get\+Is\+Init}} ()
+\begin{DoxyCompactList}\small\item\em ノーツの生成が終わっているかどうかの取得 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly Entity \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a4e59594320df7554121ee5fb12819f85}{entity}}
+\item 
+readonly Ref\+RW$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data}{Note\+Generator\+Data}} $>$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a233fec79bc44fc40c426804674da542c}{note\+Generator\+Data\+RW}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+ノーツ生成用エンティティのアスペクト 
+
+Definition at line \mbox{\hyperlink{_note_generator_aspect_8cs_source_l00011}{11}} of file \mbox{\hyperlink{_note_generator_aspect_8cs_source}{Note\+Generator\+Aspect.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_ae932e245fc7cc48ad95b8a5761f68581}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_ae932e245fc7cc48ad95b8a5761f68581} 
+\index{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}!GetBPMChangesBlobRef@{GetBPMChangesBlobRef}}
+\index{GetBPMChangesBlobRef@{GetBPMChangesBlobRef}!RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}}
+\doxysubsubsection{\texorpdfstring{GetBPMChangesBlobRef()}{GetBPMChangesBlobRef()}}
+{\footnotesize\ttfamily Blob\+Asset\+Reference$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_b_p_m_changes_blob}{BPMChanges\+Blob}} $>$ Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Generator\+Aspect.\+Get\+BPMChanges\+Blob\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+BPMChangesの\+Blob\+Assetの\+Refを取得 
+
+\begin{DoxyReturn}{Returns}
+BPMChangesの\+Blob\+Assetの\+Ref
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_ae932e245fc7cc48ad95b8a5761f68581_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_aa0edbb67aec8395b89a91f40bdacd911}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_aa0edbb67aec8395b89a91f40bdacd911} 
+\index{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}!GetIsInit@{GetIsInit}}
+\index{GetIsInit@{GetIsInit}!RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}}
+\doxysubsubsection{\texorpdfstring{GetIsInit()}{GetIsInit()}}
+{\footnotesize\ttfamily bool Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Generator\+Aspect.\+Get\+Is\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ノーツの生成が終わっているかどうかの取得 
+
+\begin{DoxyReturn}{Returns}
+ノーツの生成が終わっているかどうか
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_aa0edbb67aec8395b89a91f40bdacd911_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a082ecf1da618461ac244d05b1ace88b6}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a082ecf1da618461ac244d05b1ace88b6} 
+\index{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}!GetLongNoteEdgeEntity@{GetLongNoteEdgeEntity}}
+\index{GetLongNoteEdgeEntity@{GetLongNoteEdgeEntity}!RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}}
+\doxysubsubsection{\texorpdfstring{GetLongNoteEdgeEntity()}{GetLongNoteEdgeEntity()}}
+{\footnotesize\ttfamily Entity Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Generator\+Aspect.\+Get\+Long\+Note\+Edge\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ロングノーツ端の\+Entityの取得 
+
+\begin{DoxyReturn}{Returns}
+ロングノーツ端の\+Entity
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a082ecf1da618461ac244d05b1ace88b6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a0b8912cc65825977564bd23fe0de0f52}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a0b8912cc65825977564bd23fe0de0f52} 
+\index{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}!GetLongNoteEntity@{GetLongNoteEntity}}
+\index{GetLongNoteEntity@{GetLongNoteEntity}!RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}}
+\doxysubsubsection{\texorpdfstring{GetLongNoteEntity()}{GetLongNoteEntity()}}
+{\footnotesize\ttfamily Entity Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Generator\+Aspect.\+Get\+Long\+Note\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ロングノーツの\+Entityの取得 
+
+\begin{DoxyReturn}{Returns}
+ロングノーツの\+Entity
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a0b8912cc65825977564bd23fe0de0f52_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a2bb0ddbdeaa5a83b148e56feebf6f681}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a2bb0ddbdeaa5a83b148e56feebf6f681} 
+\index{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}!GetMusicID@{GetMusicID}}
+\index{GetMusicID@{GetMusicID}!RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}}
+\doxysubsubsection{\texorpdfstring{GetMusicID()}{GetMusicID()}}
+{\footnotesize\ttfamily int Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Generator\+Aspect.\+Get\+Music\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+music\+IDの取得 
+
+\begin{DoxyReturn}{Returns}
+ノーツの\+Music\+ID
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a2bb0ddbdeaa5a83b148e56feebf6f681_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a8ddd432fae57c2783216a99a9f26aaf0}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a8ddd432fae57c2783216a99a9f26aaf0} 
+\index{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}!GetNotePresenterDataEntity@{GetNotePresenterDataEntity}}
+\index{GetNotePresenterDataEntity@{GetNotePresenterDataEntity}!RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}}
+\doxysubsubsection{\texorpdfstring{GetNotePresenterDataEntity()}{GetNotePresenterDataEntity()}}
+{\footnotesize\ttfamily Entity Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Generator\+Aspect.\+Get\+Note\+Presenter\+Data\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Note\+Presenterの\+Entityの取得 
+
+\begin{DoxyReturn}{Returns}
+Note\+Presenterの\+Entity
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a8ddd432fae57c2783216a99a9f26aaf0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a2882b9e3af28237e513fc9c6a42c8777}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a2882b9e3af28237e513fc9c6a42c8777} 
+\index{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}!GetNotePropertyTempsBlobRef@{GetNotePropertyTempsBlobRef}}
+\index{GetNotePropertyTempsBlobRef@{GetNotePropertyTempsBlobRef}!RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}}
+\doxysubsubsection{\texorpdfstring{GetNotePropertyTempsBlobRef()}{GetNotePropertyTempsBlobRef()}}
+{\footnotesize\ttfamily Blob\+Asset\+Reference$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_property_temps_blob}{Note\+Property\+Temps\+Blob}} $>$ Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Generator\+Aspect.\+Get\+Note\+Property\+Temps\+Blob\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Note\+Property\+Tempsの\+Blob\+Assetの\+Refを取得 
+
+\begin{DoxyReturn}{Returns}
+Note\+Property\+Tempsの\+Blob\+Assetの\+Ref
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a2882b9e3af28237e513fc9c6a42c8777_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_ac9a3b2eb6b00ec453a4b5d86a94742a6}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_ac9a3b2eb6b00ec453a4b5d86a94742a6} 
+\index{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}!GetSingleNoteEntity@{GetSingleNoteEntity}}
+\index{GetSingleNoteEntity@{GetSingleNoteEntity}!RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}}
+\doxysubsubsection{\texorpdfstring{GetSingleNoteEntity()}{GetSingleNoteEntity()}}
+{\footnotesize\ttfamily Entity Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Generator\+Aspect.\+Get\+Single\+Note\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+シングルノーツの\+Entityの取得 
+
+\begin{DoxyReturn}{Returns}
+シングルノーツの\+Entity
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_ac9a3b2eb6b00ec453a4b5d86a94742a6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a099d2a57a26ef94bf423c2659303f320}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a099d2a57a26ef94bf423c2659303f320} 
+\index{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}!Init@{Init}}
+\index{Init@{Init}!RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Generator\+Aspect.\+Init (\begin{DoxyParamCaption}\item[{int}]{music\+ID,  }\item[{Native\+Array$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_note_property_temp}{Note\+Property\+Temp}} $>$}]{note\+Property\+Temps,  }\item[{Native\+Array$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_b_p_m_change}{BPMChange}} $>$}]{bpm\+Changes }\end{DoxyParamCaption})}
+
+
+
+Generator生成後の初期化 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music\+ID} & Music\+ID\\
+\hline
+{\em note\+Property\+Temps} & Note\+Property\+Tempの\+Native\+Array\\
+\hline
+{\em bpm\+Changes} & BPMChangeの\+Native\+Array\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_note_generator_aspect_8cs_source_l00024}{24}} of file \mbox{\hyperlink{_note_generator_aspect_8cs_source}{Note\+Generator\+Aspect.\+cs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a099d2a57a26ef94bf423c2659303f320_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_aeae7eca3ba976d9641ab212fa953ecc2}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_aeae7eca3ba976d9641ab212fa953ecc2} 
+\index{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}!InitComplete@{InitComplete}}
+\index{InitComplete@{InitComplete}!RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}}
+\doxysubsubsection{\texorpdfstring{InitComplete()}{InitComplete()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Generator\+Aspect.\+Init\+Complete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ノーツの生成が完了した 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_aeae7eca3ba976d9641ab212fa953ecc2_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a4e59594320df7554121ee5fb12819f85}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a4e59594320df7554121ee5fb12819f85} 
+\index{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}!entity@{entity}}
+\index{entity@{entity}!RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}}
+\doxysubsubsection{\texorpdfstring{entity}{entity}}
+{\footnotesize\ttfamily readonly Entity Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Generator\+Aspect.\+entity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_note_generator_aspect_8cs_source_l00014}{14}} of file \mbox{\hyperlink{_note_generator_aspect_8cs_source}{Note\+Generator\+Aspect.\+cs}}.
+
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a233fec79bc44fc40c426804674da542c}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect_a233fec79bc44fc40c426804674da542c} 
+\index{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}!noteGeneratorDataRW@{noteGeneratorDataRW}}
+\index{noteGeneratorDataRW@{noteGeneratorDataRW}!RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect@{RhythmSystemEntities.ECS.Aspect.NoteGeneratorAspect}}
+\doxysubsubsection{\texorpdfstring{noteGeneratorDataRW}{noteGeneratorDataRW}}
+{\footnotesize\ttfamily readonly Ref\+RW$<$\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_generator_data}{Note\+Generator\+Data}}$>$ Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Generator\+Aspect.\+note\+Generator\+Data\+RW\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_note_generator_aspect_8cs_source_l00016}{16}} of file \mbox{\hyperlink{_note_generator_aspect_8cs_source}{Note\+Generator\+Aspect.\+cs}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/git/\+Entities\+Rhythm\+Game\+System/\+Entities\+Rhythm\+Game\+System/\+Assets/\+Entities\+Rhythm\+Game/\+Scripts/\+ECS/\+Aspect/\mbox{\hyperlink{_note_generator_aspect_8cs}{Note\+Generator\+Aspect.\+cs}}\end{DoxyCompactItemize}

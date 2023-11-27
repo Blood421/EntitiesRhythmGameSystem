@@ -1,0 +1,15 @@
+<map id="RhythmSystemEntities.ECS.System.NoteJudgeSystem.JudgeResultData" name="RhythmSystemEntities.ECS.System.NoteJudgeSystem.JudgeResultData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="41,322,314,402"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,171,32,236"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="22,235,27,267,42,296,55,310,51,313,37,299,22,269,16,236"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="105,171,143,236"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="122,236,122,266,128,297,132,306,127,308,123,298,116,267,117,236"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="208,171,253,236"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="224,237,204,299,201,306,196,305,199,297,219,235"/>
+<area shape="rect" id="Node000005" href="$struct_rhythm_system_entities_1_1_data_1_1_game_settings.html" title="ゲームの設定 基本的にconstの値のみ" alt="" coords="278,164,461,244"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="357,245,342,273,321,300,301,315,298,311,317,296,338,270,353,242"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="275,5,336,71"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="303,70,302,104,310,139,315,149,310,151,304,141,297,105,297,70"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="415,5,452,71"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="429,71,406,141,403,149,398,147,402,139,424,69"/>
+</map>

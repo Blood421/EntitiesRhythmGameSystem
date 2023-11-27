@@ -1,0 +1,222 @@
+\doxysection{Rhythm\+System\+Entities.\+System.\+Judge.\+Input\+Judge\+System\+Presenter Class Reference}
+\hypertarget{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter}{}\label{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter}\index{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter@{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter}}
+
+
+判定データを\+ECS側に流すクラス  
+
+
+
+
+Inheritance diagram for Rhythm\+System\+Entities.\+System.\+Judge.\+Input\+Judge\+System\+Presenter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rhythm\+System\+Entities.\+System.\+Judge.\+Input\+Judge\+System\+Presenter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_1_1_lane_input_data}{Lane\+Input\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_ad8a00d8dcf7588133b212ecd92dd9547}{Lane\+Input}} (int lane\+Num, bool value)
+\begin{DoxyCompactList}\small\item\em レーンの入力 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_ab5c8a6baf9d19eff4cb19307915bc4b6}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_a169ad4139438d7bb429e316ef906be50}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_ace4dcfea81ba993a2b26dfdc1a171d9d}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_a0e00208e313a189f6c0b96d072e9c67b}{Send\+Input\+Data\+To\+ECS}} ()
+\begin{DoxyCompactList}\small\item\em データに変更があったら(入力があったら)ECS側に送る \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_ab769534cab2ba02b4780ab40db6f6e82}{music\+ID}} = 0
+\item 
+bool \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_a03416374e8576709b18fb6994979ee15}{is\+Auto}}
+\item 
+\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_1_1_lane_input_data}{Lane\+Input\+Data}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_a522cba92d9e625ccfd0b2b8efd21918e}{lane\+Input\+Data\+Array}}
+\item 
+\mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system}{Note\+Judge\+System}} \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_ae991724af5a2c725b9da035edf478118}{note\+Judge\+System}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+判定データを\+ECS側に流すクラス 
+
+Definition at line \mbox{\hyperlink{_input_judge_system_presenter_8cs_source_l00013}{13}} of file \mbox{\hyperlink{_input_judge_system_presenter_8cs_source}{Input\+Judge\+System\+Presenter.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_ab5c8a6baf9d19eff4cb19307915bc4b6}\label{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_ab5c8a6baf9d19eff4cb19307915bc4b6} 
+\index{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter@{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter}!Awake@{Awake}}
+\index{Awake@{Awake}!RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter@{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Judge.\+Input\+Judge\+System\+Presenter.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_input_judge_system_presenter_8cs_source_l00033}{33}} of file \mbox{\hyperlink{_input_judge_system_presenter_8cs_source}{Input\+Judge\+System\+Presenter.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_ad8a00d8dcf7588133b212ecd92dd9547}\label{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_ad8a00d8dcf7588133b212ecd92dd9547} 
+\index{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter@{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter}!LaneInput@{LaneInput}}
+\index{LaneInput@{LaneInput}!RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter@{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter}}
+\doxysubsubsection{\texorpdfstring{LaneInput()}{LaneInput()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Judge.\+Input\+Judge\+System\+Presenter.\+Lane\+Input (\begin{DoxyParamCaption}\item[{int}]{lane\+Num,  }\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+
+レーンの入力 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lane\+Num} & レーン\\
+\hline
+{\em value} & 押したtrue,話したfalse\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_input_judge_system_presenter_8cs_source_l00062}{62}} of file \mbox{\hyperlink{_input_judge_system_presenter_8cs_source}{Input\+Judge\+System\+Presenter.\+cs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_ad8a00d8dcf7588133b212ecd92dd9547_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_a0e00208e313a189f6c0b96d072e9c67b}\label{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_a0e00208e313a189f6c0b96d072e9c67b} 
+\index{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter@{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter}!SendInputDataToECS@{SendInputDataToECS}}
+\index{SendInputDataToECS@{SendInputDataToECS}!RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter@{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter}}
+\doxysubsubsection{\texorpdfstring{SendInputDataToECS()}{SendInputDataToECS()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Judge.\+Input\+Judge\+System\+Presenter.\+Send\+Input\+Data\+To\+ECS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+データに変更があったら(入力があったら)ECS側に送る 
+
+
+
+Definition at line \mbox{\hyperlink{_input_judge_system_presenter_8cs_source_l00077}{77}} of file \mbox{\hyperlink{_input_judge_system_presenter_8cs_source}{Input\+Judge\+System\+Presenter.\+cs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_a0e00208e313a189f6c0b96d072e9c67b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_a0e00208e313a189f6c0b96d072e9c67b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_a169ad4139438d7bb429e316ef906be50}\label{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_a169ad4139438d7bb429e316ef906be50} 
+\index{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter@{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter}!Start@{Start}}
+\index{Start@{Start}!RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter@{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Judge.\+Input\+Judge\+System\+Presenter.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_input_judge_system_presenter_8cs_source_l00045}{45}} of file \mbox{\hyperlink{_input_judge_system_presenter_8cs_source}{Input\+Judge\+System\+Presenter.\+cs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_a169ad4139438d7bb429e316ef906be50_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_ace4dcfea81ba993a2b26dfdc1a171d9d}\label{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_ace4dcfea81ba993a2b26dfdc1a171d9d} 
+\index{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter@{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter}!Update@{Update}}
+\index{Update@{Update}!RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter@{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+System.\+Judge.\+Input\+Judge\+System\+Presenter.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_input_judge_system_presenter_8cs_source_l00069}{69}} of file \mbox{\hyperlink{_input_judge_system_presenter_8cs_source}{Input\+Judge\+System\+Presenter.\+cs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_ace4dcfea81ba993a2b26dfdc1a171d9d_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_a03416374e8576709b18fb6994979ee15}\label{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_a03416374e8576709b18fb6994979ee15} 
+\index{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter@{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter}!isAuto@{isAuto}}
+\index{isAuto@{isAuto}!RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter@{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter}}
+\doxysubsubsection{\texorpdfstring{isAuto}{isAuto}}
+{\footnotesize\ttfamily bool Rhythm\+System\+Entities.\+System.\+Judge.\+Input\+Judge\+System\+Presenter.\+is\+Auto\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_input_judge_system_presenter_8cs_source_l00029}{29}} of file \mbox{\hyperlink{_input_judge_system_presenter_8cs_source}{Input\+Judge\+System\+Presenter.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_a522cba92d9e625ccfd0b2b8efd21918e}\label{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_a522cba92d9e625ccfd0b2b8efd21918e} 
+\index{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter@{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter}!laneInputDataArray@{laneInputDataArray}}
+\index{laneInputDataArray@{laneInputDataArray}!RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter@{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter}}
+\doxysubsubsection{\texorpdfstring{laneInputDataArray}{laneInputDataArray}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_1_1_lane_input_data}{Lane\+Input\+Data}} \mbox{[}$\,$\mbox{]} Rhythm\+System\+Entities.\+System.\+Judge.\+Input\+Judge\+System\+Presenter.\+lane\+Input\+Data\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_input_judge_system_presenter_8cs_source_l00030}{30}} of file \mbox{\hyperlink{_input_judge_system_presenter_8cs_source}{Input\+Judge\+System\+Presenter.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_ab769534cab2ba02b4780ab40db6f6e82}\label{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_ab769534cab2ba02b4780ab40db6f6e82} 
+\index{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter@{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter}!musicID@{musicID}}
+\index{musicID@{musicID}!RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter@{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter}}
+\doxysubsubsection{\texorpdfstring{musicID}{musicID}}
+{\footnotesize\ttfamily int Rhythm\+System\+Entities.\+System.\+Judge.\+Input\+Judge\+System\+Presenter.\+music\+ID = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_input_judge_system_presenter_8cs_source_l00028}{28}} of file \mbox{\hyperlink{_input_judge_system_presenter_8cs_source}{Input\+Judge\+System\+Presenter.\+cs}}.
+
+\Hypertarget{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_ae991724af5a2c725b9da035edf478118}\label{class_rhythm_system_entities_1_1_system_1_1_judge_1_1_input_judge_system_presenter_ae991724af5a2c725b9da035edf478118} 
+\index{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter@{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter}!noteJudgeSystem@{noteJudgeSystem}}
+\index{noteJudgeSystem@{noteJudgeSystem}!RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter@{RhythmSystemEntities.System.Judge.InputJudgeSystemPresenter}}
+\doxysubsubsection{\texorpdfstring{noteJudgeSystem}{noteJudgeSystem}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system}{Note\+Judge\+System}} Rhythm\+System\+Entities.\+System.\+Judge.\+Input\+Judge\+System\+Presenter.\+note\+Judge\+System\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_input_judge_system_presenter_8cs_source_l00031}{31}} of file \mbox{\hyperlink{_input_judge_system_presenter_8cs_source}{Input\+Judge\+System\+Presenter.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/git/\+Entities\+Rhythm\+Game\+System/\+Entities\+Rhythm\+Game\+System/\+Assets/\+Entities\+Rhythm\+Game/\+Scripts/\+System/\+Judge/\mbox{\hyperlink{_input_judge_system_presenter_8cs}{Input\+Judge\+System\+Presenter.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="RhythmSystemEntities.ECS.Aspect.NoteGeneratorSpawnAspect" name="RhythmSystemEntities.ECS.Aspect.NoteGeneratorSpawnAspect">
+<area shape="rect" id="Node000001" title="ノーツ生成するエンティティを保持するエンティティのアスペクト" alt="" coords="5,119,228,219"/>
+<area shape="rect" id="Node000002" href="$class_i_aspect.html" title=" " alt="" coords="88,5,145,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,86,119,119,114,119,114,86"/>
+</map>

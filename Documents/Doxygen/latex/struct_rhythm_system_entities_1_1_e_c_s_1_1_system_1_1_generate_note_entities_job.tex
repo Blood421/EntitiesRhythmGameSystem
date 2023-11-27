@@ -1,0 +1,197 @@
+\doxysection{Rhythm\+System\+Entities.\+ECS.\+System.\+Generate\+Note\+Entities\+Job Struct Reference}
+\hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job}{}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job}\index{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob@{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob}}
+
+
+ノーツの生成\+Job  
+
+
+
+
+Inheritance diagram for Rhythm\+System\+Entities.\+ECS.\+System.\+Generate\+Note\+Entities\+Job\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rhythm\+System\+Entities.\+ECS.\+System.\+Generate\+Note\+Entities\+Job\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a09e94291e6c0d806c1db4b4f15e95225}{To\+Sec\+With\+Fixed\+BPM}} (float beat, float bpm)
+\item 
+float \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a7e32f1afdd31537d1af5a9741f42dec7}{To\+Sec}} (float now\+Beat, Blob\+Asset\+Reference$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_b_p_m_changes_blob}{BPMChanges\+Blob}} $>$ bpm\+Changes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_ab670b1e80dbb785b055bdf128fa07686}{To\+Beat\+With\+Fixed\+BPM}} (float sec, float bpm)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Entity\+Command\+Buffer \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a34c1e6457175a10b11249544995f8bef}{ecb}}
+\item 
+\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_all_data_spawn_system_1_1_generate_data}{Note\+All\+Data\+Spawn\+System.\+Generate\+Data}} \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a9b0b0794bda3ae2d31020370f7492c96}{generate\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a067272652a74abd35e7bea5e5926ab85}{Execute}} (\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect}{Note\+Generator\+Aspect}} note\+Generator\+Aspect)
+\item 
+float \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a4988fe1175d96b28ce96f6bdaf237f51}{To\+Beat}} (float now\+Sec, Blob\+Asset\+Reference$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_b_p_m_changes_blob}{BPMChanges\+Blob}} $>$ bpm\+Changes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+ノーツの生成\+Job 
+
+Definition at line \mbox{\hyperlink{_note_all_data_spawn_system_8cs_source_l00165}{165}} of file \mbox{\hyperlink{_note_all_data_spawn_system_8cs_source}{Note\+All\+Data\+Spawn\+System.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a067272652a74abd35e7bea5e5926ab85}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a067272652a74abd35e7bea5e5926ab85} 
+\index{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob@{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob}!Execute@{Execute}}
+\index{Execute@{Execute}!RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob@{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+ECS.\+System.\+Generate\+Note\+Entities\+Job.\+Execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_generator_aspect}{Note\+Generator\+Aspect}}}]{note\+Generator\+Aspect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_note_all_data_spawn_system_8cs_source_l00171}{171}} of file \mbox{\hyperlink{_note_all_data_spawn_system_8cs_source}{Note\+All\+Data\+Spawn\+System.\+cs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a067272652a74abd35e7bea5e5926ab85_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a4988fe1175d96b28ce96f6bdaf237f51}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a4988fe1175d96b28ce96f6bdaf237f51} 
+\index{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob@{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob}!ToBeat@{ToBeat}}
+\index{ToBeat@{ToBeat}!RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob@{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob}}
+\doxysubsubsection{\texorpdfstring{ToBeat()}{ToBeat()}}
+{\footnotesize\ttfamily float Rhythm\+System\+Entities.\+ECS.\+System.\+Generate\+Note\+Entities\+Job.\+To\+Beat (\begin{DoxyParamCaption}\item[{float}]{now\+Sec,  }\item[{Blob\+Asset\+Reference$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_b_p_m_changes_blob}{BPMChanges\+Blob}} $>$}]{bpm\+Changes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_note_all_data_spawn_system_8cs_source_l00383}{383}} of file \mbox{\hyperlink{_note_all_data_spawn_system_8cs_source}{Note\+All\+Data\+Spawn\+System.\+cs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a4988fe1175d96b28ce96f6bdaf237f51_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a4988fe1175d96b28ce96f6bdaf237f51_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_ab670b1e80dbb785b055bdf128fa07686}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_ab670b1e80dbb785b055bdf128fa07686} 
+\index{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob@{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob}!ToBeatWithFixedBPM@{ToBeatWithFixedBPM}}
+\index{ToBeatWithFixedBPM@{ToBeatWithFixedBPM}!RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob@{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob}}
+\doxysubsubsection{\texorpdfstring{ToBeatWithFixedBPM()}{ToBeatWithFixedBPM()}}
+{\footnotesize\ttfamily static float Rhythm\+System\+Entities.\+ECS.\+System.\+Generate\+Note\+Entities\+Job.\+To\+Beat\+With\+Fixed\+BPM (\begin{DoxyParamCaption}\item[{float}]{sec,  }\item[{float}]{bpm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{_note_all_data_spawn_system_8cs_source_l00330}{330}} of file \mbox{\hyperlink{_note_all_data_spawn_system_8cs_source}{Note\+All\+Data\+Spawn\+System.\+cs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_ab670b1e80dbb785b055bdf128fa07686_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a7e32f1afdd31537d1af5a9741f42dec7}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a7e32f1afdd31537d1af5a9741f42dec7} 
+\index{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob@{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob}!ToSec@{ToSec}}
+\index{ToSec@{ToSec}!RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob@{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob}}
+\doxysubsubsection{\texorpdfstring{ToSec()}{ToSec()}}
+{\footnotesize\ttfamily float Rhythm\+System\+Entities.\+ECS.\+System.\+Generate\+Note\+Entities\+Job.\+To\+Sec (\begin{DoxyParamCaption}\item[{float}]{now\+Beat,  }\item[{Blob\+Asset\+Reference$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_b_p_m_changes_blob}{BPMChanges\+Blob}} $>$}]{bpm\+Changes }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_note_all_data_spawn_system_8cs_source_l00338}{338}} of file \mbox{\hyperlink{_note_all_data_spawn_system_8cs_source}{Note\+All\+Data\+Spawn\+System.\+cs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a7e32f1afdd31537d1af5a9741f42dec7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a7e32f1afdd31537d1af5a9741f42dec7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a09e94291e6c0d806c1db4b4f15e95225}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a09e94291e6c0d806c1db4b4f15e95225} 
+\index{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob@{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob}!ToSecWithFixedBPM@{ToSecWithFixedBPM}}
+\index{ToSecWithFixedBPM@{ToSecWithFixedBPM}!RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob@{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob}}
+\doxysubsubsection{\texorpdfstring{ToSecWithFixedBPM()}{ToSecWithFixedBPM()}}
+{\footnotesize\ttfamily float Rhythm\+System\+Entities.\+ECS.\+System.\+Generate\+Note\+Entities\+Job.\+To\+Sec\+With\+Fixed\+BPM (\begin{DoxyParamCaption}\item[{float}]{beat,  }\item[{float}]{bpm }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_note_all_data_spawn_system_8cs_source_l00322}{322}} of file \mbox{\hyperlink{_note_all_data_spawn_system_8cs_source}{Note\+All\+Data\+Spawn\+System.\+cs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a09e94291e6c0d806c1db4b4f15e95225_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a34c1e6457175a10b11249544995f8bef}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a34c1e6457175a10b11249544995f8bef} 
+\index{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob@{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob}!ecb@{ecb}}
+\index{ecb@{ecb}!RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob@{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob}}
+\doxysubsubsection{\texorpdfstring{ecb}{ecb}}
+{\footnotesize\ttfamily Entity\+Command\+Buffer Rhythm\+System\+Entities.\+ECS.\+System.\+Generate\+Note\+Entities\+Job.\+ecb}
+
+
+
+Definition at line \mbox{\hyperlink{_note_all_data_spawn_system_8cs_source_l00167}{167}} of file \mbox{\hyperlink{_note_all_data_spawn_system_8cs_source}{Note\+All\+Data\+Spawn\+System.\+cs}}.
+
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a9b0b0794bda3ae2d31020370f7492c96}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job_a9b0b0794bda3ae2d31020370f7492c96} 
+\index{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob@{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob}!generateData@{generateData}}
+\index{generateData@{generateData}!RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob@{RhythmSystemEntities.ECS.System.GenerateNoteEntitiesJob}}
+\doxysubsubsection{\texorpdfstring{generateData}{generateData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_all_data_spawn_system_1_1_generate_data}{Note\+All\+Data\+Spawn\+System.\+Generate\+Data}} Rhythm\+System\+Entities.\+ECS.\+System.\+Generate\+Note\+Entities\+Job.\+generate\+Data}
+
+
+
+Definition at line \mbox{\hyperlink{_note_all_data_spawn_system_8cs_source_l00168}{168}} of file \mbox{\hyperlink{_note_all_data_spawn_system_8cs_source}{Note\+All\+Data\+Spawn\+System.\+cs}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/git/\+Entities\+Rhythm\+Game\+System/\+Entities\+Rhythm\+Game\+System/\+Assets/\+Entities\+Rhythm\+Game/\+Scripts/\+ECS/\+System/\mbox{\hyperlink{_note_all_data_spawn_system_8cs}{Note\+All\+Data\+Spawn\+System.\+cs}}\end{DoxyCompactItemize}

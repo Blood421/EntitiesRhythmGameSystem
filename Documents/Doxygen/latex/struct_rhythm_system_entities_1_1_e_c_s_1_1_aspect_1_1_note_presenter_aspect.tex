@@ -1,0 +1,286 @@
+\doxysection{Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Presenter\+Aspect Struct Reference}
+\hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect}{}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect}\index{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}}
+
+
+ノーツへデータを運ぶ(\+Presenter)エンティティ用のアスペクト  
+
+
+
+
+Inheritance diagram for Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Presenter\+Aspect\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Presenter\+Aspect\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a494e5d86e31281d71f998e3a3c79fd8a}{Set\+Now\+Sec}} (float value)
+\begin{DoxyCompactList}\small\item\em 今の時間のセット(sec) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a538c70ff56b7595d19463a78284fd727}{Set\+Scroll\+Speed}} (float scroll\+Speed)
+\begin{DoxyCompactList}\small\item\em オプションのスクロールスピードの設定 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a8e63162bdc0ed9acf262486a9c099a84}{Set\+Player\+Input\+Offset}} (float offset)
+\begin{DoxyCompactList}\small\item\em オプションのプレイヤーからの入力オフセットの設定 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_af090009eb42eded78d22db22b5753ab9}{Get\+Now\+Sec}} ()
+\begin{DoxyCompactList}\small\item\em 今の時間の取得(sec) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a138b0766c47659bdd748e0abbe3df0aa}{Get\+Music\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Music\+IDの取得 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_option_data}{Note\+Option\+Data}} \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a3ac840046272d57cbfb4023cf0a23ebe}{Get\+Option\+Data}} ()
+\begin{DoxyCompactList}\small\item\em オプションのスクロール速度の取得 \end{DoxyCompactList}\item 
+Blob\+Asset\+Reference$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_b_p_m_changes_blob}{BPMChanges\+Blob}} $>$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a7500fea6c5b1445fef27fe68581e16b7}{Get\+BPMChanges\+Blob}} ()
+\begin{DoxyCompactList}\small\item\em BPMChangesの\+Blob\+Assetの\+Refを取得 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a2a3bf2976f5b30e282990a8f574580ad}{Dispose}} ()
+\begin{DoxyCompactList}\small\item\em Disposeする \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly Entity \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_ae643155fe296022a6f2fa0430bfaec5f}{entity}}
+\item 
+readonly Ref\+RO$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_music_i_d_data}{Music\+IDData}} $>$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_abc030c3fa26eddcc9415ffff7d62bd50}{music\+IDData\+RO}}
+\item 
+readonly Ref\+RW$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_presenter_data}{Note\+Presenter\+Data}} $>$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_ad0ad25cce40e50357cf3258955ff2b39}{note\+Presenter\+Data\+RW}}
+\item 
+readonly Ref\+RW$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_option_data}{Note\+Option\+Data}} $>$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a3000e705fb581887fc1edab636f8d3b6}{note\+Option\+Data\+RW}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+ノーツへデータを運ぶ(\+Presenter)エンティティ用のアスペクト 
+
+Definition at line \mbox{\hyperlink{_note_presenter_aspect_8cs_source_l00009}{9}} of file \mbox{\hyperlink{_note_presenter_aspect_8cs_source}{Note\+Presenter\+Aspect.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a2a3bf2976f5b30e282990a8f574580ad}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a2a3bf2976f5b30e282990a8f574580ad} 
+\index{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Presenter\+Aspect.\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disposeする 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a2a3bf2976f5b30e282990a8f574580ad_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a7500fea6c5b1445fef27fe68581e16b7}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a7500fea6c5b1445fef27fe68581e16b7} 
+\index{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}!GetBPMChangesBlob@{GetBPMChangesBlob}}
+\index{GetBPMChangesBlob@{GetBPMChangesBlob}!RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}}
+\doxysubsubsection{\texorpdfstring{GetBPMChangesBlob()}{GetBPMChangesBlob()}}
+{\footnotesize\ttfamily Blob\+Asset\+Reference$<$ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_b_p_m_changes_blob}{BPMChanges\+Blob}} $>$ Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Presenter\+Aspect.\+Get\+BPMChanges\+Blob (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+BPMChangesの\+Blob\+Assetの\+Refを取得 
+
+\begin{DoxyReturn}{Returns}
+BPMChangesの\+Blob\+Assetの\+Ref
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a7500fea6c5b1445fef27fe68581e16b7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a138b0766c47659bdd748e0abbe3df0aa}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a138b0766c47659bdd748e0abbe3df0aa} 
+\index{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}!GetMusicID@{GetMusicID}}
+\index{GetMusicID@{GetMusicID}!RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}}
+\doxysubsubsection{\texorpdfstring{GetMusicID()}{GetMusicID()}}
+{\footnotesize\ttfamily int Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Presenter\+Aspect.\+Get\+Music\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Music\+IDの取得 
+
+\begin{DoxyReturn}{Returns}
+Music\+ID
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a138b0766c47659bdd748e0abbe3df0aa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_af090009eb42eded78d22db22b5753ab9}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_af090009eb42eded78d22db22b5753ab9} 
+\index{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}!GetNowSec@{GetNowSec}}
+\index{GetNowSec@{GetNowSec}!RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}}
+\doxysubsubsection{\texorpdfstring{GetNowSec()}{GetNowSec()}}
+{\footnotesize\ttfamily float Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Presenter\+Aspect.\+Get\+Now\+Sec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+今の時間の取得(sec) 
+
+\begin{DoxyReturn}{Returns}
+今の時間(sec)
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_af090009eb42eded78d22db22b5753ab9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a3ac840046272d57cbfb4023cf0a23ebe}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a3ac840046272d57cbfb4023cf0a23ebe} 
+\index{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}!GetOptionData@{GetOptionData}}
+\index{GetOptionData@{GetOptionData}!RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}}
+\doxysubsubsection{\texorpdfstring{GetOptionData()}{GetOptionData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_option_data}{Note\+Option\+Data}} Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Presenter\+Aspect.\+Get\+Option\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+オプションのスクロール速度の取得 
+
+\begin{DoxyReturn}{Returns}
+オプションのスクロール速度
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a3ac840046272d57cbfb4023cf0a23ebe_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a494e5d86e31281d71f998e3a3c79fd8a}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a494e5d86e31281d71f998e3a3c79fd8a} 
+\index{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}!SetNowSec@{SetNowSec}}
+\index{SetNowSec@{SetNowSec}!RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}}
+\doxysubsubsection{\texorpdfstring{SetNowSec()}{SetNowSec()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Presenter\+Aspect.\+Set\+Now\+Sec (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+今の時間のセット(sec) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & 今の時間(sec)\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a494e5d86e31281d71f998e3a3c79fd8a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a8e63162bdc0ed9acf262486a9c099a84}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a8e63162bdc0ed9acf262486a9c099a84} 
+\index{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}!SetPlayerInputOffset@{SetPlayerInputOffset}}
+\index{SetPlayerInputOffset@{SetPlayerInputOffset}!RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}}
+\doxysubsubsection{\texorpdfstring{SetPlayerInputOffset()}{SetPlayerInputOffset()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Presenter\+Aspect.\+Set\+Player\+Input\+Offset (\begin{DoxyParamCaption}\item[{float}]{offset }\end{DoxyParamCaption})}
+
+
+
+オプションのプレイヤーからの入力オフセットの設定 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & オプションのプレイヤーからの入力オフセット\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a8e63162bdc0ed9acf262486a9c099a84_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a538c70ff56b7595d19463a78284fd727}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a538c70ff56b7595d19463a78284fd727} 
+\index{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}!SetScrollSpeed@{SetScrollSpeed}}
+\index{SetScrollSpeed@{SetScrollSpeed}!RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}}
+\doxysubsubsection{\texorpdfstring{SetScrollSpeed()}{SetScrollSpeed()}}
+{\footnotesize\ttfamily void Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Presenter\+Aspect.\+Set\+Scroll\+Speed (\begin{DoxyParamCaption}\item[{float}]{scroll\+Speed }\end{DoxyParamCaption})}
+
+
+
+オプションのスクロールスピードの設定 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scroll\+Speed} & オプションのスクロールスピード\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a538c70ff56b7595d19463a78284fd727_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_ae643155fe296022a6f2fa0430bfaec5f}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_ae643155fe296022a6f2fa0430bfaec5f} 
+\index{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}!entity@{entity}}
+\index{entity@{entity}!RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}}
+\doxysubsubsection{\texorpdfstring{entity}{entity}}
+{\footnotesize\ttfamily readonly Entity Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Presenter\+Aspect.\+entity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_note_presenter_aspect_8cs_source_l00012}{12}} of file \mbox{\hyperlink{_note_presenter_aspect_8cs_source}{Note\+Presenter\+Aspect.\+cs}}.
+
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_abc030c3fa26eddcc9415ffff7d62bd50}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_abc030c3fa26eddcc9415ffff7d62bd50} 
+\index{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}!musicIDDataRO@{musicIDDataRO}}
+\index{musicIDDataRO@{musicIDDataRO}!RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}}
+\doxysubsubsection{\texorpdfstring{musicIDDataRO}{musicIDDataRO}}
+{\footnotesize\ttfamily readonly Ref\+RO$<$\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_music_i_d_data}{Music\+IDData}}$>$ Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Presenter\+Aspect.\+music\+IDData\+RO\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_note_presenter_aspect_8cs_source_l00014}{14}} of file \mbox{\hyperlink{_note_presenter_aspect_8cs_source}{Note\+Presenter\+Aspect.\+cs}}.
+
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a3000e705fb581887fc1edab636f8d3b6}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_a3000e705fb581887fc1edab636f8d3b6} 
+\index{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}!noteOptionDataRW@{noteOptionDataRW}}
+\index{noteOptionDataRW@{noteOptionDataRW}!RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}}
+\doxysubsubsection{\texorpdfstring{noteOptionDataRW}{noteOptionDataRW}}
+{\footnotesize\ttfamily readonly Ref\+RW$<$\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_option_data}{Note\+Option\+Data}}$>$ Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Presenter\+Aspect.\+note\+Option\+Data\+RW\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_note_presenter_aspect_8cs_source_l00018}{18}} of file \mbox{\hyperlink{_note_presenter_aspect_8cs_source}{Note\+Presenter\+Aspect.\+cs}}.
+
+\Hypertarget{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_ad0ad25cce40e50357cf3258955ff2b39}\label{struct_rhythm_system_entities_1_1_e_c_s_1_1_aspect_1_1_note_presenter_aspect_ad0ad25cce40e50357cf3258955ff2b39} 
+\index{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}!notePresenterDataRW@{notePresenterDataRW}}
+\index{notePresenterDataRW@{notePresenterDataRW}!RhythmSystemEntities.ECS.Aspect.NotePresenterAspect@{RhythmSystemEntities.ECS.Aspect.NotePresenterAspect}}
+\doxysubsubsection{\texorpdfstring{notePresenterDataRW}{notePresenterDataRW}}
+{\footnotesize\ttfamily readonly Ref\+RW$<$\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_presenter_data}{Note\+Presenter\+Data}}$>$ Rhythm\+System\+Entities.\+ECS.\+Aspect.\+Note\+Presenter\+Aspect.\+note\+Presenter\+Data\+RW\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_note_presenter_aspect_8cs_source_l00016}{16}} of file \mbox{\hyperlink{_note_presenter_aspect_8cs_source}{Note\+Presenter\+Aspect.\+cs}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/git/\+Entities\+Rhythm\+Game\+System/\+Entities\+Rhythm\+Game\+System/\+Assets/\+Entities\+Rhythm\+Game/\+Scripts/\+ECS/\+Aspect/\mbox{\hyperlink{_note_presenter_aspect_8cs}{Note\+Presenter\+Aspect.\+cs}}\end{DoxyCompactItemize}

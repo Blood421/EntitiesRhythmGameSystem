@@ -1,0 +1,61 @@
+\doxysection{Rhythm\+System\+Entities.\+ECS.\+System Namespace Reference}
+\hypertarget{namespace_rhythm_system_entities_1_1_e_c_s_1_1_system}{}\label{namespace_rhythm_system_entities_1_1_e_c_s_1_1_system}\index{RhythmSystemEntities.ECS.System@{RhythmSystemEntities.ECS.System}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_note_entities_job}{Generate\+Note\+Entities\+Job}}
+\begin{DoxyCompactList}\small\item\em ノーツの生成\+Job \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_generate_presenter_entity_job}{Generate\+Presenter\+Entity\+Job}}
+\begin{DoxyCompactList}\small\item\em Presenterを生成する\+Job. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_get_long_note_data_job}{Get\+Long\+Note\+Data\+Job}}
+\begin{DoxyCompactList}\small\item\em ロングノーツの端データをノーツから取得するjob \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_input_judge_job}{Input\+Judge\+Job}}
+\begin{DoxyCompactList}\small\item\em 入力データから判定する\+Job \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_judged_result_to_note_job}{Judged\+Result\+To\+Note\+Job}}
+\begin{DoxyCompactList}\small\item\em 判定結果をノーツに反映させる\+Job \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_judge_note_decide_job}{Judge\+Note\+Decide\+Job}}
+\begin{DoxyCompactList}\small\item\em 判定するノーツを決める\+Job \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_long_note_edge_execute_job}{Long\+Note\+Edge\+Execute\+Job}}
+\begin{DoxyCompactList}\small\item\em ロングノーツの端データにノーツから受けとったデータを入れるjob \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_long_note_edge_execute_system}{Long\+Note\+Edge\+Execute\+System}}
+\begin{DoxyCompactList}\small\item\em ロングノーツの端のエンティティのデータを更新するシステム \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_long_note_edge_view_update_job}{Long\+Note\+Edge\+View\+Update\+Job}}
+\begin{DoxyCompactList}\small\item\em ロングノーツの端の見た目を更新する\+Job \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_all_data_spawn_system}{Note\+All\+Data\+Spawn\+System}}
+\begin{DoxyCompactList}\small\item\em ノーツや\+Presenter,Generatorを生成する\+System \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job}{Note\+Edge\+Now\+Sec\+Beat\+Update\+Job}}
+\begin{DoxyCompactList}\small\item\em 一時データを使ってノーツ端のデータを更新する\+Job \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_generator_spawn_job}{Note\+Generator\+Spawn\+Job}}
+\begin{DoxyCompactList}\small\item\em Note\+Generatorを生成する\+Job. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_judge_system}{Note\+Judge\+System}}
+\begin{DoxyCompactList}\small\item\em ノーツの入力判定と通り過ぎ判定をするシステム \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_now_sec_beat_update_job}{Note\+Now\+Sec\+Beat\+Update\+Job}}
+\begin{DoxyCompactList}\small\item\em 一時データを使ってノーツのデータを更新する\+Job \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_option_data_update_job}{Note\+Option\+Data\+Update\+Job}}
+\begin{DoxyCompactList}\small\item\em 一時データを使ってノーツのオプションデータを更新する\+Job \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_option_presenter_system}{Note\+Option\+Presenter\+System}}
+\begin{DoxyCompactList}\small\item\em プレゼンターにオプションデータをデリバリーするシステム \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_presenter_data_get_job}{Note\+Presenter\+Data\+Get\+Job}}
+\begin{DoxyCompactList}\small\item\em 一時データに必要なデータを入れる\+Job \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_presenter_dispose_job}{Note\+Presenter\+Dispose\+Job}}
+\begin{DoxyCompactList}\small\item\em 使うかわからないけど\+Presenterの\+Dispose用\+Job \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_presenter_system}{Note\+Presenter\+System}}
+\begin{DoxyCompactList}\small\item\em presenter-\/\texorpdfstring{$>$}{>}ノーツのデータデリバリーシステム \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_view_update_job}{Note\+View\+Update\+Job}}
+\begin{DoxyCompactList}\small\item\em ノーツの見た目を更新する\+Job \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_view_update_system}{Note\+View\+Update\+System}}
+\begin{DoxyCompactList}\small\item\em ノーツを移動させるシステム \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_now_sec_present_job}{Now\+Sec\+Present\+Job}}
+\begin{DoxyCompactList}\small\item\em Note\+Presenterのnow\+Secを更新する\+Job. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_rhythm_game_systems_late_update_group}{Rhythm\+Game\+Systems\+Late\+Update\+Group}}
+\begin{DoxyCompactList}\small\item\em ゲームシステムの\+Late\+Updateで処理するもののグループ \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_rhythm_game_systems_update_group}{Rhythm\+Game\+Systems\+Update\+Group}}
+\begin{DoxyCompactList}\small\item\em ゲームシステムの\+Updateで処理するもののグループ \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_set_note_option_job}{Set\+Note\+Option\+Job}}
+\begin{DoxyCompactList}\small\item\em プレゼンターのデータにセットする\+Jobの発行 \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_through_note_judge_job}{Through\+Note\+Judge\+Job}}
+\begin{DoxyCompactList}\small\item\em ノーツの通り過ぎを検知して処理するjob \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_time_presenter_system}{Time\+Presenter\+System}}
+\begin{DoxyCompactList}\small\item\em Mono側から\+ECS側にデータを持っていくための\+System. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_within_judge_range_check_job}{Within\+Judge\+Range\+Check\+Job}}
+\begin{DoxyCompactList}\small\item\em 判定するsec範囲に入っていたらリストに追加する\+Job \end{DoxyCompactList}\end{DoxyCompactItemize}

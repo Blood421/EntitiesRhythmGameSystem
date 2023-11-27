@@ -1,0 +1,74 @@
+\doxysection{Notes\+Generator.\+cs}
+\hypertarget{_notes_generator_8cs_source}{}\label{_notes_generator_8cs_source}\index{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/System/NotesGenerator.cs@{D:/git/EntitiesRhythmGameSystem/EntitiesRhythmGameSystem/Assets/EntitiesRhythmGame/Scripts/System/NotesGenerator.cs}}
+\mbox{\hyperlink{_notes_generator_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }Cysharp.Threading.Tasks;}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_data}{RhythmSystemEntities.Data}};}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_e_c_s_1_1_data}{RhythmSystemEntities.ECS.Data}};}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_e_c_s_1_1_system}{RhythmSystemEntities.ECS.System}};}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00006}00006\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_system_1_1_loader}{RhythmSystemEntities.System.Loader}};}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00007}00007\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_system_1_1_option}{RhythmSystemEntities.System.Option}};}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00008}00008\ \textcolor{keyword}{using\ }Unity.Collections;}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00009}00009\ \textcolor{keyword}{using\ }Unity.Entities;}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00010}00010\ \textcolor{keyword}{using\ }Unity.Mathematics;}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00011}00011\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00013}00013\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_rhythm_system_entities_1_1_system}{RhythmSystemEntities.System}}}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00014}00014\ \{}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00018}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator}{00018}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator}{NotesGenerator}}\ :\ \mbox{\hyperlink{class_mono_behaviour}{MonoBehaviour}}}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00019}00019\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00020}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator_aaa13843bdda15eb352606ae30dc530ef}{00020}}\ \ \ \ \ \ \ \ \ [SerializeField,Tooltip(\textcolor{stringliteral}{"{}曲ID"{}})]\ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator_aaa13843bdda15eb352606ae30dc530ef}{musicID}};}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00021}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator_a8a8fe60388551bbd4715a47b52fc387e}{00021}}\ \ \ \ \ \ \ \ \ [SerializeField,Tooltip(\textcolor{stringliteral}{"{}DJBMファイルのパス"{}})]\ \textcolor{keyword}{private}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator_a8a8fe60388551bbd4715a47b52fc387e}{djbmPath}};}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00022}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator_a8b5c0fad1c6d299fe70f4354919d66d3}{00022}}\ \ \ \ \ \ \ \ \ [SerializeField,Tooltip(\textcolor{stringliteral}{"{}オプションの参照"{}})]\ \textcolor{keyword}{private}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_option_1_1_note_option_controller}{NoteOptionController}}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator_a8b5c0fad1c6d299fe70f4354919d66d3}{noteOptionController}};}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00024}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator_a3ee0264812cdf674b00135a8ad525fef}{00024}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator_a3ee0264812cdf674b00135a8ad525fef}{Start}}()}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//非同期ロード}}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator_a25f3cc854f0d55bc02d712779fc0e224}{LoadAsyncStart}}().Forget();}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00030}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator_a25f3cc854f0d55bc02d712779fc0e224}{00030}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ async\ UniTask\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator_a25f3cc854f0d55bc02d712779fc0e224}{LoadAsyncStart}}()}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//1秒後にロード}}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ await\ UniTask.Delay(TimeSpan.FromSeconds(1),\ cancellationToken:\ destroyCancellationToken);}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator_a55778375ab8d32de17523a47c0fc923d}{LoadAsync}}().Forget();}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00037}\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator_a55778375ab8d32de17523a47c0fc923d}{00037}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ async\ UniTask\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator_a55778375ab8d32de17523a47c0fc923d}{LoadAsync}}()}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//譜面をテキストデータからロード}}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data}{NotesGenerateData}}\ notesGenerateData\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data}{NotesGenerateData}}(\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator_a8a8fe60388551bbd4715a47b52fc387e}{djbmPath}});}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ await\ notesGenerateData.\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_a0f0e3f14e7ea77aae3902abd39426108}{LoadAsync}}(destroyCancellationToken);}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//ロードデータを取得}}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_note_property_temp}{NotePropertyTemp}}[]\ notePropertyTemps\ =\ notesGenerateData.\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_a48f79a88a2b31a84c9b153a416d3672b}{GetNoteProperties}}().ToArray();}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_data_1_1_b_p_m_change}{BPMChange}}[]\ bpmChanges\ =\ notesGenerateData.\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_a048e669fd7a4a11ef142790d47e3e0bb}{GetBPMChanges}}().ToArray();}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_data_1_1_music_info}{MusicInfo}}\ info\ =\ notesGenerateData.\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_loader_1_1_notes_generate_data_a96ad9403b21bc21598bf9de6aa0caee1}{GetMusicInfo}}();}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//ノーツ生成システムを取得}}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_all_data_spawn_system}{NoteAllDataSpawnSystem}}\ noteAllDataSpawnSystem\ =}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ World.DefaultGameObjectInjectionWorld.GetOrCreateSystemManaged<\mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_all_data_spawn_system}{NoteAllDataSpawnSystem}}>();}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//ノーツをスポーンさせる}}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ noteAllDataSpawnSystem.\mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_all_data_spawn_system_ac97dbf6e431bbad9901733dbdd90719e}{Spawn}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_all_data_spawn_system}{NoteAllDataSpawnSystem}}.\mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_all_data_spawn_system_1_1_generate_data}{GenerateData}}()}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ isUsed\ =\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator_aaa13843bdda15eb352606ae30dc530ef}{musicID}}\ =\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator_aaa13843bdda15eb352606ae30dc530ef}{musicID}},}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ offsetSec\ =\ info.\mbox{\hyperlink{class_rhythm_system_entities_1_1_data_1_1_music_info_ad7c5de33ed31d351084d3c4759ed9368}{offset}},}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ posOffset\ =\ \textcolor{keyword}{new}\ float2(-\/5,0),}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ posAdjustor\ =\ \textcolor{keyword}{new}\ float2(1,1),}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ notePropertyTemps\ =\ \textcolor{keyword}{new}\ NativeArray<NotePropertyTemp>(notePropertyTemps,Allocator.TempJob),}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ bpmChanges\ =\ \textcolor{keyword}{new}\ NativeArray<BPMChange>(bpmChanges,Allocator.TempJob),}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ noteOptionData\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_rhythm_system_entities_1_1_e_c_s_1_1_data_1_1_note_option_data}{NoteOptionData}}()}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ scrollSpeed\ =\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator_a8b5c0fad1c6d299fe70f4354919d66d3}{noteOptionController}}.\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_option_1_1_note_option_controller_aa2f10f6f825c8863dfa9c16f28e8298d}{GetScrollSpeed}}().Value,}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ playerInputOffset\ =\ \mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_notes_generator_a8b5c0fad1c6d299fe70f4354919d66d3}{noteOptionController}}.\mbox{\hyperlink{class_rhythm_system_entities_1_1_system_1_1_option_1_1_note_option_controller_a2a3b394c0c672e580e88ad0825f2d5f7}{GetPlayerInputOffset}}().Value}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00070}00070\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_notes_generator_8cs_source_l00071}00071\ \}}
+
+\end{DoxyCode}

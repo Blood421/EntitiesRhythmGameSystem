@@ -1,0 +1,7 @@
+<map id="RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob.ToSecWithFixedBPM" name="RhythmSystemEntities.ECS.System.NoteEdgeNowSecBeatUpdateJob.ToSecWithFixedBPM">
+<area shape="rect" id="Node000001" title=" " alt="" coords="594,5,840,61"/>
+<area shape="rect" id="Node000002" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job.html#a1e22642d34e4ccf9bfa790732059ace3" title=" " alt="" coords="300,5,546,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="578,36,546,36,546,31,578,31"/>
+<area shape="rect" id="Node000003" href="$struct_rhythm_system_entities_1_1_e_c_s_1_1_system_1_1_note_edge_now_sec_beat_update_job.html#acd1f260f972b9d15bc21c3a7beec97b3" title=" " alt="" coords="5,5,252,61"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="284,36,252,36,252,31,284,31"/>
+</map>
